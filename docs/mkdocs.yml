@@ -1,0 +1,17 @@
+### Site metadata ###
+
+site_name: geoBoundaries Documentation
+site_description: Documentaiton for the geoBoundaries Project
+site_url: https://wmgeolab.github.io/gbDocs/
+
+repo_url: https://github.com/wmgeolab/gbDocs
+edit_uri: edit/master/docs/docs
+
+### Build settings ###
+
+theme: readthedocs
+
+nav:
+  - Home: index.md
+  - Introduction:
+      - What is geoBoundaries?: 00-introduction/what-is-geoboundaries.md
