@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Chapter 1](docs/00-introduction/)
+* [Chapter 1](docs/docs/00-introduction/)
   * [What is geoBoundaries?](00-introduction/what-is-geoboundaries.md)
   * [Section 1.2](chapter_1/section_1_2.md)
 * [Chapter 2](chapter_2.md)
