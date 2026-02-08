@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Chapter 1](docs/docs/00-introduction/)
-  * [What is geoBoundaries?](00-introduction/what-is-geoboundaries.md)
+  * [What is geoBoundaries?](docs/docs/00-introduction/what-is-geoboundaries.md)
   * [Section 1.2](chapter_1/section_1_2.md)
 * [Chapter 2](chapter_2.md)
   * [Section 2.1](chapter_2/section_2_1.md)
