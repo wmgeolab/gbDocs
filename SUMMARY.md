@@ -1,14 +1,13 @@
 # Summary
 
 * [Introduction](README.md)
-* [Chapter 1](chapter_1/README.md)
-  * [Section 1.1](chapter_1/section_1_1.md)
+* [Chapter 1](docs/00-introduction/)
+  * [What is geoBoundaries?](docs/00-introduction/
+what-is-geoboundaries.md)
   * [Section 1.2](chapter_1/section_1_2.md)
 * [Chapter 2](chapter_2.md)
   * [Section 2.1](chapter_2/section_2_1.md)
 
-docs/README.md
-docs/SUMMARY.md (navigation order)
 docs/00-introduction/
 what-is-geoboundaries.md
 governance-and-principles.md
