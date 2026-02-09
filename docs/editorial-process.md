@@ -12,6 +12,6 @@
 ## Review Criteria
 A page is ready when:
 - [x] Steps tested
-- [ ] Screenshots match UI
-- [ ] Links work
-- [ ] Template sections complete
+- [x] Screenshots match UI
+- [x] Links work
+- [x] Template sections complete
