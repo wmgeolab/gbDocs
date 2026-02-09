@@ -4,17 +4,19 @@
 * [Introduction](docs/docs/00-introduction/)
   * [What is geoBoundaries?](docs/docs/00-introduction/what-is-geoboundaries.md)
   * [Governance and Principles](docs/docs/00-introduction/governance-and-principles.md)
-  * [Glossary] (docs/docs/00-introduction/glossary.md)
+  * [Glossary](docs/docs/00-introduction/glossary.md)
 * [Chapter 1](docs/docs/10-workflow-overview/)
   * [End to End Pipeline](docs/docs/10-workflow-overview/end-to-end-pipeline.md)
+  * [Roles and Responsibilities](docs/docs/10-workflow-overview/roles-and-responsibilities.md)
+  * [Deliverables and Artifacts](docs/docs/10-workflow-overview/deliverables-and-artifacts.md)
+  * [Quality Gates](docs/docs/10-workflow-overview/quality-gates.md)
+* [Chapter 2](docs/docs/20-research-and-sourcing/)
+  * [End to End Pipeline](docs/docs/10-workflow-overview/end-to-end-pipeline.md)
+  * [Roles and Responsibilities](docs/docs/10-workflow-overview/roles-and-responsibilities.md)
+  * [Deliverables and Artifacts](docs/docs/10-workflow-overview/deliverables-and-artifacts.md)
+  * [Quality Gates](docs/docs/10-workflow-overview/quality-gates.md)
 
-
-docs/docs/10-workflow-overview/
-
-roles-and-responsibilities.md
-deliverables-and-artifacts.md
-quality-gates.md
-docs/20-research-and-sourcing/
+docs/docs/20-research-and-sourcing/
 
 
 source-discovery-strategies.md
