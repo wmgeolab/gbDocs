@@ -60,4 +60,4 @@
   * [PR Templates](docs/docs/80-contributor-guides/pr-templates.md)
   * [Support and Contact](docs/docs/80-contributor-guides/support-and-contact.md)
 
-* [Assets](docs/docs/assets/)
+* [Assets](docs/images/)
