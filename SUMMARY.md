@@ -1,20 +1,16 @@
 # Summary
 
 * [Introduction](README.md)
-* [Chapter 1](docs/docs/00-introduction/)
+* [Introduction](docs/docs/00-introduction/)
   * [What is geoBoundaries?](docs/docs/00-introduction/what-is-geoboundaries.md)
-  * [Section 1.2](chapter_1/section_1_2.md)
-* [Chapter 2](chapter_2.md)
-  * [Section 2.1](chapter_2/section_2_1.md)
-
-docs/00-introduction/
-what-is-geoboundaries.md
-governance-and-principles.md
-glossary.md
-docs/10-workflow-overview/
+  * [Governance and Principles](docs/docs/00-introduction/governance-and-principles.md)
+  * [Glossary] (docs/docs/00-introduction/glossary.md)
+* [Chapter 1](docs/docs/10-workflow-overview/)
+  * [End to End Pipeline](docs/docs/10-workflow-overview/end-to-end-pipeline.md)
 
 
-end-to-end-pipeline.md
+docs/docs/10-workflow-overview/
+
 roles-and-responsibilities.md
 deliverables-and-artifacts.md
 quality-gates.md
