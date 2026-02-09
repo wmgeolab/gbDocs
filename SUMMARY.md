@@ -11,24 +11,23 @@
   * [Deliverables and Artifacts](docs/docs/10-workflow-overview/deliverables-and-artifacts.md)
   * [Quality Gates](docs/docs/10-workflow-overview/quality-gates.md)
 * [Chapter 2](docs/docs/20-research-and-sourcing/)
-  * [End to End Pipeline](docs/docs/10-workflow-overview/end-to-end-pipeline.md)
-  * [Roles and Responsibilities](docs/docs/10-workflow-overview/roles-and-responsibilities.md)
-  * [Deliverables and Artifacts](docs/docs/10-workflow-overview/deliverables-and-artifacts.md)
-  * [Quality Gates](docs/docs/10-workflow-overview/quality-gates.md)
+  * [Source Discovery Strategies](docs/docs/20-research-and-sourcing/source-discovery-strategies.md)
+  * [Source Evaluation Rubric](docs/docs/20-research-and-sourcing/source-evaluation-rubric.md)
+  * [Licensing and Permissions](docs/docs/20-research-and-sourcing/licensing-and-permissions.md)
+  * [Citation and Provenance](docs/docs/20-research-and-sourcing/citation-and-provenance.md)
+* [Chapter 3](docs/docs/30-data-acquisition/)
+  * [Downloading and Archiving](docs/docs/30-data-acquisition/downloading-and-archiving.md)
+  * [Digitizing and Georeferencing](docs/docs/30-data-acquisition/digitizing-and-georeferencing.md)
+  * [Admin Hierarchy and Naming](docs/docs/30-data-acquisition/admin-hierarchy-and-naming.md)
+* [Chapter 2](docs/docs/20-research-and-sourcing/)
+  * [Source Discovery Strategies](docs/docs/20-research-and-sourcing/source-discovery-strategies.md)
+  * [Source Evaluation Rubric](docs/docs/20-research-and-sourcing/source-evaluation-rubric.md)
+  * [Licensing and Permissions](docs/docs/20-research-and-sourcing/licensing-and-permissions.md)
+  * [Citation and Provenance](docs/docs/20-research-and-sourcing/citation-and-provenance.md)
 
-docs/docs/20-research-and-sourcing/
+docs/docs/30-data-acquisition/
 
 
-source-discovery-strategies.md
-source-evaluation-rubric.md
-licensing-and-permissions.md
-citation-and-provenance.md
-docs/30-data-acquisition/
-
-
-downloading-and-archiving.md
-digitizing-and-georeferencing.md
-admin-hierarchy-and-naming.md
 docs/40-qgis-user-manual/
 
 
