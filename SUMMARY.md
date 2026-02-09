@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [README](README.md)
 * [Introduction](docs/docs/00-introduction/)
   * [What is geoBoundaries?](docs/docs/00-introduction/what-is-geoboundaries.md)
   * [Governance and Principles](docs/docs/00-introduction/governance-and-principles.md)
@@ -25,49 +25,47 @@
   * [Licensing and Permissions](docs/docs/20-research-and-sourcing/licensing-and-permissions.md)
   * [Citation and Provenance](docs/docs/20-research-and-sourcing/citation-and-provenance.md)
 
-docs/docs/30-data-acquisition/
+* [Chapter 3](docs/docs/30-data-acquisition/)
+  * [Downloading and Archiving](docs/docs/30-data-acquisition/downloading-and-archiving.md)
+  * [Digitizing and Georeferencing](docs/docs/30-data-acquisition/digitizing-and-georeferencing.md)
+  * [Admin Hierarchy and Naming](docs/docs/30-data-acquisition/admin-hierarchy-and-naming.md)
+
+ * [Chapter 4](docs/docs/40-qgis-user-manual/)
+  * [QGIS Setup](docs/docs/40-qgis-user-manual/qgis-setup.md)
+  * [Project Structure](docs/docs/40-qgis-user-manual/project-structure.md)
+  * [Loading and Inspecting Data](docs/docs/40-qgis-user-manual/loading-and-inspecting-data.md)
+  * [Georeferencing Workflow](docs/docs/40-qgis-user-manual/georeferencing-workflow.md)
+  * [Editing Geometries](docs/docs/40-qgis-user-manual/editing-geometries.md)
+  * [Topology and Validity](docs/docs/40-qgis-user-manual/topology-and-validity.md)
+  * [Snapping and Shared Borders](docs/docs/40-qgis-user-manual/snapping-and-shared-borders.md)
+  * [Attribute Schema](docs/docs/40-qgis-user-manual/attribute-schema.md)
+  * [Exporting and Formatting](docs/docs/40-qgis-user-manual/exporting-and-formatting.md)
+  * [QGIS Troubleshooting](docs/docs/40-qgis-user-manual/qgis-troubleshooting.md)
+
+ * [Chapter 5](docs/docs/50-geometry-fixes-and-standards/)
+  * [Common Errors and Fixes](docs/docs/50-geometry-fixes-and-standards/common-errors-and-fixes.md)
+  * [Multipart Slivers, Gaps, Overlaps](docs/docs/50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps.md)
+  * [Coastlines, Lakes, Enclaves](docs/docs/50-geometry-fixes-and-standards/coastlines-lakes-enclaves.md)
+  * [Projection and Precision](docs/docs/50-geometry-fixes-and-standards/projection-and-precision.md)
+  * [Generalization vs Fidelity](docs/docs/50-geometry-fixes-and-standards/generalization-vs-fidelity.md)
 
 
-docs/40-qgis-user-manual/
+ * [Chapter 6](docs/docs/60-qa-qc/)
+  * [Automated Checks Spec](docs/docs/60-qa-qc/automated-checks-spec.md)
+  * [Manual Review Checklist](docs/docs/60-qa-qc/manual-review-checklist.md)
+  * [Peer Review Process](docs/docs/60-qa-qc/peer-review-process.md)
+  * [Acceptance Criteria](docs/docs/60-qa-qc/acceptance-criteria.md)
 
+ * [Chapter 7](docs/docs/70-packaging-and-release/)
+  * [Folder and File Conventions](docs/docs/70-packaging-and-release/folder-and-file-conventions.md)
+  * [Versioning and Change Log](docs/docs/70-packaging-and-release/versioning-and-changelog.md)
+  * [Metadata Requirements](docs/docs/70-packaging-and-release/metadata-requirements.md)
+  * [Publication Checklist](docs/docs/70-packaging-and-release/publication-checklist.md)
 
-qgis-setup.md
-project-structure.md
-loading-and-inspecting-data.md
-georeferencing-workflow.md
-editing-geometries.md
-topology-and-validity.md
-snapping-and-shared-borders.md
-attribute-schema.md
-exporting-and-formatting.md
-qgis-troubleshooting.md
-docs/50-geometry-fixes-and-standards/
+ * [Chapter 8](docs/docs/80-contributor-guides/)
+  * [Creating and New Boundary PR](docs/docs/80-contributor-guides/creating-a-new-boundary-pr.md)
+  * [Issue Templates](docs/docs/80-contributor-guides/issue-templates.md)
+  * [PR Templates](docs/docs/80-contributor-guides/pr-templates.md)
+  * [Support and Contact](docs/docs/80-contributor-guides/support-and-contact.md)
 
-
-common-errors-and-fixes.md
-multipart-slivers-gaps-overlaps.md
-coastlines-lakes-enclaves.md
-projection-and-precision.md
-generalization-vs-fidelity.md
-docs/60-qa-qc/
-
-
-automated-checks-spec.md
-manual-review-checklist.md
-peer-review-process.md
-acceptance-criteria.md
-docs/70-packaging-and-release/
-
-
-folder-and-file-conventions.md
-versioning-and-changelog.md
-metadata-requirements.md
-publication-checklist.md
-docs/80-contributor-guides/
-
-
-creating-a-new-boundary-pr.md
-issue-templates.md
-pr-templates.md
-support-and-contact.md
-assets/ (images, screenshots, diagrams)
+ * [Assets](docs/docs/assets/)
