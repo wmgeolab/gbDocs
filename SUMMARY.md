@@ -1,6 +1,14 @@
 # Summary
 
 * [README](README.md)
+* [Documents](docs/)
+  * [Style Guide](docs/style-guide.md)
+  * [Editorial-Process.md](docs/editorial-process.md)
+
+* [Templates](docs/templates/)
+  * [Workflow Template](workflow-template.md)
+  * [Editorial Process](editorial-process.md)
+
 * [Introduction](docs/docs/00-introduction/)
   * [What is geoBoundaries?](docs/docs/00-introduction/what-is-geoboundaries.md)
   * [Governance and Principles](docs/docs/00-introduction/governance-and-principles.md)
