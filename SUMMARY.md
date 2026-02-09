@@ -30,7 +30,7 @@
   * [Digitizing and Georeferencing](docs/docs/30-data-acquisition/digitizing-and-georeferencing.md)
   * [Admin Hierarchy and Naming](docs/docs/30-data-acquisition/admin-hierarchy-and-naming.md)
 
- * [Chapter 4](docs/docs/40-qgis-user-manual/)
+* [Chapter 4](docs/docs/40-qgis-user-manual/)
   * [QGIS Setup](docs/docs/40-qgis-user-manual/qgis-setup.md)
   * [Project Structure](docs/docs/40-qgis-user-manual/project-structure.md)
   * [Loading and Inspecting Data](docs/docs/40-qgis-user-manual/loading-and-inspecting-data.md)
@@ -42,7 +42,7 @@
   * [Exporting and Formatting](docs/docs/40-qgis-user-manual/exporting-and-formatting.md)
   * [QGIS Troubleshooting](docs/docs/40-qgis-user-manual/qgis-troubleshooting.md)
 
- * [Chapter 5](docs/docs/50-geometry-fixes-and-standards/)
+* [Chapter 5](docs/docs/50-geometry-fixes-and-standards/)
   * [Common Errors and Fixes](docs/docs/50-geometry-fixes-and-standards/common-errors-and-fixes.md)
   * [Multipart Slivers, Gaps, Overlaps](docs/docs/50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps.md)
   * [Coastlines, Lakes, Enclaves](docs/docs/50-geometry-fixes-and-standards/coastlines-lakes-enclaves.md)
@@ -50,22 +50,22 @@
   * [Generalization vs Fidelity](docs/docs/50-geometry-fixes-and-standards/generalization-vs-fidelity.md)
 
 
- * [Chapter 6](docs/docs/60-qa-qc/)
+* [Chapter 6](docs/docs/60-qa-qc/)
   * [Automated Checks Spec](docs/docs/60-qa-qc/automated-checks-spec.md)
   * [Manual Review Checklist](docs/docs/60-qa-qc/manual-review-checklist.md)
   * [Peer Review Process](docs/docs/60-qa-qc/peer-review-process.md)
   * [Acceptance Criteria](docs/docs/60-qa-qc/acceptance-criteria.md)
 
- * [Chapter 7](docs/docs/70-packaging-and-release/)
+* [Chapter 7](docs/docs/70-packaging-and-release/)
   * [Folder and File Conventions](docs/docs/70-packaging-and-release/folder-and-file-conventions.md)
   * [Versioning and Change Log](docs/docs/70-packaging-and-release/versioning-and-changelog.md)
   * [Metadata Requirements](docs/docs/70-packaging-and-release/metadata-requirements.md)
   * [Publication Checklist](docs/docs/70-packaging-and-release/publication-checklist.md)
 
- * [Chapter 8](docs/docs/80-contributor-guides/)
+* [Chapter 8](docs/docs/80-contributor-guides/)
   * [Creating and New Boundary PR](docs/docs/80-contributor-guides/creating-a-new-boundary-pr.md)
   * [Issue Templates](docs/docs/80-contributor-guides/issue-templates.md)
   * [PR Templates](docs/docs/80-contributor-guides/pr-templates.md)
   * [Support and Contact](docs/docs/80-contributor-guides/support-and-contact.md)
 
- * [Assets](docs/docs/assets/)
+* [Assets](docs/docs/assets/)
