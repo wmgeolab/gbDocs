@@ -14,4 +14,5 @@ theme: readthedocs
 nav:
   - Home: index.md
   - Introduction:
-      - What is geoBoundaries?: 00-introduction/what-is-geoboundaries.md
+      - Glossary: 00-introduction/glossary.md
+      - Governance: 00-introduction/governance-and-principles.md
