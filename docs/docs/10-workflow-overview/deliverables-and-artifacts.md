@@ -12,8 +12,30 @@ The expected output is a zip file containing:
 2. A **screenshot of the source license** in PNG format, `license.png`
 3. A **metadata file**, `meta.txt`.
 
+Boundary File:
 - If the zip file contains a **shapefile** rather than a geojson, it will also contain a minimum of three file types that must be present: `.shp`, `.shx`, and `.dbf`. The other component files that may be present are `.prj`, and `.cpg`.
 - If the zip file contains a **geojson**, it will contain the geojson and no other component files.
+
+License File:
+The screenshot must include the url of the license source, a full screen screenshot is preferred.
+
+Metadata File:
+
+## meta.txt subfields
+Within the `meta.txt` file, there are several subfields that describe the data.
+
+Boundary Representative of Year: Year that the data was created
+ISO-3166-1 (Alpha-3): ISO 3-letter country code 
+Boundary Type: Administrative Division level
+Canonical Boundary Type Name: Official name of the boundary
+Source 1: Data Source #1
+Source 2: Data Source #1
+Release Type: gbOpen 
+License: Type of license the data is shared under
+License Notes: Specifications on license usage
+License Source: Link to the licensing information
+Link to Source Data: Link to the source data information
+Other Notes: ...
 
 ## Steps
 The steps to creating these files will be described in the Pipeline section, as previously stated.
@@ -31,23 +53,6 @@ Here is a downloadable example of a zip file containing the 3 expected outputs, 
 </a>
 
 Within the zip file, there is the `.shp` file, and the other component files that are crucial for spatial accuracy, the `meta.txt` file, and the `license.png` screenshot of the boundary's license.
-
-## meta.txt subfields
-
-Within the `meta.txt` file, there are several subfields that describe the data.
-
-Boundary Representative of Year: Year that the data was created
-ISO-3166-1 (Alpha-3): ISO 3-letter country code 
-Boundary Type: Administrative Division level
-Canonical Boundary Type Name: Official name of the boundary
-Source 1: Data Source #1
-Source 2: Data Source #1
-Release Type: gbOpen 
-License: Type of license the data is shared under
-License Notes: Specifications on license usage
-License Source: Link to the licensing information
-Link to Source Data: Link to the source data information
-Other Notes: ...
 
 ## Common Errors
 There are usually errors regarding the component files that automatically generate with the shape file. In addition, within `meta.txt`, it is important to accurately display the boundary as the country itself calls it. 
