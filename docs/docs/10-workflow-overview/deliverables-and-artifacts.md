@@ -16,7 +16,14 @@ A **zip file** containing the corrected **shapefile**, or a **geojson**, with th
 The steps to creating these files will be described in the Pipeline section, as previously stated.
 
 ## Validation / QA
-Here is a downloadable example
+Here is a downloadable example using Angola's country border, administrative division 0 (AGO_ADM0).
+
+<a href="[https://www.geoboundaries.org](https://github.com/wmgeolab/geoBoundaries/raw/refs/heads/main/sourceData/gbOpen/AGO_ADM0.zip?download=)" target="_blank" rel="noopener"
+   style="display:inline-block;background:#115740;color:#fff;text-decoration:none;
+          padding:.9em 1.6em;border-radius:9999px;font-weight:700;letter-spacing:.02em;
+          box-shadow:0 8px 24px rgba(0,0,0,.08);transition:transform .05s ease-out">
+  ⬇︎ Download the data here
+</a>
 
 ## Common Errors
 What usually goes wrong.
