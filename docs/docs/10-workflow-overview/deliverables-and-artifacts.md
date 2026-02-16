@@ -7,7 +7,10 @@ This page defines the required outputs for the geoBoundaries workflow, so that t
 In order to start the workflow, there must be a problem with a layer of data, which can be found at the **[Issues](https://github.com/wmgeolab/geoBoundaries/issues?page=1)** page. After understanding the issue, the user will go through the steps to solving the issue, which is thoroughly detailed in **[End to End Pipeline](https://wmgeolab.github.io/gbDocs/10-workflow-overview/end-to-end-pipeline/)** Section. 
 
 ## Outputs
-A **zip file** containing the corrected **shapefile**, or a **geojson**, with the related boundary, a **screenshot of the source license** in PNG format, and a **metadata file** will be produced. 
+The expected output is a zip file containing:
+1. The corrected **shapefile**, or a **geojson**, with the related boundary, `ISO_ADM#`
+2. A **screenshot of the source license** in PNG format, `license.png`
+3. A **metadata file**, `meta.txt`.
 
 - If the zip file contains a **shapefile** rather than a geojson, it will also contain a minimum of three file types that must be present: `.shp`, `.shx`, and `.dbf`. The other component files that may be present are `.prj`, and `.cpg`.
 - If the zip file contains a **geojson**, it will contain the geojson and no other component files.
@@ -16,8 +19,7 @@ A **zip file** containing the corrected **shapefile**, or a **geojson**, with th
 The steps to creating these files will be described in the Pipeline section, as previously stated.
 
 ## Validation / QA
-Here is a downloadable example using Angola's country border, administrative division 0 (AGO_ADM0).
-
+Here is a downloadable example of a zip file containing the 3 expected outputs, using Angola's country border, administrative division 0 (AGO_ADM0).
 <a href="https://github.com/wmgeolab/geoBoundaries/raw/refs/heads/main/sourceData/gbOpen/AGO_ADM0.zip?download=" 
    target="_blank" 
    rel="noopener"
@@ -26,6 +28,24 @@ Here is a downloadable example using Angola's country border, administrative div
           box-shadow:0 8px 24px rgba(0,0,0,.08);transition:transform .05s ease-out">
   ⬇︎ Download the data here
 </a>
+
+Within the zip file, there is the `.shp` file, and the other component files that are crucial for spatial accuracy, the `meta.txt` file, and the `license.png` screenshot of the boundary's license.
+
+Within the `meta.txt` file, there are several subfields that describe the data.
+<details>
+Boundary Representative of Year: 2021
+ISO-3166-1 (Alpha-3): AGO
+Boundary Type: ADM0
+Canonical Boundary Type Name: República de Angola
+Source 1: Open Street Map
+Source 2: 
+Release Type: gbOpen 
+License: Creative Commons Attribution-ShareAlike 2.0
+License Notes: 
+License Source: https://osm-boundaries.com/Documentation
+Link to Source Data: https://osm-boundaries.com/ 
+Other Notes: 
+</details>
 
 ## Common Errors
 What usually goes wrong.
