@@ -20,6 +20,7 @@ The steps to creating these files will be described in the Pipeline section, as 
 
 ## Validation / QA
 Here is a downloadable example of a zip file containing the 3 expected outputs, using Angola's country border, administrative division 0 (AGO_ADM0).
+
 <a href="https://github.com/wmgeolab/geoBoundaries/raw/refs/heads/main/sourceData/gbOpen/AGO_ADM0.zip?download=" 
    target="_blank" 
    rel="noopener"
@@ -31,24 +32,22 @@ Here is a downloadable example of a zip file containing the 3 expected outputs, 
 
 Within the zip file, there is the `.shp` file, and the other component files that are crucial for spatial accuracy, the `meta.txt` file, and the `license.png` screenshot of the boundary's license.
 
+## meta.txt subfields
+
 Within the `meta.txt` file, there are several subfields that describe the data.
-<details>
-Boundary Representative of Year: 2021
-ISO-3166-1 (Alpha-3): AGO
-Boundary Type: ADM0
-Canonical Boundary Type Name: República de Angola
-Source 1: Open Street Map
-Source 2: 
+
+Boundary Representative of Year: Year that the data was created
+ISO-3166-1 (Alpha-3): ISO 3-letter country code 
+Boundary Type: Administrative Division level
+Canonical Boundary Type Name: Official name of the boundary
+Source 1: Data Source #1
+Source 2: Data Source #1
 Release Type: gbOpen 
-License: Creative Commons Attribution-ShareAlike 2.0
-License Notes: 
-License Source: https://osm-boundaries.com/Documentation
-Link to Source Data: https://osm-boundaries.com/ 
-Other Notes: 
-</details>
+License: Type of license the data is shared under
+License Notes: Specifications on license usage
+License Source: Link to the licensing information
+Link to Source Data: Link to the source data information
+Other Notes: ...
 
 ## Common Errors
-What usually goes wrong.
-
-## Related Pages
-Links
+There are usually errors regarding the component files that automatically generate with the shape file. In addition, within `meta.txt`, it is important to accurately display the boundary as the country itself calls it. 
