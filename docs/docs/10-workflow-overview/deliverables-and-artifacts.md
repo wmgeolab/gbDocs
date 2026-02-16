@@ -8,20 +8,20 @@ In order to start the workflow, there must be a problem with a layer of data, wh
 
 ## Outputs
 The expected output is a zip file containing:
-1. The corrected **shapefile**, or a **geojson**, with the related boundary, `ISO_ADM#`
-2. A **screenshot of the source license** in PNG format, `license.png`
-3. A **metadata file**, `meta.txt`.
+   1. The corrected **shapefile**, or a **geojson**, with the related boundary, `ISO_ADM#`
+   2. A **screenshot of the source license** in PNG format, `license.png`
+   3. A **metadata file**, `meta.txt`.
 
 Boundary File:
-- If the zip file contains a **shapefile** rather than a geojson, it will also contain a minimum of three file types that must be present: `.shp`, `.shx`, and `.dbf`. The other component files that may be present are `.prj`, and `.cpg`.
-- If the zip file contains a **geojson**, it will contain the geojson and no other component files.
+
+   - If the zip file contains a **shapefile** rather than a geojson, it will also contain a minimum of three file types that must be present: `.shp`, `.shx`, and `.dbf`. The other component files that may be present are `.prj`, and `.cpg`.
+   - If the zip file contains a **geojson**, it will contain the geojson and no other component files.
 
 License File:
 The screenshot must include the url of the license source, a full screen screenshot is preferred.
 
 Metadata File:
 
-## meta.txt subfields
 Within the `meta.txt` file, there are several subfields that describe the data.
 
 Boundary Representative of Year: Year that the data was created
