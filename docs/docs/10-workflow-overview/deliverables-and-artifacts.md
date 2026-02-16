@@ -8,8 +8,8 @@ In order to start the workflow, there must be a problem with a layer of data, wh
 
 ## Outputs
 The expected output is a zip file containing:
-   1. The corrected **shapefile**, or a **geojson**, with the related boundary, `ISO_ADM#`
-   2. A **screenshot of the source license** in PNG format, `license.png`
+   1. The corrected **shapefile**, or a **geojson**, with the related boundary, `ISO_ADM#`.
+   2. A **screenshot of the source license** in PNG format, `license.png`.
    3. A **metadata file**, `meta.txt`.
 
 Boundary File:
