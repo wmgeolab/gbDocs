@@ -16,3 +16,12 @@ nav:
   - Introduction:
       - Glossary: 00-introduction/glossary.md
       - Governance: 00-introduction/governance-and-principles.md
+      - What is geoBoundaries: 00-introduction/what-is-geoboundaries.md
+  - Workflow Overview:
+      - End to End Pipeline: 10-workflow-overview/end-to-end-pipeline.md
+      - Roles and responsibilities: 10-workflow-overview/roles-and-responsibilities.md
+      - Deliverables and Artifacts: 10-workflow-overview/deliverables-and-artifacts.md
+      - Quality Gates: 10-workflow-overview/quality-gates.md
+
+
+
