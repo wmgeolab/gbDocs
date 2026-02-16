@@ -7,7 +7,7 @@ This page defines the required outputs for the geoBoundaries workflow, so that t
 In order to start the workflow, there must be a problem with a layer of data, which can be found at the **[Issues](https://github.com/wmgeolab/geoBoundaries/issues?page=1)** page. 
 
 ## Outputs
-What will be produced
+A zip file containing a shapefile, or a geojson, and a meta data file will be produced. 
 
 ## Steps
 1.
