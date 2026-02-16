@@ -18,7 +18,7 @@ The steps to creating these files will be described in the Pipeline section, as 
 ## Validation / QA
 Here is a downloadable example using Angola's country border, administrative division 0 (AGO_ADM0).
 
-<a href="https://github.com/wmgeolab/geoBoundaries/raw/refs/heads/main/sourceData/gbOpen/AGO_ADM0.zip" 
+<a href="https://github.com/wmgeolab/geoBoundaries/raw/refs/heads/main/sourceData/gbOpen/AGO_ADM0.zip?download=" 
    target="_blank" 
    rel="noopener"
    style="display:inline-block;background:#115740;color:#fff;text-decoration:none;
