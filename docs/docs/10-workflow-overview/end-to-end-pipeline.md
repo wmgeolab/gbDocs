@@ -64,12 +64,15 @@ Here is the official [ISO website](https://www.iso.org/obp/ui/#search) that allo
 ### If the License Is Unclear
 
 - Contact the data owner for permission  
-- Use the permission tracking template provided <!-- TODO: Link template -->
-- Save correspondence in the `raw` folder for the boundary  
+- Use the [permission tracking template provided](https://github.com/wmgeolab/gbDocs/blob/main/docs/templates/Boundary%20Request.md)
+- If the owner responds and affirms the data's usage, save the correspondence in the zip file for the boundary, as it is proof that the data can be used.
 
-<!-- TODO: Add screenshot of template -->
+In order to continue the process of boundary research, up to this point a valid boundary would contain:
+ 1. A license that is appropriate for all uses (commercial, educational...)
+ 2. A source that we are able to provide
+ 3. Up to date boundary information that would update the boundary in comparison to the one geoBoundaries already has.
 
----
+After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
 ### Checking the Shapefile
 
@@ -82,6 +85,9 @@ Once you find a shapefile with an acceptable license:
 
 ---
 
+
+
+---
 
 ## Downloading geoBoundaries Data from GitHub
 
