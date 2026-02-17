@@ -6,7 +6,7 @@ Tasks are located on GitHub and are called **“[issues](https://github.com/wmge
 
 ## Overview of Issue Workflow
 
-![Workflow Diagram](docs/images/workflow.png)
+![Workflow Diagram](workflow.png)
 
 
 1. Identify the country and administrative division (ADM level) using [ISO codes](#identifying-the-country).
