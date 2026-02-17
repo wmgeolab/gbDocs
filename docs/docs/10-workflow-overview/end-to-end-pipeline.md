@@ -7,7 +7,7 @@ Tasks are located on GitHub and are called **“[issues](https://github.com/wmge
 ## Overview of Issue Workflow
 
 ![Workflow Diagram](../../images/workflow.png)
-<img src="../../images/workflow.png" width="600">
+<img src="../../images/workflow.png" width="300">
 
 
 
