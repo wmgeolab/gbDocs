@@ -104,7 +104,7 @@ If an acceptable licensed shapefile is not found:
 - Adding polygons to pre-existing boundaries
 
 Tips:
-- Always double-check the license when updating old files, as they may be outdated
+- Always double-check the license when updating old files, as they may be outdated.
 - Ensure that you submit the correct file, as when renaming files to our naming convention, there may be mixups with the old file that has the same name.
 
 ---
