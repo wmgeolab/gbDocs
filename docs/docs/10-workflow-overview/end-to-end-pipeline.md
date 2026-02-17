@@ -135,22 +135,11 @@ Before submitting:
      -  ISO_Code (only for ADM levels 0-1, ADM2+ levels do not have an ISO field because they are too granular)
 3. Export shapefile with the proper name (ISO_ADM#)
 4. Take a screenshot of the license with the URL visible, and name it `license.png`
-5. Create a new text file for the metadata. Make sure it follows the 
-6.  Zip all files for GitHub submission
-
-### Required Files in Submission ZIP
-
-- Clean shapefile  
-- `.png` screenshot of license information showing source URL  
-- `.txt` file with metadata information  
-
-<!-- TODO: Add screenshot showing example ZIP contents -->
-
----
-
-## Submission
-
-[Submit ZIP here](#) <!-- TODO: Replace with actual submission link -->
+5. Create a new text file for the metadata. Make sure it follows the format described [here](https://github.com/wmgeolab/gbDocs/blob/main/docs/docs/10-workflow-overview/deliverables-and-artifacts.md)
+6.  Ensure that the `meta.txt` file and the `license.png` screenshot and the shapefile are in the same folder
+7.  Compress/zip all files, and ensure the compressed file (zip file) has the same name as the ADM (ex - USA_ADM2) for GitHub submission
 
 
+## Submission via Website
 
+[Submit ZIP here](https://www.geoboundaries.org/gbContribute.html)
