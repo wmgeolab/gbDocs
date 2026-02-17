@@ -4,27 +4,20 @@
 
 Tasks are assigned via GitHub and are called **“[issues](https://github.com/wmgeolab/geoBoundaries/issues)”**.
 
----
-
-## How to Find the Data
-
-GeoBoundaries source data is hosted on GitHub:
-
-[Source Data Repository](https://github.com/wmgeolab/geoBoundaries/tree/main/sourceData/gbOpen)
-
----
 
 ## Overview of Issue Workflow
 
-1. Identify the country and administrative division (ADM level) using **[ISO codes](#finding-iso-codes)**.
-2. Understand the task type on GitHub and follow the corresponding detailed guide:
+1. Identify the country and administrative division (ADM level) using **[ISO codes](#identifying-the-country)**.
+2. Understand the task type on GitHub.
+3. Follow the corresponding detailed guide:
    - **[Research a shapefile](#researching-boundaries)** <!-- TODO: Add link to research guide -->
    - **[Digitize a shapefile](#)** <!-- TODO: Add link to digitize guide -->
    - **[Other issues](#)** <!-- TODO: Add link -->
-3. Compiling the completed files into a zip file and submitting
+4. Compile the completed files into a zip file and submitting
 ---
 
-## Finding ISO Codes
+## Identifying the country
+### Finding ISO Codes
 
 An ISO Code is a standardized, unique, short identifier for countries that is established by the International Organization for Standardization.
 
@@ -33,6 +26,12 @@ The **issue title** indicates the country and administrative division level.
 Example: `VNM_ADM2` → `VNM` = Vietnam, `ADM2` = administrative division level 2.
 
 Here is the official [ISO website](https://www.iso.org/obp/ui/#search) that allows you to search up a country and its corresponding ISO code. 
+
+## Understand the task type
+There are usually three possible scenarios that contributors can be tasked with.
+1. [Researching a new source of data with an accurate license.](#researching-boundaries)
+2. [Digitizing a boundary in ArcGIS Pro or QGIS.](#digitizing)
+3. [Quick fix issues such as typos or polygon fixes.](#other-common-issues)
 
 ## Researching Boundaries
 
@@ -55,7 +54,7 @@ Here is the official [ISO website](https://www.iso.org/obp/ui/#search) that allo
 
 > Avoid any license that contains “sharealike.”
 
-## License Information
+### License Information
 
 - [List of licenses we **can** and **cannot** use](https://github.com/wmgeolab/gbDocs/blob/main/docs/Licenses%20for%20gB%20Open.md)  
 
@@ -67,6 +66,7 @@ Here is the official [ISO website](https://www.iso.org/obp/ui/#search) that allo
 - Use the [permission tracking template provided](https://github.com/wmgeolab/gbDocs/blob/main/docs/templates/Boundary%20Request.md)
 - If the owner responds and affirms the data's usage, save the correspondence in the zip file for the boundary, as it is proof that the data can be used.
 
+
 In order to continue the process of boundary research, up to this point a valid boundary would contain:
  1. A license that is appropriate for all uses (commercial, educational...)
  2. A source that we are able to provide
@@ -76,32 +76,15 @@ After all of these requirements are met, then the shapefile should be downloaded
 
 ### Checking the Shapefile
 
-Once you find a shapefile with an acceptable license:
-
-1. Open the file in **ArcGIS Pro** or **QGIS**
-2. Verify accuracy of polygons and attributes
-
-<!-- TODO: Add screenshot of ArcGIS Pro verification -->
-
----
-
-
+1. If the file is zipped, unzip the file.
+2. Open **ArcGIS Pro** or **QGIS**
+3. Drag/upload the shape file onto the map.
+4. Check the attribute table for naming accuracy
+5. Check the polygon for drawn accuracy.
 
 ---
+If you cannot find an acceptable license or usable data online, you may digitze the boundary, using the following steps.
 
-## Downloading geoBoundaries Data from GitHub
-
-1. Navigate to the [Source Data repository](https://github.com/wmgeolab/geoBoundaries/tree/main/sourceData/gbOpen)
-2. Locate the country and ADM level (alphabetical then ADM order)
-3. Click the folder and download using **View raw** or the download button  
-4. Extract all files:
-   - Right-click → **Extract All**
-   - Save to local folder (OneDrive recommended)
-5. Drag the `.shp` shapefile into a new ArcGIS Pro map
-
-<!-- TODO: Add screenshots for ZIP extraction and ArcGIS drag -->
-
----
 
 ## Digitizing
 
@@ -120,6 +103,27 @@ If an acceptable licensed shapefile is not found:
 
 - Quick fixes, e.g., correcting typos in boundary names  
 - Always double-check licenses when updating old files  
+
+---
+
+
+## Downloading geoBoundaries Data from GitHub
+
+---
+
+### How to Find the Data
+
+GeoBoundaries source data is hosted on GitHub:
+
+1. Navigate to the [Source Data repository](https://github.com/wmgeolab/geoBoundaries/tree/main/sourceData/gbOpen)
+2. Locate the country and ADM level (alphabetical then ADM order)
+3. Click the folder and download using **View raw** or the download button  
+4. Extract all files:
+   - Right-click → **Extract All**
+   - Save to local folder (OneDrive recommended)
+5. Drag the `.shp` shapefile into a new ArcGIS Pro map
+
+<!-- TODO: Add screenshots for ZIP extraction and ArcGIS drag -->
 
 ---
 
