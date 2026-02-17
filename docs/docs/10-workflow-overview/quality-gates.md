@@ -6,11 +6,11 @@ Quality gates ensure consistency, accuracy, and usability across all administrat
 
 ---
 
-# 1. Assessing Inclusion for a New Boundary
+## 1. Assessing Inclusion for a New Boundary
 
 Before technical checks begin, we assess whether the boundary should be included at all.
 
-## Representation Standard
+### Representation Standard
 
 - Does the boundary represent the country as it represents itself?
 - Is the source official or widely recognized?
@@ -18,9 +18,9 @@ Before technical checks begin, we assess whether the boundary should be included
 
 ---
 
-# 2. Source Validation
+## 2. Source Validation
 
-## Triangulation of Sources
+### Triangulation of Sources
 
 All boundaries should be validated using multiple sources when possible.
 
@@ -35,14 +35,14 @@ If sources disagree:
 
 ---
 
-# 3. Projection and Geometry Standards
+## 3. Projection and Geometry Standards
 
-## Projection
+### Projection
 
 - Data must use the required coordinate reference system (typically WGS 1984).
 - Projection must be verified before submission.
 
-## Geometry Quality
+### Geometry Quality
 
 - No invalid geometries
 - No self-intersections
@@ -51,11 +51,11 @@ If sources disagree:
 
 ---
 
-# 4. Visual Inspection
+## 4. Visual Inspection
 
 Some issues cannot be caught automatically and require human review.
 
-## Pixelated Boundaries
+### Pixelated Boundaries
 
 We question boundaries that appear:
 
@@ -71,7 +71,7 @@ If geometry looks unusual:
 
 ---
 
-# 5. Naming Conventions
+## 5. Naming Conventions
 
 All files and attributes must follow established naming conventions.
 
@@ -85,9 +85,9 @@ Inconsistent naming slows review and may block approval.
 
 ---
 
-# 6. Islands and Coastal Countries
+## 6. Islands and Coastal Countries
 
-## Islands (if applicable)
+### Islands (if applicable)
 
 Ensure:
 
@@ -97,7 +97,7 @@ Ensure:
 
 If islands are excluded, document why.
 
-## Coastal Countries
+### Coastal Countries
 
 Ensure:
 
@@ -105,7 +105,7 @@ Ensure:
 
 ---
 
-# 7. What Might Be Broken
+## 7. What Might Be Broken
 
 Common failure points include:
 
@@ -121,7 +121,7 @@ Always test the zip file before submission.
 
 ---
 
-# 8. Automated Quantitative Checks
+## 8. Automated Quantitative Checks
 
 We implement automated validation checks, such as:
 
@@ -132,7 +132,7 @@ Automated checks assist reviewers but do not replace manual review.
 
 ---
 
-# Final Checklist Before Submission
+## Final Checklist Before Submission
 
 - [ ] Correct country and ADM level
 - [ ] CRS verified
