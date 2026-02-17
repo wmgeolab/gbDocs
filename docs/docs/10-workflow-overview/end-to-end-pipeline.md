@@ -29,9 +29,9 @@ Here is the official [ISO website](https://www.iso.org/obp/ui/#search) that allo
 ## Understand the task type
 There are usually three possible scenarios that contributors can be tasked with.
 
- 1. [Researching a new source of data with an accurate license.](#researching-boundaries)
- 2. [Digitizing a boundary in ArcGIS Pro or QGIS.](#digitizing)
- 3. [Quick fix issues such as typos or polygon fixes.](#other-common-issues)
+1. [Researching a new source of data with an accurate license.](#researching-boundaries)
+2. [Digitizing a boundary in ArcGIS Pro or QGIS.](#digitizing)
+3. [Quick fix issues such as typos or polygon fixes.](#other-common-issues)
 
 ## Researching Boundaries
 
@@ -68,9 +68,10 @@ There are usually three possible scenarios that contributors can be tasked with.
 
 
 In order to continue the process of boundary research, up to this point a valid boundary would contain:
- 1. A license that is appropriate for all uses (commercial, educational...)
- 2. A source that we are able to provide, who geoBoundaries does not supply boundaries for.
- 3. Relevant boundary information that would update the boundary in comparison to the one geoBoundaries already has.
+
+1. A license that is appropriate for all uses (commercial, educational...)
+2. A source that we are able to provide, who geoBoundaries does not supply boundaries for.
+3. Relevant boundary information that would update the boundary in comparison to the one geoBoundaries already has.
 
 After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
