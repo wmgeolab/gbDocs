@@ -57,12 +57,9 @@ Here is the official [ISO website](https://www.iso.org/obp/ui/#search) that allo
 
 ## License Information
 
-- List of licenses we **can** and **cannot** use  
-- Product Line folder: `Resources`  
-- Information on license types per geoBoundaries release  
-- Licenses for **gB Open** accepted by GitHub
+- [List of licenses we **can** and **cannot** use](https://github.com/wmgeolab/gbDocs/blob/main/docs/Licenses%20for%20gB%20Open.md)  
 
-> **Note:** These lists are not comprehensive. Notify the team if a new license type is found.
+> **Note:** This list is not comprehensive. Notify the team if a new license type is found.
 
 ### If the License Is Unclear
 
