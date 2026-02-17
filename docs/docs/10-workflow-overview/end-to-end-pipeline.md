@@ -10,8 +10,8 @@ Tasks are located on GitHub and are called **“[issues](https://github.com/wmge
 2. Understand the [task type](#understand-the-task-type) on GitHub.
 3. Follow the corresponding detailed guide:
    - **[Research a shapefile](#researching-boundaries)**
-   - **[Digitize a shapefile](#)**
-   - **[Other issues](#)**
+   - **[Digitize a shapefile](#digitizing)**
+   - **[Other issues](#other-common-issues)**
 4. Compile the completed files into a zip file and submitting
 ---
 
