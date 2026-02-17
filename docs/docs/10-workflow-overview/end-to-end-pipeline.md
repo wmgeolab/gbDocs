@@ -28,9 +28,10 @@ Here is the official [ISO website](https://www.iso.org/obp/ui/#search) that allo
 
 ## Understand the task type
 There are usually three possible scenarios that contributors can be tasked with.
-1. [Researching a new source of data with an accurate license.](#researching-boundaries)
-2. [Digitizing a boundary in ArcGIS Pro or QGIS.](#digitizing)
-3. [Quick fix issues such as typos or polygon fixes.](#other-common-issues)
+
+ 1. [Researching a new source of data with an accurate license.](#researching-boundaries)
+ 2. [Digitizing a boundary in ArcGIS Pro or QGIS.](#digitizing)
+ 3. [Quick fix issues such as typos or polygon fixes.](#other-common-issues)
 
 ## Researching Boundaries
 
