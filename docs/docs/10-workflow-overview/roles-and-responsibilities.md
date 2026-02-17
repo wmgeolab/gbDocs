@@ -119,7 +119,7 @@ External participants do not perform final approval but are essential to expandi
 |--------------|------------------|-------------------|--------------------------|
 | Contributor  | Low–Moderate     | Required          | No                       |
 | Researcher   | High             | Required          | No                       |
-| Curator      | High             | Enforced          | Yes                      |
+| Curator      | Moderate         | Enforced          | Yes                      |
 
 ---
 
