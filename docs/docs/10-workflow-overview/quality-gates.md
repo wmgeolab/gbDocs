@@ -85,7 +85,7 @@ Inconsistent naming slows review and may block approval.
 
 ---
 
-## 6. Islands and Coastal Countries
+## 6. Islands and Coastal Boundaries
 
 ### Islands (if applicable)
 
@@ -97,11 +97,11 @@ Ensure:
 
 If islands are excluded, document why.
 
-### Coastal Countries
+### Coastal Boundaries
 
 Ensure:
 
-- The shores are accurately drawn, so that they are not too jagged or too smooth either
+- The shores are accurately drawn, so that they are not too jagged (do this by adding many points when drawing the polygon)
 
 ---
 
