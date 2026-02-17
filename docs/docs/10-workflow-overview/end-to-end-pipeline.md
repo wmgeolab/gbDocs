@@ -2,17 +2,16 @@
 
 ## Using GitHub
 
-Tasks are assigned via GitHub and are called **“[issues](https://github.com/wmgeolab/geoBoundaries/issues)”**.
-
+Tasks are located on GitHub and are called **“[issues](https://github.com/wmgeolab/geoBoundaries/issues)”**.
 
 ## Overview of Issue Workflow
 
-1. Identify the country and administrative division (ADM level) using **[ISO codes](#identifying-the-country)**.
-2. Understand the task type on GitHub.
+1. Identify the country and administrative division (ADM level) using [ISO codes](#identifying-the-country).
+2. Understand the [task type](#understand-the-task-type) on GitHub.
 3. Follow the corresponding detailed guide:
-   - **[Research a shapefile](#researching-boundaries)** <!-- TODO: Add link to research guide -->
-   - **[Digitize a shapefile](#)** <!-- TODO: Add link to digitize guide -->
-   - **[Other issues](#)** <!-- TODO: Add link -->
+   - **[Research a shapefile](#researching-boundaries)**
+   - **[Digitize a shapefile](#)**
+   - **[Other issues](#)**
 4. Compile the completed files into a zip file and submitting
 ---
 
@@ -69,8 +68,8 @@ There are usually three possible scenarios that contributors can be tasked with.
 
 In order to continue the process of boundary research, up to this point a valid boundary would contain:
  1. A license that is appropriate for all uses (commercial, educational...)
- 2. A source that we are able to provide
- 3. Up to date boundary information that would update the boundary in comparison to the one geoBoundaries already has.
+ 2. A source that we are able to provide, who geoBoundaries does not supply boundaries for.
+ 3. Relevant boundary information that would update the boundary in comparison to the one geoBoundaries already has.
 
 After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
@@ -90,40 +89,38 @@ If you cannot find an acceptable license or usable data online, you may digitze 
 
 If an acceptable licensed shapefile is not found:
 
-1. Open **ArcGIS Pro**  
-2. Sign in using organizational link (`wm-gis`)  
-3. Drag/upload shapefiles from unzipped folder  
-4. Check attribute table and polygons  
-
-<!-- TODO: Add screenshots for each step -->
+1. Open **ArcGIS Pro** or **QGIS**
+2. Find an image to georeference.
+3. ... 
 
 ---
 
 ## Other Common Issues
 
-- Quick fixes, e.g., correcting typos in boundary names  
-- Always double-check licenses when updating old files  
+- Quick fixes, e.g., correcting typos in boundary names.
+- Fixing a polygon to contain another polygon, or not contain another polygon
+- Adding polygons to pre-existing boundaries
+
+Tips:
+- Always double-check the license when updating old files, as they may be outdated
+- Ensure that you submit the correct file, as when renaming files to our naming convention, there may be mixups with the old file that has the same name.
 
 ---
 
+If there is a quick fix in a boundary that does not require researching a new boundary, or digitizing from scratch, follow the proceeding steps:
 
-## Downloading geoBoundaries Data from GitHub
-
----
-
-### How to Find the Data
+### How to Find and Download geoBoundaries Data from the GitHub
 
 GeoBoundaries source data is hosted on GitHub:
 
 1. Navigate to the [Source Data repository](https://github.com/wmgeolab/geoBoundaries/tree/main/sourceData/gbOpen)
 2. Locate the country and ADM level (alphabetical then ADM order)
 3. Click the folder and download using **View raw** or the download button  
-4. Extract all files:
+4. Extract all files from the zipped folder:
    - Right-click → **Extract All**
    - Save to local folder (OneDrive recommended)
-5. Drag the `.shp` shapefile into a new ArcGIS Pro map
-
-<!-- TODO: Add screenshots for ZIP extraction and ArcGIS drag -->
+5. Drag the `.shp` shapefile or `.geojson` into a new ArcGIS Pro or QGIS map
+6. Complete the quick fix.
 
 ---
 
@@ -131,10 +128,15 @@ GeoBoundaries source data is hosted on GitHub:
 
 Before submitting:
 
-1. Ensure shapefile is clean  
-2. Project polygons correctly (coordinate system)  
-3. Export shapefile properly  
-4. Zip all files for GitHub submission
+1. Ensure shapefile is in the correct geographic projection: 'WGS 1984'
+2. Check that all of the fields in the attribute table exist including:
+     -  Name
+     -  Level (ADM 0-4+)
+     -  ISO_Code (only for ADM levels 0-1, ADM2+ levels do not have an ISO field because they are too granular)
+3. Export shapefile with the proper name (ISO_ADM#)
+4. Take a screenshot of the license with the URL visible, and name it `license.png`
+5. Create a new text file for the metadata. Make sure it follows the 
+6.  Zip all files for GitHub submission
 
 ### Required Files in Submission ZIP
 
