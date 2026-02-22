@@ -67,9 +67,7 @@ There are usually three possible scenarios that contributors can be tasked with.
 - Contact the data owner for permission  
 - Use the [permission tracking template provided](https://github.com/wmgeolab/gbDocs/blob/main/docs/templates/Boundary%20Request.md)
 - If the owner responds and affirms the data's usage, save the correspondence in the zip file for the boundary, as it is proof that the data can be used.
-
 ---
-
 In order to continue the process of boundary research, up to this point a valid boundary would contain:
 
 1. A license that is appropriate for all uses (commercial, educational...)
