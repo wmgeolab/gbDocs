@@ -12,6 +12,8 @@ The expected output is a zip file containing:
    2. A **screenshot of the source license** in PNG format, `license.png`.
    3. A **metadata file**, `meta.txt`.
 
+<insert photo of a zip file>
+
 Boundary File:
 
    - If the zip file contains a **shapefile** rather than a geojson, it will also contain a minimum of three file types that must be present: `.shp`, `.shx`, and `.dbf`. The other component files that may be present are `.prj`, and `.cpg`.
