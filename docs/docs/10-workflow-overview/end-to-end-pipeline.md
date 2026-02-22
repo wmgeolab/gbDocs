@@ -86,6 +86,7 @@ After all of these requirements are met, then the shapefile should be downloaded
 4. #### Click the “Add Data” button in the top ribbon (if it doesn’t appear, hit the “Map” tab), then hit “Data” in the dropdown. Navigate to the folder where you saved the extracted ADM files. Click on it, then hit “OK”.
 5. #### Projecting the Shapefile
    (Start here if you have digitized your file.)
+   
 A map projection is the way in which a boundary is represented on a sphere. Different types of projections have different strengths and weaknesses in terms of portraying a boundary accurately (all have some sort of distortion; it’s impossible to represent the spherical earth on a 2D surface without distortion).
    - Hit the “Analysis” button on the top ribbon. Then, hit the “Tools” button (with the red toolbox).
    - A pane will appear on the right side with a search bar. Type “Project” into the search bar. The tool “Project” will appear. Click on it. Hit the options in this order: Geographic Coordinate Systems→ World→ WGS 1984. The WGS projection is the projection we use for all shapefiles, so it’s important that the projections are standardized.
