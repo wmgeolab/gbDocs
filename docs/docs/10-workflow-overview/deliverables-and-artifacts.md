@@ -12,7 +12,7 @@ The expected output is a zip file containing:
    2. A **screenshot of the source license** in PNG format, `license.png`.
    3. A **metadata file**, `meta.txt`.
 
-<insert photo of a zip file>
+<insert photo of a zip file
 
 Boundary File:
 
