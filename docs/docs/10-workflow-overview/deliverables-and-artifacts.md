@@ -50,7 +50,7 @@ Other Notes: Any other relevant information (if applicable)
 ```
 
 ## Steps
-The steps to creating these files will be described in the Pipeline section, as previously stated.
+The steps to creating these files will be described in the **[Pipeline](https://wmgeolab.github.io/gbDocs/10-workflow-overview/end-to-end-pipeline/)** section, as previously stated.
 
 ## Validation / QA
 Here is a downloadable example of a zip file containing the 3 expected outputs, using Angola's country border, administrative division 0 (AGO_ADM0).
