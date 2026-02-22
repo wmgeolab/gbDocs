@@ -191,8 +191,8 @@ _insert image of argis / qgis tools bar_
    - When starting on a different section, you can use the trace tool on the bottom pop-up for adjacent features to trace the border of an existing polygon so you don't have to make sure all of the vertices are matched up manually.
    _insert photo of the trace tool_
    - When done, click the Save button under the Edit tab in the top ribbon.
-   - Add all of the required fields for these polygons in the attribute table, described in the [Attribute Table Section](#Checking-the-attribute-table).
    - Project the shapefile, steps described in the [Project the Shapefile Section](#Projecting-the-Shapefile).
+   - Add all of the required fields for these polygons in the attribute table, described in the [Attribute Table Section](#Checking-the-attribute-table).
 
 </details>
 ---
