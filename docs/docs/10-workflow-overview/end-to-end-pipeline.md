@@ -106,6 +106,7 @@ _insert screenshot of attribute table guidance_
    - ADM Level (Text type, length 50)
    - Object ID
    - Shape
+   
    To add a field, hit the "add field" ribbon near the bottom of the pane, using the respective criteria.
 4. Delete all the other fields that aren't needed. To do so, right click on the green box to the left of the field name and click delete. Save all progress.
 5. Fill in the fields accurately.
