@@ -23,6 +23,7 @@ License File:
 The screenshot must include the url of the license source, a full screen screenshot is preferred.
 
 Metadata File:
+_insert photo of meta data file_
 
 Within the `meta.txt` file, there are several subfields that describe the data.
 ```
