@@ -94,7 +94,7 @@ A map projection is the way in which a boundary is represented on a sphere. Diff
    - Once you’ve got the projection and the route for the layer, hit the “Run” button in the bottom corner of the pane
      _insert photo of project steps_
      
-7. #### Checking the attribute table
+6. #### Checking the attribute table
 
 After completing the digitizing steps, ensure there are the same number of features as there are supposed to be subdivisions for your given country.
 
