@@ -22,6 +22,11 @@ nav:
       - Roles and responsibilities: 10-workflow-overview/roles-and-responsibilities.md
       - Deliverables and Artifacts: 10-workflow-overview/deliverables-and-artifacts.md
       - Quality Gates: 10-workflow-overview/quality-gates.md
+  - Research and Sourcing:
+      - Source Discovery Strategies: 20-research-and-sourcing/source-discovery-strategies.md
+      - Source Evaluation Rubric: 20-research-and-sourcing/source-evaluation-rubric.md
+      - Licensing and Permissions: 20-research-and-sourcing/licensing-and-permissions.md
+      - Citation and Provenance: 20-research-and-sourcing/citation-and-provenance.md
 
 
 
