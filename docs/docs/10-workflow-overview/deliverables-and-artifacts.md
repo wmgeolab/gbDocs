@@ -23,7 +23,7 @@ The screenshot must include the url of the license source, a full screen screens
 Metadata File:
 
 Within the `meta.txt` file, there are several subfields that describe the data.
-
+```
 Boundary Representative of Year: Year of data creation, publication, or most recent update.
 
 ISO-3166-1 (Alpha-3): ISO 3-letter country code 
@@ -47,6 +47,7 @@ License Source: Link to the page on the website that details the license informa
 Link to Source Data: Link to the page where the shapefile can be found
 
 Other Notes: Any other relevant information (if applicable)
+```
 
 ## Steps
 The steps to creating these files will be described in the Pipeline section, as previously stated.
