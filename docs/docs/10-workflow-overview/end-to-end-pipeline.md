@@ -243,5 +243,5 @@ Before submitting:
 
 
 ## Submission via Website
-
+You may submit through the website, or by emailing directly team@geoBoundaries.org with the zipfile.
 [Submit ZIP here](https://www.geoboundaries.org/gbContribute.html)
