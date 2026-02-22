@@ -78,11 +78,24 @@ After all of these requirements are met, then the shapefile should be downloaded
 
 ### Checking the Shapefile
 
-1. If the file is zipped, unzip the file.
-2. Open **ArcGIS Pro** or **QGIS**
-3. Drag/upload the shape file onto the map.
-4. Check the attribute table for naming accuracy
-5. Check the polygon for drawn accuracy.
+1. Download the shapefile.
+2. Extract the data from the zipped file.
+   a. Right click the folder and hit "extract all" in the top ribbon. It will prompt you to save it in a certain location on the computer (do this wherever you see fit).
+   b. When you navigate to your chosen folder, you’ll see the zip file plus the separate files with the same name. Make sure you see “filename.shp”
+3. Open **ArcGIS Pro** or **QGIS**. Select the "blank map" option. Name it `ISO_ADM#` with the corresponding iso code and ADM level of your boundary.
+4. Click the “Add Data” button in the top ribbon (if it doesn’t appear, hit the “Map” tab), then hit “Data” in the dropdown. Navigate to the folder where you saved the extracted ADM files. Click on it, then hit “OK”.
+5. Checking the attribute table
+   a. The boundary will appear in the map frame and the name of the shapefile will appear in the left pane.
+   b. Right click on the shapefile name, then hit the “Attribute Table” option.
+   c. The attribute table shows you all of the features within the shapefile.
+      - The number of features is the total number of polygons in the shapefile. This equates to the number of features within the administrative division.
+      - Make sure the number of polygons within the shapefile is correct (see your previous research) and that the names of each feature are correct.
+      - We’ll revise the attribute table later. It’s best to check it early to make sure your data is correct and complete (don’t waste your time processing a faulty boundary).
+   d. Projecting the Shapefile
+
+
+
+
 
 ---
 If you cannot find an acceptable license or usable data online, you may digitze the boundary, using the following steps.
@@ -143,16 +156,35 @@ After completing the digitizing steps, ensure there are the same number of featu
 _insert screenshot of attribute table guidance_
 2. Edit the Fields of the attribute table
 3. Ensure the following fields exist in the attribute table:
-   - Name (Text type, length = 50)
-   - ISO Code (Text type, length = 50)
-   - ADM Level (Text type, length 50)
-   - Object ID
-   - Shape
-4. Delete all the other fields that aren't needed. To do so, right click on the green box to the left of the field name and click delete.
-5. 
+   a. Name (Text type, length = 50)
+   b. ISO Code (Text type, length = 50)
+   c. ADM Level (Text type, length 50)
+   d. Object ID
+   e. Shape
+   To add a field, hit the "add field" ribbon near the bottom of the pane, using the respective criteria.
+4. Delete all the other fields that aren't needed. To do so, right click on the green box to the left of the field name and click delete. Save all progress.
+5. Fill in the fields accurately.
+   a. Return to the original attribute table table.
+   b. The fields just made should be empty, but we'll be using the "Calculate Field" tool to populate them.
+     1. Hit the name of the field you want to populate. Hit the “Calculate Field” button, located at the top of the table. The “Calculate Field” pane will appear.
+     2. In the “Field Name” box, select the name of the field you want to populate. We can start with the “**Name**” field.
+        a. For the “Name” field, we’re just copying the contents of an existing field. The box that says “Name” = ____ is where we build the expression.
+        b. Double click the name of the original field with the names of the divisions. It will automatically fill in the blank.
+        c. Hit run.
+     3. **ISO_Code and Level**
+        a. The “Calculate Field” pane will still be up. Let’s do “ISO_Code” next.
+        b. Select “ISO_Code” from the “Field Name” dropdown. You’re not copying information from another column; you’re simply filling in the same ISO code for each row in the table. In the “ISO_Code” = ___ space, type in (include the quotes): “County’s ISO Code” Quotes are how you represent a string/text in python.
+        c. ISO codes are only needed for **ADM0s** and **ADM1s**. For ADM0 use the generalized “country’s ISO code”, but for ADM1 use the 3166-2 code as specified, accessible [here](https://www.iso.org/obp/ui/#home) with “country codes” selected.
+        _insert photo of example with the 3166-2 code_
+        d. Hit “OK” or “Apply”
+        e. Repeat the same thing for level, except you would fill the “Level” = ____ space with “ADMX”. For example, the level for an ADM4 boundary would be “ADM4”.
 
-
+Now that all fields are populated in the Attribute Table
+1. Order the fields in this order: Object ID, Shape, Name, Level, ISO_Code
+   a. Click on the title of the column and drag to relocate the fields.
+   _insert final attribute table example_
    
+
    
    
 
