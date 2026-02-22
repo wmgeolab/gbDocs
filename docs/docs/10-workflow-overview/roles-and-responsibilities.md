@@ -41,8 +41,8 @@ A **Contributor** submits a boundary dataset for consideration.
 
 - May be a student, or **external user**.
 - Submits a shapefile through:
-  - The GitHub repository, or *****
   - The project website submission portal.
+  - Emailing directly team@geoBoundaries.org
 
 ### Responsibilities
 
