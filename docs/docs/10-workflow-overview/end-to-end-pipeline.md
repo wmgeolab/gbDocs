@@ -90,12 +90,16 @@ If you cannot find an acceptable license or usable data online, you may digitze 
 
 ## Digitizing
 
-If an acceptable licensed shapefile is not found:
+Digitizing is the process of 
+
+If an acceptable licensed shapefile is not found, follow these steps:
+<details>
 
 1. Open **ArcGIS Pro** or **QGIS**
 2. Find an image to georeference.
 3. ... 
 
+</details>
 ---
 
 ## Other Common Issues
