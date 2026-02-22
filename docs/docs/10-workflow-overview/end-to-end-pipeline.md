@@ -142,7 +142,7 @@ _insert photo of the export features_
    - Preparing the file for GitHub and Uploading to GitHub
 
 ---
-If you cannot find an acceptable license or usable data online, you may digitze the boundary, using the following steps.
+If you cannot find an acceptable license or usable data online, you may digitize the boundary, using the following steps.
 
 
 ## Digitizing
