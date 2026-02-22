@@ -96,9 +96,66 @@ If an acceptable licensed shapefile is not found, follow these steps:
 <details>
    <summary>Digitizing Steps</summary>
 
-1. Open **ArcGIS Pro** or **QGIS**
-2. Find an image to georeference.
-3. ... 
+### **Finding an image to georeference**
+   In order to start the digitizing process, you must find an image that has the appropriate boundary of your country. There are a lot of ways to find an image that works, here are some common options:
+
+1. Wikimedia
+   - Make sure to check the license on the wikimedia page, and that it is acceptable.
+2. Google images
+
+Once you have found the image with an acceptable license, you can start the process of georeferencing.
+
+### **Georeferencing your image**
+
+1. Open **ArcGIS Pro** or **QGIS** on the computer. Select the "blank map" option. Name it with the corresponding country ISO code and ADM level, `ISO_ADM#`.
+2. Add Data → Data in ArcGIS Pro to import your image (if it doesn’t appear hit the “Map” tab). Then hit “Data” in the dropdown, and navigate to the folder where you saved the extracted ADM files, or the image that you will digitize over.
+_insert image of argis / qgis tools bar_
+3. Your image will show up in the middle of the ocean, that’s expected. If moving/adjusting the image will help, there are some tools to use.
+   - In the top ribbon, under the Imagery tab, click on Georeference. The Fit to Display, Move, Scale, and Rotate tools can help adjust your image.
+4. In the top ribbon, under the Georeference tab, click Add Control Points.
+  a. First, click a on a point of the image that will be easy to align with the basemap.
+   - It will be easier to make the image somewhat transparent. Under the Appearance tab, adjust the transparency under the Effects section of the top ribbon.
+  b. Second, click where you want that point to align with on the basemap.
+  c. Do this several times along the border to best match up the image with the basemap.
+  d. After you’ve added a lot of control points, they will have shifted. Under the Georeference tab in the top ribbine, click on Transformation, and then Adjust. This will transform the image to make all of the control points line up.
+  e. When done, click Save in the top ribbon under the Georeference tab. Then click Close Georeference.
+
+### **Digitizing**
+1. In the Catalog Pane on the right side, open the Folders drop down. You should see a folder with your project name.
+2. Right click on the project folder → New → Shapefile.
+   _Insert image of new shapefile_
+   a. Add the Feature Class Name, Geometry Type (this workflow will go through polygon and polyline, and Coordinate System (**WGS 1984**).
+   b. Should look like the screenshot below, and then click run. To find the coordinate system, click on the circle next to that field and search “WGS 1984” (Click on the globe and search WGS 1984, filter through geographic coordinates system and then world.
+   _insert image of geoprocessing tab_
+3. Under the Edit tab in the top ribbon, click Create in the Features section
+   a. In the right side pane, click on the feature you want to create for.
+   b. Start clicking along the lines of your boundary for one of the subdivisions, making sure that you are clicking based on where the boundary line is in the image, not the basemap. Turn the transparency of the image back to 0%
+    - When you are done with the polygon, or with a section of one, double click on the vertex that you started with to close the polygon.
+   c. When starting on a different section, you can use the trace tool on the bottom pop-up for adjacent features to trace the border of an existing polygon so you don't have to make sure all of the vertices are matched up manually.
+   _insert photo of the trace tool_
+   d. When done, click the Save button under the Edit tab in the top ribbon.
+   e. Add all of the required fields for these polygons in the attribute table.
+
+### Attribute Table
+After completing the digitizing steps, ensure there are the same number of features as there are supposed to be subdivisions for your given country.
+
+1. Navigate to the attribute table
+_insert screenshot of attribute table guidance_
+2. Edit the Fields of the attribute table
+3. Ensure the following fields exist in the attribute table:
+   - Name (Text type, length = 50)
+   - ISO Code (Text type, length = 50)
+   - ADM Level (Text type, length 50)
+   - Object ID
+   - Shape
+4. Delete all the other fields that aren't needed. To do so, right click on the green box to the left of the field name and click delete.
+5. 
+
+
+   
+   
+   
+
 
 </details>
 ---
