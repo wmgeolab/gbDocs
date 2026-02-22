@@ -90,10 +90,11 @@ If you cannot find an acceptable license or usable data online, you may digitze 
 
 ## Digitizing
 
-Digitizing is the process of 
+**Digitizing** is the process of converting features from an image into digital vector data (a polygon).
 
 If an acceptable licensed shapefile is not found, follow these steps:
 <details>
+   <summary>Digitizing Steps</summary>
 
 1. Open **ArcGIS Pro** or **QGIS**
 2. Find an image to georeference.
