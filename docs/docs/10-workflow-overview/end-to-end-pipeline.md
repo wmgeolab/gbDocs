@@ -8,12 +8,6 @@ Tasks are located on GitHub and are called **“[issues](https://github.com/wmge
 
 <img src="../../images/workflow.png" width="400">
 
-1. Identify the country.
-2. Understand the task type
-3. Follow the guides
-4. Compile the files
-
-
 1. Identify the country and administrative division (ADM level) using [ISO codes](#identifying-the-country).
 2. Understand the [task type](#understand-the-task-type) on GitHub.
 3. Follow the corresponding detailed guide:
