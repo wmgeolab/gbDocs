@@ -86,11 +86,11 @@ After all of these requirements are met, then the shapefile should be downloaded
 4. #### Click the “Add Data” button in the top ribbon (if it doesn’t appear, hit the “Map” tab), then hit “Data” in the dropdown. Navigate to the folder where you saved the extracted ADM files. Click on it, then hit “OK”.
 5. #### Projecting the Shapefile
    (Start here if you have digitized your file.)
-   - A map projection is the way in which a boundary is represented on a sphere. Different types of projections have different strengths and weaknesses in terms of portraying a boundary accurately (all have some sort of distortion; it’s impossible to represent the spherical earth on a 2D surface without distortion).
-      - Hit the “Analysis” button on the top ribbon. Then, hit the “Tools” button (with the red toolbox).
-      - A pane will appear on the right side with a search bar. Type “Project” into the search bar. The tool “Project” will appear. Click on it. Hit the options in this order: Geographic Coordinate Systems→ World→ WGS 1984. The WGS projection is the projection we use for all shapefiles, so it’s important that the projections are standardized.
-      - You’ll have the option to rename the new projected shapefile (the function makes a completely separate layer). Name it “CountryADMX_projected” (for example, Belgium ADM 4 would be “BelgiumADM4_projected”). Make sure to save the new layer in the folder you created on the PC, or where you can easily find it.
-      - Once you’ve got the projection and the route for the layer, hit the “Run” button in the bottom corner of the pane
+A map projection is the way in which a boundary is represented on a sphere. Different types of projections have different strengths and weaknesses in terms of portraying a boundary accurately (all have some sort of distortion; it’s impossible to represent the spherical earth on a 2D surface without distortion).
+   - Hit the “Analysis” button on the top ribbon. Then, hit the “Tools” button (with the red toolbox).
+   - A pane will appear on the right side with a search bar. Type “Project” into the search bar. The tool “Project” will appear. Click on it. Hit the options in this order: Geographic Coordinate Systems→ World→ WGS 1984. The WGS projection is the projection we use for all shapefiles, so it’s important that the projections are standardized.
+   - You’ll have the option to rename the new projected shapefile (the function makes a completely separate layer). Name it “CountryADMX_projected” (for example, Belgium ADM 4 would be “BelgiumADM4_projected”). Make sure to save the new layer in the folder you created on the PC, or where you can easily find it.
+   - Once you’ve got the projection and the route for the layer, hit the “Run” button in the bottom corner of the pane
      _insert photo of project steps_
      
 7. #### Checking the attribute table
