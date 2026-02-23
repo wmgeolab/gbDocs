@@ -49,29 +49,6 @@ A source is acceptable if it is:
 
 After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
-## Requirements when documenting the source
-
-When documenting the source, the meta data must be accurately filled out and placed in the zip file so others can access it.
-
-[This page describes what must be included in the `meta.txt` file](https://wmgeolab.github.io/gbDocs/10-workflow-overview/deliverables-and-artifacts/), specifically under the meta data file in the Output section.
-
-Here is an example using Angola ADM0.
-
-```
-Boundary Representative of Year: 2021
-ISO-3166-1 (Alpha-3): AGO
-Boundary Type: ADM0
-Canonical Boundary Type Name: República de Angola
-Source 1: Open Street Map
-Source 2: 
-Release Type: gbOpen 
-License: Creative Commons Attribution-ShareAlike 2.0
-License Notes: 
-License Source: https://osm-boundaries.com/Documentation
-Link to Source Data: https://osm-boundaries.com/ 
-Other Notes:
-```
-
 ### A **curator** may need to intervene or give input on a source's credibility if there are:
   - Conflicting official sources
   - Political boundary disputes
