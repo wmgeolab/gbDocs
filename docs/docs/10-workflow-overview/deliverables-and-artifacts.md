@@ -14,15 +14,15 @@ The expected output is a zip file containing:
 
 _insert photo of a zip file_
 
-Boundary File:
+### Boundary File:
 
    - If the zip file contains a **shapefile** rather than a geojson, it will also contain a minimum of three file types that must be present: `.shp`, `.shx`, and `.dbf`. The other component files that may be present are `.prj`, and `.cpg`.
    - If the zip file contains a **geojson**, it will contain the geojson and no other component files.
 
-License File:
+### License File:
 The screenshot must include the url of the license source, a full screen screenshot is preferred.
 
-Metadata File:
+### Metadata File:
 _insert photo of meta data file_
 
 Within the `meta.txt` file, there are several subfields that describe the data.
