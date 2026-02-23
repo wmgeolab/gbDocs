@@ -1,6 +1,14 @@
 # Source Evaluation Rubric
 
+## Rubric to follow
 
+| Criterion         | Accept | Conditional (Possible to make edits) | Reject |
+|--------------|------------------|-------------------|--------------------------|
+| License/Creator  | National Mapping Agency with Public Domain License | License is not listed (reach out to data owner)| Blog/unknown source with no License |
+| Metadata   |   Complete       | Partial (fill in)     | None available         |
+| Data   | Clean polygons with a complete attribute table  | Data is accurate but is missing attribute table information   | Data is completely inaccurate and has discrepencies with other sources                     |
+
+---
 
 ## Deciding whether a source is acceptable to use
 
@@ -61,5 +69,12 @@ License: Creative Commons Attribution-ShareAlike 2.0
 License Notes: 
 License Source: https://osm-boundaries.com/Documentation
 Link to Source Data: https://osm-boundaries.com/ 
-Other Notes: 
+Other Notes:
 ```
+
+A **curator** may need to intervene or give input on a source's credibility if there are:
+  - Conflicting official sources
+  - Political boundary disputes
+  - Other issues that make source evaluation unclear
+
+
