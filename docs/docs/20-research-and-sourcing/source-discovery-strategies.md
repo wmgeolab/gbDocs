@@ -42,11 +42,11 @@ Use the background information to aid in your search.
 
 ---
 
-## 3. How we decide a source is unacceptable to use
+## 3. Deciding whether a source is acceptable to use
 
 The datasets we incorporate into the GeoBoundaries dataset have to be openly licensed so that we can redistribute and not get yelled at. If a source does not have an appropriate license, for example, a source that does not allow the commercial usage of their data would be considered an unacceptable source. 
 
-What makes a source unacceptable:
+What makes a source **unacceptable**:
   - No metadata
   - Unacceptable license, that says no commercial use
   - Over simplified polygons
@@ -80,7 +80,7 @@ A source is acceptable if it is:
 
 After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
-## 4. What do we require when documenting the source
+## 4. Requirements when documenting the source
 
 When documenting the source, the meta data must be accurately filled out and placed in the zip file so others can access it.
 
