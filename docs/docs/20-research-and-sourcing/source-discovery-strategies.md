@@ -3,7 +3,7 @@ This document will answer the following questions:
 How do researchers find boundary sources in the first place?
 Where do we look?
 
-1. ## Discovery Framework
+## 1. Discovery Framework
 When searching for boundary data that could solve an issue, it is recommended to start with understanding background information on the country, such as:
   - What is the country's official language?
   - What is the name of the administrative division that you are searching for? Examples under ADM1 could include districts, provinces, regions, prefectures, etc.
@@ -16,7 +16,7 @@ It is helpful to start the search with credible and trustworthy sites, for examp
 
 ---
 
-2. ## Search Methods
+## 2. Search Methods
 Use the background information to aid in your search.
 
 **Search Template** to get an idea of _how the country is divided at each level_, replacing the word "country" with your assigned country name:
@@ -42,7 +42,7 @@ Use the background information to aid in your search.
 
 ---
 
-3. ## How we decide a source is unacceptable to use
+## 3. How we decide a source is unacceptable to use
 
 The datasets we incorporate into the GeoBoundaries dataset have to be openly licensed so that we can redistribute and not get yelled at. If a source does not have an appropriate license, for example, a source that does not allow the commercial usage of their data would be considered an unacceptable source. 
 
@@ -73,7 +73,6 @@ Be sure to avoid Share-alike clauses
 
 > **Note:** This list is not comprehensive. Notify the team if a new license type is found.
 
-
 A source is acceptable if it is:
 1. A license that is appropriate for all uses (commercial, educational...)
 2. A source that we are able to provide, who geoBoundaries does not supply boundaries for.
@@ -81,10 +80,13 @@ A source is acceptable if it is:
 
 After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
-4. ## What do we require when documenting the source
+## 4. What do we require when documenting the source
 
 When documenting the source, the meta data must be accurately filled out and placed in the zip file so others can access it.
 
+[This page describes what must be included in the `meta.txt` file](https://wmgeolab.github.io/gbDocs/10-workflow-overview/deliverables-and-artifacts/), specifically under the meta data file in the Output section.
+
+Here is an example using Angola ADM0.
 
 ```
 Boundary Representative of Year: 2021
