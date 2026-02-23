@@ -4,9 +4,9 @@
 
 | Criterion         | Accept | Conditional (Possible to make edits) | Reject |
 |--------------|------------------|-------------------|--------------------------|
-| License/Creator  | National Mapping Agency with Public Domain License | License is not listed (reach out to data owner)| Blog/unknown source with no License |
-| Metadata   |   Complete       | Partial (fill in)     | None available         |
-| Data   | Clean polygons with a complete attribute table  | Data is accurate but is missing attribute table information   | Data is completely inaccurate and has discrepencies with other sources                     |
+| License/Creator  | National Mapping Agency with Public Domain License | License is not listed (Contributor reaches out to data owner)| Blog/unknown source with no License |
+| Metadata   |   Complete       | Partial (Contributor fills in)     | None available         |
+| Data   | Clean polygons with a complete attribute table  | Data is accurate but is missing attribute table information (Contributor fixes attribute table  | Data is completely inaccurate and has discrepencies with other sources                     |
 
 ---
 
