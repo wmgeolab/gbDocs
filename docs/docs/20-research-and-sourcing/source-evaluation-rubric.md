@@ -72,7 +72,7 @@ Link to Source Data: https://osm-boundaries.com/
 Other Notes:
 ```
 
-## A **curator** may need to intervene or give input on a source's credibility if there are:
+### A **curator** may need to intervene or give input on a source's credibility if there are:
   - Conflicting official sources
   - Political boundary disputes
   - Other issues that make source evaluation unclear
