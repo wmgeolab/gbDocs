@@ -6,7 +6,7 @@
 |--------------|------------------|-------------------|--------------------------|
 | License/Creator  | National Mapping Agency with Public Domain License | License is not listed (Contributor reaches out to data owner)| Blog/unknown source with no License |
 | Metadata   |   Complete       | Partial (Contributor fills in)     | None available         |
-| Data   | Clean polygons with a complete attribute table  | Data is accurate but is missing attribute table information (Contributor fixes attribute table  | Data is completely inaccurate and has discrepencies with other sources                     |
+| Data   | Clean polygons with a complete attribute table  | Data is accurate but is missing attribute table information (Contributor fixes attribute table)  | Data is completely inaccurate and has discrepencies with other sources                     |
 
 ---
 
@@ -72,7 +72,7 @@ Link to Source Data: https://osm-boundaries.com/
 Other Notes:
 ```
 
-A **curator** may need to intervene or give input on a source's credibility if there are:
+## A **curator** may need to intervene or give input on a source's credibility if there are:
   - Conflicting official sources
   - Political boundary disputes
   - Other issues that make source evaluation unclear
