@@ -2,6 +2,8 @@
 
 The datasets we incorporate into the GeoBoundaries dataset have to be **openly licensed** so that we can redistribute and not get yelled at. If a source does not have an appropriate license, for example, a source that does not allow the commercial usage of their data would be considered an unacceptable source.
 
+Licenses should be located along with the source data. If no license is found, the contributor may reach out to data owner, however the data can not be used until an acceptable license has been supplied. A contributor may make a permission request to the data owner using [this template]().
+
 ## **These are the licenses the bot *will* accept for gB Open.**
 This list is NOT exhaustive (there are probably more that work that we haven’t come across yet\!)  
 Licenses must be spelled exactly as they are below for the bot to accept them
