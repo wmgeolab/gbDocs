@@ -1,3 +1,5 @@
+# Licensing and Permissions
+
 These are the licenses the bot *will* accept for gB Open.   
 This list is NOT exhaustive (there are probably more that work that we haven’t come across yet\!)  
 Licenses must be spelled exactly as they are below for the bot to accept them
