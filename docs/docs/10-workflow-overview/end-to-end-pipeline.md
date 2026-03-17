@@ -178,7 +178,7 @@ Now that all fields are populated in the Attribute Table:
    - Hit “Ok”
 _insert photo of the export features_
    - Save your map and quit ArcPro
-   - [Preparing the file for GitHub and Uploading to GitHub](#Clean-Up-and-Submission)
+   - [Preparing the file for GitHub and Uploading to GitHub](#clean-up-and-submission)
 
 ---
 If you cannot find an acceptable license or usable data online, you may digitize the boundary, using the following steps.
