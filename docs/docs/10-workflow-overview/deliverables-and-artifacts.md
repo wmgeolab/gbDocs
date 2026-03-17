@@ -7,13 +7,20 @@ This page defines the required outputs for the geoBoundaries workflow, so that t
 In order to start the workflow, there must be a problem with a layer of data, which can be found at the **[Issues](https://github.com/wmgeolab/geoBoundaries/issues?page=1)** page. After understanding the issue, the user will go through the steps to solving the issue, which is thoroughly detailed in **[End to End Pipeline](https://wmgeolab.github.io/gbDocs/10-workflow-overview/end-to-end-pipeline/)** Section. 
 
 ## Outputs
-The expected output is a zip file containing:
-   1. The corrected **shapefile**, or a **geojson**, with the related boundary, `ISO_ADM#`.
-   2. A **screenshot of the source license** in PNG format, `license.png`.
-   3. A **metadata file**, `meta.txt`.
+## Expected Output
 
-_insert photo of a zip file_
+The final submission should be a **.zip file** containing the following:
 
+1. The corrected **shapefile** or **GeoJSON** containing the boundary  
+   - File name format: `ISO_ADM#`
+
+2. A **PNG screenshot of the source license**  
+   - File name: `license.png`
+
+3. A **metadata file**  
+   - File name: `meta.txt`
+
+*Insert image of the final zip file contents.*
 ### Boundary File:
 
    - If the zip file contains a **shapefile** rather than a geojson, it will also contain a minimum of three file types that must be present: `.shp`, `.shx`, and `.dbf`. The other component files that may be present are `.prj`, and `.cpg`.
