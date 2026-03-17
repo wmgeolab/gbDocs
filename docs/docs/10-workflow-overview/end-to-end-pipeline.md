@@ -197,160 +197,54 @@ If an acceptable licensed shapefile is not found, follow these steps:
 <details>
 <summary><strong>Digitizing Steps</strong></summary>
 
----
+**Finding an Image to Georeference**  
+To start digitizing, find an image with the boundary you need. Common options:
 
-## Finding an Image to Georeference
-
-To begin the digitizing process, you must find an image that contains the administrative boundary you need.
-
-Common places to find usable images:
-
-1. **Wikimedia**
-   - Always check the license listed on the page to confirm it is acceptable.
-
-2. **Google Images**
-   - Verify that the original source of the image has an acceptable license.
-
-Once you have found an image with an acceptable license, you can begin the georeferencing process.
+- **Wikimedia** – check the license.  
+- **Google Images** – ensure source license is acceptable.  
 
 ---
 
-## Georeferencing the Image
+**Georeferencing the Image**
 
-1. Open **ArcGIS Pro** or **QGIS** and create a **Blank Map** project.
-
-2. Name the project using the format: `ISO_ADM#`.
-
-3. Import the image.
-
-   - Click **Add Data → Data** in ArcGIS Pro.
-   - If the button does not appear, open the **Map** tab.
-   - Navigate to the folder containing the image and select it.
-
-*Insert image of ArcGIS/QGIS toolbar*
-
-4. The image will appear in the **middle of the ocean**. This is normal.
-
-5. Open the **Imagery** tab and click **Georeference**.
-
-Useful tools include:
-
-- **Fit to Display**
-- **Move**
-- **Scale**
-- **Rotate**
-
-These tools help position the image relative to the basemap.
+1. Open **ArcGIS Pro** or **QGIS**, create a **Blank Map**.  
+2. Name it `ISO_ADM#`.  
+3. Add the image:
+   - Click **Add Data → Data** (or open **Map** tab).  
+   - Navigate to the folder with the image, select it.  
+   - The image may appear in the middle of the ocean — normal.  
+4. Go to the **Imagery → Georeference** tab. Tools you’ll use: **Fit to Display**, **Move**, **Scale**, **Rotate**.
 
 ---
 
-## Adding Control Points
+**Adding Control Points**
 
-1. Under the **Georeference** tab, click **Add Control Points**.
-
-2. Select a recognizable point on the image.
-
-3. Click the corresponding location on the basemap.
-
-4. Repeat this process for multiple locations along the border.
-
-Tips:
-
-- Make the image **partially transparent** to align it more easily.
-- Use the **Appearance → Transparency** slider.
-
-5. After adding several control points:
-
-   - Go to **Transformation** in the Georeference tab.
-   - Select **Adjust**.
-
-This will transform the image so the control points align correctly.
-
-6. When finished:
-
-- Click **Save** in the Georeference tab.
-- Click **Close Georeference**.
+- **Add Control Points** from the Georeference tab.  
+- Click a point on the image → align with basemap.  
+- Repeat along the border.  
+- Tip: Make the image **partially transparent** to align easily.  
+- After adding points: **Transformation → Adjust → Save → Close Georeference**.
 
 ---
 
-## Digitizing the Boundary
+**Digitizing the Boundary**
 
-1. In the **Catalog Pane**, open the **Folders** dropdown.
-
-2. Locate your **project folder**.
-
-3. Right-click the folder and select: → New → Shapefile.
-
-*Insert image of new shapefile dialog*
-
-4. Fill in the shapefile settings:
-
-- **Feature Class Name**
-- **Geometry Type**  
-  - Polygon  
-  - Polyline
-- **Coordinate System:** `WGS 1984`
-
-To find the coordinate system:
-
-- Click the **globe icon**
-- Search **WGS 1984**
-- Select:
-
-   _insert image of geoprocessing tab_
-
-*Insert image of geoprocessing pane*
+- Open the **Catalog Pane → Folders** dropdown.  
+- Right-click your project folder → **New → Shapefile**.  
+  - Set **Feature Class Name**, **Geometry Type** (Polygon/Polyline), **Coordinate System: WGS 1984**.  
+- Edit tab → **Create → select feature → trace along boundary**.  
+- Double-click to close polygon.  
+- For neighboring polygons → use **Trace Tool**.
 
 ---
 
-## Creating Features
+**Saving Your Work**
 
-1. Open the **Edit** tab in the top ribbon.
+- Click **Save** in Edit tab.  
+- Next steps:  
+  - **Project the shapefile** → [Project the Shapefile](#project-the-shapefile)  
+  - **Complete the attribute table** → [Check Attribute Table](#checking-the-attribute-table)
 
-2. Click **Create** in the **Features** section.
-
-3. In the right-side pane, select the feature you want to create.
-
-4. Begin digitizing the boundary:
-
-- Click along the border of the administrative division.
-- Follow the boundary visible in the **image**, not the basemap.
-
-Tip:
-
-You may want to return the image transparency to **0%** while tracing.
-
-5. To complete a polygon:
-
-- Double-click the final vertex to close the shape.
-
----
-
-## Tracing Adjacent Boundaries
-
-When creating neighboring polygons:
-
-- Use the **Trace Tool** from the editing toolbar.
-- This allows you to trace an existing border instead of recreating the vertices manually.
-
-*Insert image of trace tool*
-
----
-
-## Saving Your Work
-
-When finished digitizing:
-
-1. Click **Save** in the **Edit** tab.
-
-2. Continue to the next steps:
-
-- **Project the shapefile**  
-  See: [Project the Shapefile](#project-the-shapefile)
-
-- **Complete the attribute table**  
-  See: [Checking the Attribute Table](#checking-the-attribute-table)
-  
 </details>
 ---
 
