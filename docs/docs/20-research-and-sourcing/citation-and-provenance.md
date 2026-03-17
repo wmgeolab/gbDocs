@@ -37,7 +37,7 @@ For written works that use geoBoundaries in analysis, we ask that you cite our P
 
 ### Online Usage
 
-When using geoBoundaries on the web, we ask that you put the name "geoBoundaries" with a link back to this website, [www.geoboundaries.org](www.geoboundaries.org), somewhere prominent on the page that uses the boundaries. This can be a stand-alone link or within a sentence.
+When using geoBoundaries on the web, we ask that you put the name "geoBoundaries" with a link back to this website, [geoBoundaries](https://www.geoboundaries.org), somewhere prominent on the page that uses the boundaries. This can be a stand-alone link or within a sentence.
 
 ### Other
 
