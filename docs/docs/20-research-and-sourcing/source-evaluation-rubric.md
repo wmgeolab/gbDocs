@@ -2,12 +2,11 @@
 
 ## Rubric to follow
 
-| Criterion         | Accept | Conditional (Possible to make edits) | Reject |
-|--------------|------------------|-------------------|--------------------------|
-| License/Creator  | National Mapping Agency with Public Domain License | License is not listed (Contributor reaches out to data owner)| Blog/unknown source with no License |
-| Metadata   |   Complete       | Partial (Contributor fills in)     | None available         |
-| Data   | Clean polygons with a complete attribute table  | Data is accurate but is missing attribute table information (Contributor fixes attribute table)  | Data is completely inaccurate and has discrepencies with other sources                     |
-
+| Decision | License / Creator | Metadata | Data |
+|----------|------------------|----------|------|
+| **Accept** | National Mapping Agency with Public Domain License | Complete | Clean polygons with a complete attribute table |
+| **Conditional (Possible to make edits)** | License is not listed (Contributor reaches out to data owner) | Partial (Contributor fills in) | Data is accurate but is missing attribute table information (Contributor fixes attribute table) |
+| **Reject** | Blog/unknown source with no license | None available | Data is completely inaccurate and has discrepancies with other sources |
 ---
 
 ## Deciding whether a source is acceptable to use
