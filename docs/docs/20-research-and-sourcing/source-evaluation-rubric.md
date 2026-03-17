@@ -13,21 +13,29 @@
 
 The datasets we incorporate into the GeoBoundaries dataset have to be openly licensed so that we can redistribute and not get yelled at. If a source does not have an appropriate license, for example, a source that does not allow the commercial usage of their data would be considered an unacceptable source. 
 
-What makes a source **unacceptable**:
-  - No clear metadata available
-  - Unacceptable license, that says no commercial use
-  - Over simplified polygons
-  - Differing ADM level definitions from other sources
-  - Temporal relevance, the source should not be outdated
+### Unacceptable Sources
 
-Here are common sites we cannot use:
-  - GADM
-  - earthworks.stanford.edu
-  - maps.princeton.edu
-  - geodata.lib.berkley.edu
-  - Open Street Map
-  - humdata/hdx
-  - any license with "sharealike" in the name
+A source is considered **unacceptable** if it meets any of the following criteria:
+
+- No clear metadata is available.
+- License restrictions prevent usage (e.g., non-commercial only).
+- Polygons are oversimplified or lack accuracy.
+- Administrative division (ADM) levels differ from other reliable sources.
+- Source is outdated and lacks temporal relevance.
+
+---
+
+### Sites Commonly Not Allowed
+
+The following sources are **not acceptable**:
+
+- GADM
+- earthworks.stanford.edu
+- maps.princeton.edu
+- geodata.lib.berkeley.edu
+- OpenStreetMap
+- humdata/hdx
+- Any source with a license that includes “sharealike”
 
 These types of data licenses help us deduce whether or not a source is acceptable or not:
 
