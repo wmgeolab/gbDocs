@@ -49,13 +49,15 @@ Be sure to avoid Share-alike clauses
 
 > **Note:** This list is not comprehensive. Notify the team if a new license type is found.
 
-A source is acceptable if it is:
-1. A license that is appropriate for all uses (commercial, educational...)
-2. A source that we are able to provide, who geoBoundaries does not supply boundaries for.
-3. Relevant boundary information that would update the boundary in comparison to the one geoBoundaries already has.
+### Acceptable Sources
 
-After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
+A source is considered **acceptable** if it meets all of the following criteria:
 
+1. Provides a license that allows usage for **all purposes** (commercial, educational, etc.).
+2. Contains data that we are able to supply, but for which **geoBoundaries currently does not provide boundaries**.
+3. Includes **relevant boundary information** that improves or updates the boundary compared to what geoBoundaries already has.
+
+> Once all of these criteria are satisfied, the shapefile should be **downloaded** and **verified** for complete accuracy before proceeding.
 ### A **curator** may need to intervene or give input on a source's credibility if there are:
   - Conflicting official sources
   - Political boundary disputes
