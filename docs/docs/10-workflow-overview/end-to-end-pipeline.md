@@ -194,58 +194,49 @@ If you cannot find an acceptable license or usable data online, you may digitize
 
 If an acceptable licensed shapefile is not found, follow these steps:
 
-<details>
-<summary><strong>Digitizing Steps</strong></summary>
+### Digitizing Steps
 
 **Finding an Image to Georeference**  
 To start digitizing, find an image with the boundary you need. Common options:
 
 - **Wikimedia** – check the license.  
-- **Google Images** – ensure source license is acceptable.  
-
----
+- **Google Images** – ensure the source license is acceptable.  
 
 **Georeferencing the Image**
 
 1. Open **ArcGIS Pro** or **QGIS**, create a **Blank Map**.  
-2. Name it `ISO_ADM#`.  
+2. Name the project `ISO_ADM#`.  
 3. Add the image:
-   - Click **Add Data → Data** (or open **Map** tab).  
-   - Navigate to the folder with the image, select it.  
-   - The image may appear in the middle of the ocean — normal.  
-4. Go to the **Imagery → Georeference** tab. Tools you’ll use: **Fit to Display**, **Move**, **Scale**, **Rotate**.
-
----
+   - Click **Add Data → Data** (or open the **Map** tab).  
+   - Navigate to the folder with the image and select it.  
+   - The image may appear in the middle of the ocean — this is normal.  
+4. Go to **Imagery → Georeference**. Tools to use: **Fit to Display**, **Move**, **Scale**, **Rotate**.
 
 **Adding Control Points**
 
-- **Add Control Points** from the Georeference tab.  
-- Click a point on the image → align with basemap.  
+- Click **Add Control Points** in the Georeference tab.  
+- Click a point on the image and align it with the basemap.  
 - Repeat along the border.  
-- Tip: Make the image **partially transparent** to align easily.  
+- Tip: Make the image **partially transparent** to align more easily.  
 - After adding points: **Transformation → Adjust → Save → Close Georeference**.
-
----
 
 **Digitizing the Boundary**
 
-- Open the **Catalog Pane → Folders** dropdown.  
+- Open **Catalog Pane → Folders** dropdown.  
 - Right-click your project folder → **New → Shapefile**.  
-  - Set **Feature Class Name**, **Geometry Type** (Polygon/Polyline), **Coordinate System: WGS 1984**.  
+  - Feature Class Name  
+  - Geometry Type (Polygon / Polyline)  
+  - Coordinate System: `WGS 1984`  
 - Edit tab → **Create → select feature → trace along boundary**.  
 - Double-click to close polygon.  
 - For neighboring polygons → use **Trace Tool**.
-
----
 
 **Saving Your Work**
 
 - Click **Save** in Edit tab.  
 - Next steps:  
   - **Project the shapefile** → [Project the Shapefile](#project-the-shapefile)  
-  - **Complete the attribute table** → [Check Attribute Table](#checking-the-attribute-table)
-
-</details>
+  - **Complete the attribute table** → [Checking the Attribute Table](#checking-the-attribute-table)
 ---
 
 ## Other Common Issues
