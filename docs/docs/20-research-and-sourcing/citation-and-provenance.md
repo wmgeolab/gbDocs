@@ -35,6 +35,9 @@ For written works that use geoBoundaries in analysis, we ask that you cite our P
 
 **Long Form**: Runfola, Daniel, Community Contributors, and [v4.0: Lindsey Rogers, Joshua Habib, Sidonie Horn, Sean Murphy, Dorian Miller, Hadley Day, Lydia Troup, Dominic Fornatora, Natalie Spage, Kristina Pupkiewicz, Michael Roth, Carolina Rivera, Charlie Altman, Isabel Schruer, Tara McLaughlin, Russ Biddle, Renee Ritchey, Emily Topness, James Turner, Sam Updike, Helena Buckman, Neel Simpson, Jason Lin], [v2.0: Austin Anderson, Heather Baier, Matt Crittenden, Elizabeth Dowker, Sydney Fuhrig, Seth Goodman, Grace Grimsley, Rachel Layko, Graham Melville, Maddy Mulder, Rachel Oberman, Joshua Panganiban, Andrew Peck, Leigh Seitz, Sylvia Shea, Hannah Slevin, Rebecca Yougerman, Lauren Hobbs]. "geoBoundaries: A global database of political administrative boundaries." Plos one 15, no. 4 (2020): e0231866.
 
+Student Contributors since 2023: Julia Beverley, Lily Pickworth, Colin Schulte, Cameron Butz, Christopher Tillotsen, Emilia Zapata, Helena Beinhacker, Justin Feira, Sofia Simonian, Sophia Shebay, Saranga Bansal, Jing Li, Elizabeth Ott, Jordan Lerner, Sam Christophersen, Shannon McGuire, Shaun Mathew, and Jialu Tao.
+
+
 ### Online Usage
 
 When using geoBoundaries on the web, we ask that you put the name "geoBoundaries" with a link back to this website, [geoBoundaries](https://www.geoboundaries.org), somewhere prominent on the page that uses the boundaries. This can be a stand-alone link or within a sentence.
