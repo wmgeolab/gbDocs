@@ -77,31 +77,33 @@ In order to continue the process of boundary research, up to this point a valid 
 After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
 ### Checking the Shapefile
-
-1. #### Download the shapefile
-
-2. #### Extract the shapefile data
-
+1. **Download the shapefile**
    - Right-click the `.zip` folder and select **Extract All** from the top ribbon.
    - Choose a location on your computer where the files will be saved.
    - After extraction, navigate to the folder and confirm that the individual files are present.
    - Verify that the file `filename.shp` exists.
 
-3. #### Open ArcGIS Pro or QGIS
+2. **Extract the shapefile data**
+   - Open the extracted folder.
+   - Confirm that all files are present (`.shp`, `.dbf`, `.shx`, etc.).
 
+3. **Open ArcGIS Pro or QGIS**
    - Select the **Blank Map** option.
    - Name the project using the format: `ISO_ADM#`
    - Example: `VNM_ADM2`
 
-4. #### Add the shapefile to the map
-
+4. **Add the shapefile to the map**
    - Click **Add Data** in the top ribbon.
    - If the button is not visible, select the **Map** tab first.
    - In the dropdown menu, choose **Data**.
    - Navigate to the folder containing the extracted shapefile.
    - Select the `.shp` file and click **OK**.
 
-5. #### Project the shapefile
+5. **Project the shapefile**
+
+
+   - Start here if you have digitized your file.
+   
 
    *(Start here if you have digitized your boundary instead of downloading an existing shapefile.)*
    
