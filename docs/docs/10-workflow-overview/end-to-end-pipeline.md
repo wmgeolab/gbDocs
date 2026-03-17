@@ -77,29 +77,31 @@ In order to continue the process of boundary research, up to this point a valid 
 After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.
 
 ### Checking the Shapefile
-1. **Download the shapefile**
-   - Right-click the `.zip` folder and select **Extract All** from the top ribbon.
-   - Choose a location on your computer where the files will be saved.
-   - After extraction, navigate to the folder and confirm that the individual files are present.
-   - Verify that the file `filename.shp` exists.
 
-2. **Extract the shapefile data**
-   - Open the extracted folder.
-   - Confirm that all files are present (`.shp`, `.dbf`, `.shx`, etc.).
+### Download the shapefile
+- Right-click the `.zip` folder and select **Extract All** from the top ribbon.
+- Choose a location on your computer where the files will be saved.
+- After extraction, navigate to the folder and confirm that the individual files are present.
+- Verify that the file `filename.shp` exists.
 
-3. **Open ArcGIS Pro or QGIS**
-   - Select the **Blank Map** option.
-   - Name the project using the format: `ISO_ADM#`
-   - Example: `VNM_ADM2`
+### Extract the shapefile data
+- Open the extracted folder.
+- Confirm that all files are present (`.shp`, `.dbf`, `.shx`, etc.).
 
-4. **Add the shapefile to the map**
-   - Click **Add Data** in the top ribbon.
-   - If the button is not visible, select the **Map** tab first.
-   - In the dropdown menu, choose **Data**.
-   - Navigate to the folder containing the extracted shapefile.
-   - Select the `.shp` file and click **OK**.
+### Open ArcGIS Pro or QGIS
+- Select the **Blank Map** option.
+- Name the project using the format: `ISO_ADM#`
+- Example: `VNM_ADM2`
 
-5. **Project the shapefile**
+### Add the shapefile to the map
+- Click **Add Data** in the top ribbon.
+- If the button is not visible, select the **Map** tab first.
+- In the dropdown menu, choose **Data**.
+- Navigate to the folder containing the extracted shapefile.
+- Select the `.shp` file and click **OK**.
+
+### Project the shapefile
+- Start here if you have digitized your file.
 
 
    - Start here if you have digitized your file.
@@ -120,7 +122,7 @@ A map projection is the way in which a boundary is represented on a sphere. Diff
 
 *Insert photo of projection steps*
      
-7. #### Checking the attribute table
+#### Checking the attribute table
 
 After completing the digitizing steps, ensure there are the same number of features as there are supposed to be subdivisions for your given country.
 
@@ -136,12 +138,12 @@ _insert screenshot of attribute table guidance_
    
 To add a field, click the **Add Field** button in the ribbon near the bottom of the pane and create the fields according to the required criteria.
 
-4. #### Delete unnecessary fields
+#### Delete unnecessary fields
 
 Right-click the green box to the left of the field name and select **Delete**.  
 Remove all fields that are not required, then **save your progress**.
 
-5. #### Populate the fields
+#### Populate the fields
 
 Return to the **original attribute table**.  
 The fields you created will be empty. We will populate them using the **Calculate Field** tool.
@@ -172,7 +174,7 @@ Now that all fields are populated in the Attribute Table:
    - Click on the title of the column and drag to relocate the fields.
    _insert final attribute table example_
 
-7. ### Saving and Exporting the Shapefile
+### Saving and Exporting the Shapefile
    - Now that the file is standardized and complete, we can export it.
    - SAVE YOUR MAP! Hit the icon in the top left with the purple rectangle. 
    - Right click the name of the final shapefile in the LEFT pane, hover over “Data”, then hit “Export Features”.
