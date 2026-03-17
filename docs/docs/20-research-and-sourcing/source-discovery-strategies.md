@@ -25,17 +25,39 @@ Use the background information to aid in your search.
 **Search Template** to _find actual data_:
 - “[country name] shapefile administrative divisions”
 
-**Other helpful methods**
-- Searching in a the official language of the country
-- Search for "**country** open data portal - some countries or groups of countries may have a website where they have a collection of data sets
-    - Look out for categories like “Administrative Divisions”, “Territories”, “Geography”
-    - These open data portals may have shapefiles but under different categories. Look into census data, health data, or political data. They may be divided by ADM.
+### Other Helpful Search Methods
 
-**Places to Look For**
-- Goverment websites
-- Census bureaus
-- National mapping agencies
-- GitHub (a platform where individuals can post datasets and code) could be a good resource. If you find a good shapefile there, you’ll have to contact the creator of the data set to make sure it’s ok to redistribute.
-- Academic papers and websites
-    - If you find a map that includes the ADM but doesn’t have the shapefile to download, look at the webpage’s / paper’s bibliography. They may cite the page that contains the downloadable shapefile.
-- Constitutions and other official documents are helpful
+- Search using the **official language of the country**.
+- Search for "**country name** open data portal". Some countries (or regional organizations) maintain centralized websites that host collections of public datasets.
+
+  Look for categories such as:
+  - **Administrative Divisions**
+  - **Territories**
+  - **Geography**
+
+  Note that these portals may not always label datasets clearly. Administrative boundaries may appear under other categories, such as:
+
+  - Census data
+  - Health data
+  - Political or electoral data
+
+  In many cases, these datasets are organized by **ADM level**.
+
+---
+
+### Places to Look for Boundary Data
+
+- **Government websites**
+- **Census bureaus**
+- **National mapping agencies**
+
+- **GitHub**  
+  GitHub is a platform where individuals and organizations share datasets and code. It can sometimes contain useful shapefiles.  
+  If you find a suitable dataset on GitHub, you must **contact the creator to confirm that redistribution is permitted**.
+
+- **Academic papers and research websites**
+  - If you find a map showing administrative boundaries but no downloadable shapefile, check the **bibliography or references**.
+  - Authors often cite the original source where the dataset can be downloaded.
+
+- **Constitutions and other official government documents**  
+  These can help confirm the **official structure and naming of administrative divisions**, even if they do not provide shapefiles directly.
