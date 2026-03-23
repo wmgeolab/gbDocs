@@ -14,3 +14,14 @@ After identifying an acceptable source, the next step is to:
 
 ## Downloading the Data
 
+How to Find and Download geoBoundaries Data from the GitHub
+GeoBoundaries source data is hosted on GitHub:
+
+Navigate to the Source Data repository
+Locate the country and ADM level (alphabetical then ADM order)
+Click the folder and download using View raw or the download button
+Extract all files from the zipped folder:
+Right-click → Extract All
+Save to local folder (OneDrive recommended)
+Drag the .shp shapefile or .geojson into a new ArcGIS Pro or QGIS map
+Complete the quick fix.
