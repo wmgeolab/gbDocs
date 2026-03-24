@@ -15,7 +15,7 @@ To start digitizing, find an image with the boundary you need. Common options:
 **Georeferencing the Image**
 
 1. Open **ArcGIS Pro** or **QGIS**, create a **Blank Map**.  
-2. Name the project `ISO_ADM#`.  
+2. Name the project the respective countries' ISO code and ADM level, `ISO_ADM#`.  
 3. Add the image:
    - Click **Add Data → Data** (or open the **Map** tab).  
    - Navigate to the folder with the image and select it.  
