@@ -103,10 +103,6 @@ After all of these requirements are met, then the shapefile should be downloaded
 ### Project the shapefile
 - Start here if you have digitized your file.
 
-
-   - Start here if you have digitized your file.
-   
-
    *(Start here if you have digitized your boundary instead of downloading an existing shapefile.)*
    
 A map projection is the way in which a boundary is represented on a sphere. Different types of projections have different strengths and weaknesses in terms of portraying a boundary accurately (all have some sort of distortion; it’s impossible to represent the spherical earth on a 2D surface without distortion).
