@@ -8,9 +8,9 @@ This page outlines the process for downloading boundary data.
 
 GeoBoundaries source data is hosted on GitHub:
 
-1. Navigate to the Source Data repository
+1. Navigate to the [Source Data repository](https://github.com/wmgeolab/geoBoundaries/tree/main/sourceData/gbOpen)
 2. Locate the country and ADM level (alphabetical then ADM order)
-3. Click the folder and download using View raw or the download button
+3. Click the folder and download using "View raw" or the "Download" button
 4. Extract all files from the zipped folder:
   - Right-click → Extract All
   - Save to local folder (OneDrive recommended)
