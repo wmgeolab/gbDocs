@@ -31,9 +31,14 @@ nav:
       - Downloading and Archiving: 30-data-acquisition/downloading-and-archiving.md
       - Digitizing and Georeferencing: 30-data-acquisition/digitizing-and-georeferencing.md
       - Admin Hierarchy and Naming: 30-data-acquisition/admin-hierarchy-and-naming.md
-
-  
-  
-
-
-
+  - QGIS User Manual:
+      - QGIS Setup: 40-qgis-user-manual/qgis-setup.md
+      - Project Structure: 40-qgis-user-manual/project-structure.md
+      - Loading and Inspecting Data: 40-qgis-user-manual/loading-and-inspecting-data.md
+      - Georeferencing Workflow: 40-qgis-user-manual/georeferencing-workflow.md
+      - Editing Geometries: 40-qgis-user-manual/editing-geometries.md
+      - Topology and Validity: 40-qgis-user-manual/topology-and-validity.md
+      - Snapping and Shared Borders: 40-qgis-user-manual/snapping-and-shared-borders.md
+      - Attribute Schema: 40-qgis-user-manual/attribute-schema.md
+      - Exporting and Formatting: 40-qgis-user-manual/exporting-and-formatting.md
+      - QGIS Troubleshooting: 40-qgis-user-manual/qgis-troubleshooting.md
