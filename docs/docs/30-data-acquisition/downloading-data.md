@@ -1,4 +1,4 @@
-# Downloading and Archiving Data
+# Downloading Data
 
 This page outlines the process for downloading boundary data.
 
