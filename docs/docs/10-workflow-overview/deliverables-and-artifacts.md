@@ -12,15 +12,10 @@ In order to start the workflow, there must be a problem with a layer of data, wh
 The final submission should be a **.zip file** containing the following:
 
 1. The corrected **shapefile** or **GeoJSON** containing the boundary  
-
    File name format: `ISO_ADM#`
-
 2. A **PNG screenshot of the source license**  
-
    File name: `license.png`
-
 3. A **metadata file**  
-
    File name: `meta.txt`
 
 *Insert image of the final zip file contents.*
