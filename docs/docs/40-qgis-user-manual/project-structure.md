@@ -14,6 +14,7 @@ This folder name must match:
 
 ## Expected Folder Contents
 
+
 The folder contents differ when working on QGIS vs ArcGIS Pro. The remaining tutorials will reference QGIS, and QGIS only.
 
 The folder should contain the following files:
@@ -25,6 +26,8 @@ The folder should contain the following files:
 A description of what each file should contain is listed [at this page](https://wmgeolab.github.io/gbDocs/10-workflow-overview/deliverables-and-artifacts/). 
 
 ## Example Folder Structure
+
+<img src="../../images/USA_ADM1_example.png" width="400">
 
 `USA_ADM1/
 │
