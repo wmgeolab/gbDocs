@@ -4,6 +4,12 @@ When starting an open issue that is listed on the [geoBoundaries GitHub](https:/
 
 ## Overarching Folder
 
+The folder that you download from the GitHub repository be titled `ISO_ADM#`, corresponding to the ISO Code of the issue and the administrative division level. The folder should contain three files:
+
+1. The GeoJSON containing the polygon(s) of the boundary and its attribute table.
+2. The meta.txt file containing the meta data.
+3. The license.png file containing a screenshot of the license.
+
 ## GeoJSON
 
 
