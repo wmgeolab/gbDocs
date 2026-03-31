@@ -34,7 +34,7 @@ There are two main ways to inspect the dataset:
 To open and review the attribute table:
 
 1. Right-click the layer in the Layers panel.
-2. Select **Open Attribute Table**,
+2. Select **Open Attribute Table**.
 
 <img width="451" height="681" alt="Screenshot 2026-03-30 212425" src="https://github.com/user-attachments/assets/a65ae895-9869-4fb5-9d88-d9bf015b4770" />
 
