@@ -44,6 +44,8 @@ The number of features is the total number of polygons in the shapefile. This eq
 
 Required fields are described in the **Checking the Attribute Table** section of the [End-to-End Pipeline](https://wmgeolab.github.io/gbDocs/10-workflow-overview/end-to-end-pipeline/).
 
+4. Make sure the number of polygons within the shapefile is correct (see your previous research) and that the names of each feature are correct.
+
 ---
 
 ## Polygons
