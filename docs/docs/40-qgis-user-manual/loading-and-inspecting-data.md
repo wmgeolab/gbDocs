@@ -38,7 +38,7 @@ To check the attribute table:
   - The name of the geographical coordinate system is under "Coordinate Reference System (CRS)".
 3. Use the "Pan map" tool to scroll through the polygon(s).
 
-
+If additional support it needed to open a file, the user may visit the [QGIS documentation](https://docs.qgis.org/3.44/en/docs/training_manual/basic_map/preparation.html) to read more regarding loading and inspecting data.
 
 
 
