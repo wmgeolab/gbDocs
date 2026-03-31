@@ -38,6 +38,8 @@ To open and review the attribute table:
 
 <img width="451" height="681" alt="Screenshot 2026-03-30 212425" src="https://github.com/user-attachments/assets/a65ae895-9869-4fb5-9d88-d9bf015b4770" />
 
+The number of features is the total number of polygons in the shapefile. This equates to the number of features within the administrative division. In addition, QGIS gives you the Shape Length and Shape Area of each feature. These fields cannot be deleted.
+
 3. Verify that all required fields are present.
 
 Required fields are described in the **Checking the Attribute Table** section of the [End-to-End Pipeline](https://wmgeolab.github.io/gbDocs/10-workflow-overview/end-to-end-pipeline/).
