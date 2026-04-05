@@ -78,4 +78,28 @@ Now it is time to create the shapefile
 <img width="153" height="167" alt="image" src="https://github.com/user-attachments/assets/6f45d335-342d-4c9c-a255-cc741bd29eb1" />
 
 6. When you have fully traced your shape, right-click to save the polygon and label the polygon with an id number.
+    - When there is an area of your shape that you would like to edit, select the Vertex Tool.
+<img width="173" height="80" alt="image" src="https://github.com/user-attachments/assets/a00d6f5e-4861-45ef-be7f-73c13ceb3b8c" />
+When you hover over your shape, it will show you all of the vertices. Using this tool, you can move vertices, move segments, add or delete vertices. You do not need to use this tool every time you digitize, it is just helpful for fixing errors.
 
+7. Now it is time to export the polygon as a shapefile.
+    - First, toggle off editing.
+    - Next, go to your layer and select export-save features as...
+
+<img width="429" height="392" alt="image" src="https://github.com/user-attachments/assets/42a49e45-1339-4ba3-b59a-234dba984a3a" />
+
+<img width="438" height="493" alt="image" src="https://github.com/user-attachments/assets/14a2a87a-8105-4999-be8e-2addf3516411" />
+
+8. This menu will pop up. Here you can name your file, according to the ISO Code of the Layer and the ADM level. In this case, since Williamsburg is under ADM3, the title of the file would be `USA_ADM3`. Make sure the encoding is UTF-8 and that the CRS is correct.  The format we use is ESRI Shapefile.
+Remember to change where it saves from your hard drive to literally anywhere else. DO NOT SAVE TO YOUR HARD DRIVE. 
+Click Ok when done. 
+
+The final product should be the 6 files that automatically load when saved:
+
+<img width="614" height="142" alt="image" src="https://github.com/user-attachments/assets/9a6f9f51-1206-4c68-b45f-ef5c801a25ed" />
+
+9. Copy all 6 files and compress them in a zip folder.
+
+<img width="516" height="320" alt="image" src="https://github.com/user-attachments/assets/a1672463-abce-4b7d-a6fe-8907a15b043b" />
+
+10. Add the `meta.txt` file and the `license.png` screenshot to the zip folder, and you are ready to submit!
