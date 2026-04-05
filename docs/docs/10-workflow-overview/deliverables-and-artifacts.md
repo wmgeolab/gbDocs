@@ -31,7 +31,7 @@ The screenshot must include the url of the license source, a full screen screens
 _insert photo of meta data file_
 
 Within the `meta.txt` file, there are several subfields that describe the data.
-```
+```text
 Boundary Representative of Year: Year of data creation, publication, or most recent update.
 
 ISO-3166-1 (Alpha-3): ISO 3-letter country code 
