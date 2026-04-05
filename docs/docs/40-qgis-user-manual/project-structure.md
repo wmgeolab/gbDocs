@@ -14,9 +14,6 @@ This folder name must match:
 
 ## Expected Folder Contents
 
-
-The folder contents differ when working on QGIS vs ArcGIS Pro. The remaining tutorials will reference QGIS, and QGIS only.
-
 The folder should contain the following files:
 
 1. Boundary file (GeoJSON or shapefile)
