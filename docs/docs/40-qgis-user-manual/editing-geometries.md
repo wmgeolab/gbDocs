@@ -149,3 +149,5 @@ Look for:
 - Validate geometry before moving forward
 
 Accurate geometry is critical to producing high-quality boundary data.
+
+After making edits, ensure your data meets all [topology and validity requirements](https://wmgeolab.github.io/gbDocs/40-qgis-user-manual/topology-and-validity/). 
