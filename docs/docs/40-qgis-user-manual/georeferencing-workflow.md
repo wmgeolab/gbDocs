@@ -77,7 +77,14 @@ Now it is time to create the shapefile
 
 <img width="153" height="167" alt="image" src="https://github.com/user-attachments/assets/6f45d335-342d-4c9c-a255-cc741bd29eb1" />
 
+6. When you have fully traced your shape, right-click to save the polygon and label the polygon with an id number.
+    - When there is an area of your shape that you would like to edit, select the Vertex Tool.
+<img width="173" height="80" alt="image" src="https://github.com/user-attachments/assets/a00d6f5e-4861-45ef-be7f-73c13ceb3b8c" />
+When you hover over your shape, it will show you all of the vertices. Using this tool, you can move vertices, move segments, add or delete vertices. You do not need to use this tool every time you digitize, it is just helpful for fixing errors.
+
 ---
+
+## Snapping Multiple Polygons and Merging Polygons
 
 If you need to step away from the project and continue adding vertices to a polygon, or if you need to add a polygon that is adjacent to another polygon, follow the tutorial below. This tutorial is also helpful if you are digitizing many divisions and would like to trace the surrounding polygons as a basis.
 
@@ -107,10 +114,7 @@ Now your two Polygons are merged into one!
 
 ---
 
-6. When you have fully traced your shape, right-click to save the polygon and label the polygon with an id number.
-    - When there is an area of your shape that you would like to edit, select the Vertex Tool.
-<img width="173" height="80" alt="image" src="https://github.com/user-attachments/assets/a00d6f5e-4861-45ef-be7f-73c13ceb3b8c" />
-When you hover over your shape, it will show you all of the vertices. Using this tool, you can move vertices, move segments, add or delete vertices. You do not need to use this tool every time you digitize, it is just helpful for fixing errors.
+## Saving the Polygon(s) as a Shapefile
 
 7. Now it is time to export the polygon as a shapefile.
     - First, toggle off editing.
