@@ -1,21 +1,42 @@
 # Georeferencing Workflow
 
-Basic tools and what they do:
+Here is a handy image of some of the important QGIS tools to keep an eye out for:
 <img width="557" height="227" alt="image" src="https://github.com/user-attachments/assets/a1870147-f1fb-4d5a-8cd8-74064bf9b4a6" />
+
+This tutorial will review the Georeferencing and Digitizing workflow. Georeferncing is the process of assigning real-world geographic coordinates (latitude/longitude or projection coordinates) to raster data like scanned maps, aerial photos, or satellite imagery. Digitizing is the process of converting information from physical (a paper map, a scanned image, a satellite photo, etc.) into a vector format.
+
+If there is no data available on the country's administrative division based off of your research, it can be helpful to georeference an image of the boundary that has an appropriate license and then digitize the said image to create a polygon.
 
 ## Selecting an Image to Georeference
 
-bad example: 
+One tip to select an appropriate and acceptable image to georeference is to use a search query with the words "border", "outline", and "map". In order to demonstrate this, Williamsburg, Virginia will be used an example. The query "williamsburg virginia boundary map outline" was used to find an image with an acceptable license. The license specifically clarifies that the image can be used for any purposes, **even commercial**. To know which licenses are acceptable, review [this page](https://wmgeolab.github.io/gbDocs/20-research-and-sourcing/licensing-and-permissions/)/ 
+
+Here is the image that was selected for the georeferencing of Williamsburg, VA.
+
+<img width="713" height="726" alt="image" src="https://github.com/user-attachments/assets/6d24d032-2277-4d3f-bcd6-5fadaf7d743f" />
+
+This is a good example because
+- The quality of the image is good
+- The edges are very detailed and precise
+- There is an acceptable license listed
+
+Here is a bad example of an image for georeferencing:
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/dfe05d19-6d06-47a2-a199-b4418be16e1a" />
 
-
+This is a bad example because:
+- The quality of the image is bad
+- The segments are not detailed and precise enough
+- There is no license listed on the website
 
 ## Georeferencing
 
-When adding a picture of a map to QGIS, it appears in the middle of the ocean. Georeferencing is when we take an image, and manually tell QGIS where to place it on a base map.
+When adding a picture of a map to QGIS, it appears in the middle of the ocean. Georeferencing is when we take an image, and manually tell QGIS where to place it on a base map. Open up a QGIS project to get started with georeferencing. 
 
-1. Add a basemap of your choice. For this example, we will use the OSM basemap.
+1. To add a basemap of your choice, ensure the "Browser Panel" is visible.
+<img width="347" height="344" alt="image" src="https://github.com/user-attachments/assets/feb6f77c-e1bf-4e4b-b424-451a43c130ad" />
+
+2.  Scroll until you locate the "XYZ Tiles" For this example, we will use the OSM basemap.
 
 <img width="452" height="380" alt="image" src="https://github.com/user-attachments/assets/3ae19182-d602-4221-a47a-00cbc0c95833" />
 
@@ -56,7 +77,7 @@ You must download the raster image using one of these formats: GeoTIFF (.tif, .t
 
 14. Close the Georeferencing tab to see the georeferenced raster image!
 
-## Creating the Shapefile
+## Digitizing
 
 Now it is time to create the shapefile
 
