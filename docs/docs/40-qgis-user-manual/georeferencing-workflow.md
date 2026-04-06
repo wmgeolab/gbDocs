@@ -83,7 +83,7 @@ You must download the raster image using one of these formats: GeoTIFF (.tif, .t
 Now it is time to create the shapefile
 
 1. Go to Layer -> Create Layer -> New Shapefile Layer...
-2. A menu will pop up. For geometry type, select Polygon. Save the location other than the hard drive of your computer. Select OK.
+2. A menu will pop up. For geometry type, select Polygon. Save in a location **other than the hard drive of your computer**. Select OK.
 
 <img width="1289" height="676" alt="image" src="https://github.com/user-attachments/assets/ea72711a-f827-4f58-af14-8a581b9f4f01" />
 
