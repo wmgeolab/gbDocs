@@ -59,6 +59,7 @@ You must download the raster image using one of these formats: GeoTIFF (.tif, .t
 6. Select a notable corner/point on the raster image.
 
 7. Ensure the projection is set to WGS 84/Pseudo-Mercator.
+<img width="277" height="212" alt="image" src="https://github.com/user-attachments/assets/26e600ac-c57d-4abf-81b4-4cca8f418f57" />
 
 8. Select **From Map Canvas** to select the corresponding same corner from the base map to start the aligning/georeferencing process.
 
