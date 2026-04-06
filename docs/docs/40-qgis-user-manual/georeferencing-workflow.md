@@ -77,8 +77,11 @@ Now it is time to create the shapefile
 
 <img width="153" height="167" alt="image" src="https://github.com/user-attachments/assets/6f45d335-342d-4c9c-a255-cc741bd29eb1" />
 
+---
+
 If you need to step away from the project and continue adding vertices to a polygon, or if you need to add a polygon that is adjacent to another polygon, follow the tutorial below. This tutorial is also helpful if you are digitizing many divisions and would like to trace the surrounding polygons as a basis.
-```text
+
+
 1. Select "View" and then "Toolbars". Ensure all of these toolbars below are selected so that the needed tools are available. The required toolbars are "Advanced Digitizing Toolbar" and "Snapping Toolbar".
 <img width="410" height="613" alt="image" src="https://github.com/user-attachments/assets/20de296a-b7b2-48ca-878e-38e200f2f83b" />
 2. Ensure that these tools are selected to be able to snap the new polygon to the old one. Click "Enable Snapping". Select "Vertex", "Segment", and "Area" within the "Area" tool. Set the "Snapping Tolerance in Defined Units" to 5 meters. Select "Enable Snapping on Intersection", "Enable Tracing", and "Enable self-snapping". 
@@ -101,7 +104,8 @@ Here is where you would stop if you only need to create an adjacent polygon usin
 10. Select the "Merge Selected Features" tool. This will combine the two polygons into one. Select "OK".
 <img width="343" height="434" alt="image" src="https://github.com/user-attachments/assets/37c578a3-8a6f-41a1-9eab-22b58aeb37b7" />
 Now your two Polygons are merged into one!
-```
+
+---
 
 6. When you have fully traced your shape, right-click to save the polygon and label the polygon with an id number.
     - When there is an area of your shape that you would like to edit, select the Vertex Tool.
