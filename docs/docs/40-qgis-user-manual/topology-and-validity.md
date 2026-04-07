@@ -59,9 +59,23 @@ A valid dataset should:
 ## Checking Geometry Validity in QGIS
 
 1. Open the **Processing Toolbox**
+
+<img width="429" height="317" alt="image" src="https://github.com/user-attachments/assets/2f50f274-a4c4-44b6-afc3-f18f4ff75232" />
+
 2. Search for **Check Validity**
+
+<img width="230" height="252" alt="image" src="https://github.com/user-attachments/assets/b1a1c5ca-95dd-4ec9-83db-4d07c1d2b64f" />
+
 3. Select your layer as the input
+
+<img width="515" height="407" alt="image" src="https://github.com/user-attachments/assets/ce017a95-6467-4497-9b10-efa6b32c3d99" />
+
 4. Run the tool
+5. Check to see if the layer is valid.
+
+<img width="299" height="317" alt="image" src="https://github.com/user-attachments/assets/047378d5-61ab-4c0b-ae49-3cf781d61541" />
+
+If the layer is invalid, use the **Fix Geometries** tool in the proccessing toolbox which is reviewed below.
 
 ### Output
 
