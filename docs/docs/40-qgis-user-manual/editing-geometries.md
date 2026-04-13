@@ -86,7 +86,7 @@ To ensure clean boundaries:
 
 This prevents:
 
-- Gaps between polygons
+- Gaps between polygons (unless gaps do truly exist in the boundary)
 - Overlapping boundaries
 
 ---
@@ -95,7 +95,7 @@ This prevents:
 
 Good geometry must:
 
-- Have no gaps between adjacent polygons
+- Have no gaps between adjacent polygons (unless gaps do truly exist in the boundary)
 - Have no overlaps
 - Share clean borders
 - Fully cover the intended area
@@ -135,7 +135,7 @@ Look for:
 - Forgetting to enable editing mode
 - Not saving edits
 - Creating overlaps between polygons
-- Leaving gaps between regions
+- Leaving gaps between regions (unless gaps do truly exist in the boundary)
 - Over-editing (making shapes less accurate)
 
 ---
@@ -145,7 +145,7 @@ Look for:
 - Enter edit mode before making changes
 - Use vertex tools to adjust boundaries
 - Split or merge polygons when needed
-- Ensure clean topology (no gaps or overlaps)
+- Ensure clean topology (no gaps or overlaps, unless they do truly exist in the boundary)
 - Validate geometry before moving forward
 
 Accurate geometry is critical to producing high-quality boundary data.
