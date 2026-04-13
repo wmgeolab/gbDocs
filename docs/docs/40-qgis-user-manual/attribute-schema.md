@@ -102,24 +102,23 @@ ISO codes can be found using the [ISO Online Browsing Platform](https://www.iso.
 To add a field:
 
 1. Ensure editing mode is enabled
-2. Click **Add Field** (bottom of the attribute table window)
+<img width="275" height="265" alt="image" src="https://github.com/user-attachments/assets/95a4a20e-ce30-4d9d-824f-7411482874dc" />
+
+2. Click **Add Field** (top of the attribute table window)
+<img width="452" height="218" alt="image" src="https://github.com/user-attachments/assets/70363d85-a8c1-4f57-8f15-4612884d9311" />
+
 3. Enter:
    - Field name
    - Type (**Text**)
    - Length (as specified above)
+<img width="391" height="254" alt="image" src="https://github.com/user-attachments/assets/2499a010-26f0-46c3-a722-7cead59dead8" />
+
 4. Click **OK**
+5. Fill in the corresponding name of the boundary
+
+<img width="377" height="259" alt="image" src="https://github.com/user-attachments/assets/7bb7d7a9-ccf7-463e-b22f-8f102042bc31" />
 
 Repeat for each required field.
-
----
-
-## Modifying Existing Fields
-
-If a similar field already exists:
-
-- Rename it to match the required field name
-- Ensure the data type and length are correct
-- Verify that the data is accurate and complete
 
 ---
 
@@ -129,7 +128,9 @@ After creating the required fields:
 
 1. Right-click the column header (or field name)
 2. Select **Delete Field**
-3. Save edits
+<img width="136" height="50" alt="image" src="https://github.com/user-attachments/assets/9e0f3f2c-13c1-4aca-91e4-19c56874e806" />
+
+4. Save edits
 
 Only required fields should remain unless otherwise specified.
 
