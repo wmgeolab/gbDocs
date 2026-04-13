@@ -99,7 +99,7 @@ Now it is time to create the shapefile
 
 <img width="153" height="167" alt="image" src="https://github.com/user-attachments/assets/6f45d335-342d-4c9c-a255-cc741bd29eb1" />
 
-6. When you have fully traced your shape, right-click to save the polygon and label the polygon with an id number.
+6. When you have fully traced your shape, right-click to save the polygon and label the polygon with a **temporary** id number. The ID column will later be deleted once the rest of the required fields are entered.
     - When there is an area of your shape that you would like to edit, select the Vertex Tool.
 <img width="173" height="80" alt="image" src="https://github.com/user-attachments/assets/a00d6f5e-4861-45ef-be7f-73c13ceb3b8c" />
 When you hover over your shape, it will show you all of the vertices. Using this tool, you can move vertices, move segments, add or delete vertices. You do not need to use this tool every time you digitize, it is just helpful for fixing errors.
@@ -132,7 +132,7 @@ If you need to step away from the project and continue adding vertices to a poly
 7. Trace the area with vertexes just like you did with the original polygon. Once you have returned to the starting point of this new polygon, hover over the starting point and press with two fingers to close the polygon.
 <img width="515" height="370" alt="image" src="https://github.com/user-attachments/assets/001f2799-a6ef-4da3-aae4-31d44a5619cc" />
 
-8. Give the new polygon an id number.
+8. Give the new polygon a **temporary** id number. The ID column will later be deleted once the rest of the required fields are entered.
 
 Here is where you would stop if you only need to create an adjacent polygon using the snapping tool. If you would like to merge the polygons, continue to step 9.
 
