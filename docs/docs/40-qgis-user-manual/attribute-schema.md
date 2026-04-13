@@ -92,6 +92,11 @@ The following fields must exist in every dataset:
 - For **ADM1**: use **ISO 3166-2 codes** (unique per feature)
 - For lower levels: follow project-specific guidance if applicable
 
+This example has the ISO_Code to demonstrate what higher ADM levels should have.
+
+<img width="301" height="150" alt="image" src="https://github.com/user-attachments/assets/c2080e0e-ad27-4d09-afeb-1180740da415" />
+
+
 Reference:  
 ISO codes can be found using the [ISO Online Browsing Platform](https://www.iso.org/obp/ui/#home)
 
@@ -129,8 +134,6 @@ After creating the required fields:
 1. Right-click the column header (or field name)
 2. Select **Delete Field**
 <img width="136" height="50" alt="image" src="https://github.com/user-attachments/assets/9e0f3f2c-13c1-4aca-91e4-19c56874e806" />
-
-<img width="136" height="50" alt="image" src="https://github.com/user-attachments/assets/324a5546-54da-4b40-bc1d-34dc2d7e1cd3" />
 
 4. Save edits
 
