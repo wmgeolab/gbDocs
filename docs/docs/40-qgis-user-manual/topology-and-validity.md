@@ -24,12 +24,12 @@ All geometries must pass both **visual inspection** and **technical validation**
 
 ## Common Topology Errors
 
-### Gaps
+### Gaps (unless gaps do truly exist in the boundary)
 
-- Empty spaces between adjacent polygons
+- Empty spaces between adjacent polygons 
 - Occur when boundaries do not align perfectly
 
-### Overlaps
+### Overlaps (unless OVerlaps do truly exist in the boundary)
 
 - Two polygons cover the same area
 - Causes duplication and incorrect data representation
@@ -143,7 +143,6 @@ Pay special attention to:
 
 ## Common Mistakes
 
-- Assuming the data is valid because it “looks correct”
 - Not running the **Check Validity** tool
 - Ignoring small gaps or overlaps
 - Overusing automatic fixes without checking results
