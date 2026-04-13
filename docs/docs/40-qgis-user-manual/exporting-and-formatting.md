@@ -51,7 +51,7 @@ This file description of what this file should include can be located in the [De
 
 Once all required files are ready:
 
-1. Select all required files (`.geojson`, `meta.txt`, `license.png`).
+1. Select all required files (boundary file(s), `meta.txt`, `license.png`).
 
 <img width="479" height="166" alt="image" src="https://github.com/user-attachments/assets/1637e1ee-dee0-4591-ab03-7d25117e5283" />
 
@@ -76,7 +76,7 @@ Once all required files are ready:
 
 Before submission, confirm:
 
-- [ ] GeoJSON file is correctly named  
+- [ ] Boundary file(s) is correctly named  
 - [ ] `meta.txt` is complete and accurate  
 - [ ] `license.png` is included and readable  
 - [ ] All files are included in the `.zip` folder  
@@ -86,7 +86,7 @@ Before submission, confirm:
 
 ## Summary
 
-- Export the boundary as a **GeoJSON**
+- Export the boundary as a **GeoJSON** or **Shapefile**
 - Include required supporting files (`meta.txt`, `license.png`)
 - Compress everything into a `.zip` file
 - Follow strict naming conventions for submission
