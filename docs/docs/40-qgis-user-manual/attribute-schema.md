@@ -130,7 +130,10 @@ After creating the required fields:
 2. Select **Delete Field**
 <img width="136" height="50" alt="image" src="https://github.com/user-attachments/assets/9e0f3f2c-13c1-4aca-91e4-19c56874e806" />
 
+<img width="136" height="50" alt="image" src="https://github.com/user-attachments/assets/324a5546-54da-4b40-bc1d-34dc2d7e1cd3" />
+
 4. Save edits
+
 
 Only required fields should remain unless otherwise specified.
 
