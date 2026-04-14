@@ -42,3 +42,10 @@ nav:
       - Attribute Schema: 40-qgis-user-manual/attribute-schema.md
       - Exporting and Formatting: 40-qgis-user-manual/exporting-and-formatting.md
       - QGIS Troubleshooting: 40-qgis-user-manual/qgis-troubleshooting.md
+  - Geometry Fixes and Standards:
+      - Common Errors and Fixes: 50-geometry-fixes-and-standards/common-errors-and-fixes.md
+      - Multipart Slivers, Gaps, and Overlaps: 50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps.md
+      - Coastlines, Lakes, and Enclaves: 50-geometry-fixes-and-standards/coastlines-lakes-enclaves.md
+      - Projection and Precision: 50-geometry-fixes-and-standards/projection-and-precision.md
+      - Generalization vs. Fidelity: 50-geometry-fixes-and-standards/generalization-vs-fidelity.md
+
