@@ -48,4 +48,9 @@ nav:
       - Coastlines, Lakes, and Enclaves: 50-geometry-fixes-and-standards/coastlines-lakes-enclaves.md
       - Projection and Precision: 50-geometry-fixes-and-standards/projection-and-precision.md
       - Generalization vs. Fidelity: 50-geometry-fixes-and-standards/generalization-vs-fidelity.md
+  - Quality Assurance and Quality Control:
+      - Automated Checks and Spec: 60-qa-qc/automated-checks-spec.md
+      - Manual Review Checklist: 60-qa-qc/manual-review-checklist.md
+      - Peer Review Process: 60-qa-qc/peer-review-process.md
+      - Acceptance Criteria: 60-qa-qc/acceptance-criteria.md
 
