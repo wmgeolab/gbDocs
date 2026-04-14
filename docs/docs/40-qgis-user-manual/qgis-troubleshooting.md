@@ -9,11 +9,14 @@ For more detailed guidance, refer to the official QGIS documentation linked thro
 
 **Possible causes:**
 - File is still compressed (`.zip`)
+  
 - Missing shapefile components
+  
 - Unsupported format
 
 **Fix:**
 - Extract the file before loading
+  
 - Use **Layer → Add Layer → Add Vector Layer**
 
 More help: https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html
