@@ -19,7 +19,7 @@ For more detailed guidance, refer to the official QGIS documentation linked thro
   
 - Use **Layer → Add Layer → Add Vector Layer**
 
-More help: https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html
+[More help located on the QGIS Documentation Page](https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html)
 
 ---
 
@@ -29,9 +29,10 @@ More help: https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/o
 
 **Fix:**
 - Right-click layer → **Set Layer CRS**
+
 - Select **WGS 1984 (EPSG:4326)**
 
-More help: https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projections/working_with_projections.html
+[More help located on the QGIS Documentation Page](https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projections/working_with_projections.html)
 
 ---
 
@@ -48,10 +49,12 @@ More help: https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projectio
 
 **Common problems:**
 - Cannot edit fields
+  
 - Missing required fields
 
 **Fix:**
 - Enable editing mode
+  
 - Refer to the [Attribute Schema](https://wmgeolab.github.io/gbDocs/40-qgis-user-manual/attribute-schema/)
 
 ---
@@ -63,9 +66,10 @@ More help: https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projectio
 
 **Fix:**
 - Run **Check Validity**
+  
 - Use **Fix Geometries**
 
-More help: https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html
+[More help located on the QGIS Documentation Page](https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html)
 
 ---
 
@@ -73,7 +77,9 @@ More help: https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/v
 
 **Fix:**
 - Ensure geometry is valid
+  
 - Export as **GeoJSON**
+  
 - Check file name and location (`ISO_ADM#`)
 
 ---
@@ -82,15 +88,18 @@ More help: https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/v
 
 **Fix:**
 - Remove unnecessary layers
+  
 - Restart QGIS
+  
 - Save frequently
 
 ---
 
 ## Need More Help?
 
-- QGIS Documentation: https://docs.qgis.org/3.44/en/docs/index.html
-- QGIS Training Manual: https://docs.qgis.org/3.44/en/docs/training_manual/
+- [QGIS Documentation](https://docs.qgis.org/3.44/en/docs/index.html)
+  
+- [QGIS Training Manual](https://docs.qgis.org/3.44/en/docs/training_manual/)
 
 ---
 
@@ -99,7 +108,9 @@ More help: https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/v
 Most issues can be resolved by checking:
 
 - CRS (projection)
+  
 - Editing mode
+  
 - File structure
 
 If problems persist, revisit earlier workflow steps or ask a team lead.
