@@ -18,6 +18,8 @@ Before making any changes:
 1. Right-click the layer in the **Layers panel**
 2. Select **Toggle Editing**
 
+<img width="1505" height="782" alt="image" src="https://github.com/user-attachments/assets/12cb09e9-870d-4c47-abe7-1749449db7ac" />
+
 - The layer is now editable and editing tools will become available.
 
 When finished:
