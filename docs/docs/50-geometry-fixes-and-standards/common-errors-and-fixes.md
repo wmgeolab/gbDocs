@@ -4,6 +4,18 @@ This page helps identify common issues and directs you to the appropriate soluti
 
 ---
 
+## Cannot Edit Layer
+
+**Issue:**  
+Cannot edit the layer.
+
+**Fix:**  
+Turn on editing mode on the selected layer.
+
+→ See: [Editing Geometries](../40-qgis-user-manual/editing-geometries.md)  
+
+---
+
 ## Gaps Between Polygons
 
 **Issue:**  
@@ -62,6 +74,28 @@ Required files are not included.
 Prepare complete submission package.
 
 → See: [Exporting and Formatting](../40-qgis-user-manual/exporting-and-formatting.md)
+
+---
+
+## Extra Submission Files
+
+**Issue:**  
+Extraneous files are included.
+
+**Fix:**  
+Double check for a complete submission package.
+
+→ See: [Exporting and Formatting](../40-qgis-user-manual/exporting-and-formatting.md)
+
+---
+
+## Personal Information in Submission Files
+
+**Issue:**  
+Personal information is included in the file name or the package.
+
+**Fix:**  
+Ensure no personal information is in the submission package.
 
 ---
 
