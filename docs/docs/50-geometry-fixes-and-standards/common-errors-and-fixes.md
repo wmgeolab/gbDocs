@@ -12,6 +12,8 @@ Cannot edit the layer.
 **Fix:**  
 Turn on editing mode on the selected layer.
 
+<img width="1505" height="782" alt="image" src="https://github.com/user-attachments/assets/12cb09e9-870d-4c47-abe7-1749449db7ac" />
+
 → See: [Editing Geometries](../40-qgis-user-manual/editing-geometries.md)  
 
 ---
