@@ -21,7 +21,7 @@ Turn on editing mode on the selected layer.
 ## Gaps Between Polygons
 
 **Issue:**  
-Empty spaces between adjacent boundaries.
+Empty spaces between adjacent boundaries (unless gaps do truly exist in the boundary).
 
 **Fix:**  
 Align boundaries and ensure shared edges.
@@ -34,7 +34,7 @@ Align boundaries and ensure shared edges.
 ## Overlapping Polygons
 
 **Issue:**  
-Multiple polygons covering the same area.
+Multiple polygons covering the same area, overlaps are never allowed.
 
 **Fix:**  
 Remove overlaps and validate geometry.
