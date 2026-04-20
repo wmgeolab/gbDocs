@@ -1,123 +1,138 @@
-# Multipart Features, Slivers, Gaps, and Overlaps
+ # Multipart Features, Slivers, Gaps, and Overlaps
 
-This page outlines key geometry issues that must be identified and resolved before submission. These issues are common in boundary datasets and are critical to data quality.
+ This page outlines key geometry issues that must be identified and resolved before submission. These issues are common in boundary datasets and are critical to data quality.
 
-For step-by-step fixes, refer to the linked QGIS documentation pages.
+ For step-by-step fixes, refer to the linked QGIS documentation pages.
 
----
+ ---
 
-## Multipart Features
+ ## Multipart Features
 
-### What They Are
+ ### What They Are
 
-A **multipart feature** is a single record in the attribute table that contains multiple disconnected polygons.
+ A **multipart feature** is a single record in the attribute table that contains multiple disconnected polygons.
 
-### Why This Matters
+ ### Why This Matters
 
-- Each administrative unit should typically be represented as a **single feature**
-- Multipart features can:
-  - Break analysis workflows
-  - Cause inconsistencies in the dataset
+ - Each administrative unit should typically be represented as a **single feature**
+ - Multipart features can:
+   - Break analysis workflows
+   - Cause inconsistencies in the dataset
 
-### When They Are Acceptable
++### Important Nuance
++
++- Everything may initially appear as multipart, but you should **not always convert multipart to singlepart**
++- This is more nuanced and depends on context and data integrity
 
-- When a single administrative unit is naturally composed of multiple parts (e.g., islands)
+ ### When They Are Acceptable
 
-### Fix
+ - When a single administrative unit is naturally composed of multiple parts (e.g., islands)
 
-- Use **Multipart to Singleparts** to separate features if needed
++### Edge Cases to Watch
++
++- Example: where there's an island
++  - But the island is **not in the boundary**
++- These situations require manual inspection
 
-→ See: [Editing Geometries](../40-qgis-user-manual/editing-geometries.md)
+ ### Fix
 
----
+-- Use **Multipart to Singleparts** to separate features if needed
++- Use **Multipart to Singleparts** carefully (do not apply blindly)
++- Exploding multipart features should always be followed by validation
 
-## Slivers
+ → See: [Editing Geometries](../40-qgis-user-manual/editing-geometries.md)
 
-### What They Are
+ ---
 
-**Slivers** are very small, thin polygons that are often created unintentionally during editing or overlay operations.
+ ## Slivers
 
-### Why This Matters
+ ### What They Are
 
-- They do not represent real administrative areas
-- They introduce errors in area calculations and analysis
+ **Slivers** are very small, thin polygons that are often created unintentionally during editing or overlay operations.
 
-### Fix
+ ### Why This Matters
 
-- Identify and delete sliver polygons
-- Merge them into the correct neighboring polygon if necessary
+ - They do not represent real administrative areas
+ - They introduce errors in area calculations and analysis
 
-→ See: [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
+ ### Fix
 
----
+ - Identify and delete sliver polygons
+ - Merge them into the correct neighboring polygon if necessary
 
-## Gaps
+ → See: [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
 
-### What They Are
+ ---
 
-**Gaps** are empty spaces between polygons where no feature exists.
+ ## Gaps
 
-### Why This Matters
+ ### What They Are
 
-- The dataset should fully cover the administrative area
-- Gaps indicate incomplete or misaligned boundaries
+ **Gaps** are empty spaces between polygons where no feature exists.
 
-### Fix
+ ### Why This Matters
 
-- Enable **Snapping**
-- Adjust vertices so polygons share borders exactly
+ - The dataset should fully cover the administrative area
+ - Gaps indicate incomplete or misaligned boundaries
 
-→ See:  
-- [Editing Geometries](../40-qgis-user-manual/editing-geometries.md)  
-- [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
+ ### Fix
 
----
+ - Enable **Snapping**
+ - Adjust vertices so polygons share borders exactly
 
-## Overlaps
+ → See:  
+ - [Editing Geometries](../40-qgis-user-manual/editing-geometries.md)  
+ - [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
 
-### What They Are
+ ---
 
-**Overlaps** occur when two or more polygons cover the same geographic area.
+ ## Overlaps
 
-### Why This Matters
+ ### What They Are
 
-- Creates duplicate representation of space
-- Leads to incorrect analysis results
+ **Overlaps** occur when two or more polygons cover the same geographic area.
 
-### Fix
+ ### Why This Matters
 
-- Adjust boundaries to eliminate overlap
-- Validate using geometry tools
+ - Creates duplicate representation of space
+ - Leads to incorrect analysis results
 
-→ See: [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
+ ### Fix
 
----
+ - Adjust boundaries to eliminate overlap
+ - Validate using geometry tools
 
-## How to Check for These Issues
+ → See: [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
 
-Use QGIS tools to identify problems:
+ ---
 
-- **Check Validity**
-- **Fix Geometries**
-- Visual inspection at high zoom levels
+ ## How to Check for These Issues
 
-→ See: [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
+ Use QGIS tools to identify problems:
 
----
+ - **Check Validity**
+ - **Fix Geometries**
+ - Visual inspection at high zoom levels
 
-## Best Practices
+ → See: [Topology and Validity](../40-qgis-user-manual/topology-and-validity.md)
 
-- Always enable **Snapping** when editing
-- Zoom in when working along shared borders
-- Regularly validate geometry during editing
-- Inspect small or complex regions carefully
+ ---
 
----
+ ## Best Practices
 
-## Summary
+ - Always enable **Snapping** when editing
+ - Zoom in when working along shared borders
+ - Regularly validate geometry during editing
+ - Inspect small or complex regions carefully
++- Do not rely solely on automated tools like exploding multipart features—always verify results manually
 
-- Multipart features, slivers, gaps, and overlaps are common geometry issues
-- Some (like multipart features) may be acceptable depending on context
-- All others must be resolved before submission
+ ---
 
-Ensuring clean geometry is essential for producing accurate and reliable boundary data.
+ ## Summary
+
+ - Multipart features, slivers, gaps, and overlaps are common geometry issues
+-- Some (like multipart features) may be acceptable depending on context
+-- All others must be resolved before submission
++- Multipart features require careful judgment and should not be automatically converted
++- Slivers, gaps, and overlaps must be resolved before submission
+ Ensuring clean geometry is essential for producing accurate and reliable boundary data.
