@@ -13,10 +13,13 @@ The goal is to maintain accuracy while avoiding unnecessary complexity.
 
 ---
 
-## Guiding Principle
+ ## Guiding Principle
 
-> Prioritize **fidelity to the source data**.  
-> Only generalize when necessary and without altering meaning.
+ > Prioritize **fidelity to the source data**.  
+ > Only generalize when necessary and without altering meaning.
++
++We promise fidelity to the **original source**.  
++We aim to maintain this fidelity during processing, but the database itself may not perfectly preserve every aspect of the original source
 
 ---
 
@@ -24,7 +27,6 @@ The goal is to maintain accuracy while avoiding unnecessary complexity.
 
 Maintain the original geometry when:
 
-- The source data is high quality
 - Boundaries contain important detail (e.g., coastlines, rivers)
 - Simplification would change the shape or meaning of the boundary
 
