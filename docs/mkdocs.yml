@@ -52,7 +52,6 @@ nav:
       - Manual Review Checklist: 60-qa-qc/manual-review-checklist.md
       - Peer Review Process: 60-qa-qc/peer-review-process.md
       - Acceptance Criteria: 60-qa-qc/acceptance-criteria.md
-      - Quality Gates: 60-qa-qc/quality-gates.md
   - Packaging and Release:
       - Folder and File Conventions: 70-packaging-and-release/folder-and-file-conventions.md
       - Versioning and Changelog: 70-packaging-and-release/versioning-and-changelog.md
