@@ -69,8 +69,6 @@
  - Verify against source data
  - Adjust boundaries to match official definitions
 
- ---
-
  ## Enclaves and Exclaves
 
  ### Definitions
@@ -78,9 +76,13 @@
  - **Enclave:** A territory completely surrounded by another
  - **Exclave:** A territory separated from its main region
 
- ### What to Consider
-
- These are legitimate geographic features and must be preserved.
+### Representation of Territories
++
++- Some enclaves/exclaves are part of larger sovereign territories
++- We represent them based on the entity being mapped
++  - Example: **French Polynesia under France (FRA)** should be represented how France defines it
++  - If **French Polynesia is mapped under its own ISO code**, it should be represented based on its own official boundaries
++- Always ensure consistency with the **source and ISO context** of the dataset
 
  ### Best Practices
 
