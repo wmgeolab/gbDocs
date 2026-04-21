@@ -90,7 +90,9 @@ Manual review ensures that the data is accurate, complete, and aligned with geoB
 - [ ] `license.png` is included
 - [ ] Files are packaged in a `.zip` folder
 
-→ See: [Project Structure](../project-structure.md)
+→ See: [Project Structure](../40-qgis-user-manual/project-structure.md)
+
+
 
 ---
 
