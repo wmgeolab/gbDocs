@@ -87,7 +87,7 @@ All criteria must be satisfied before a dataset can be approved and merged.
 - `license.png` is included
 - All files are packaged in a `.zip` folder
 
-→ See: [Project Structure](../project-structure.md)
+→ See: [Project Structure](../40-qgis-user-manual/project-structure.md)
 
 ---
 
