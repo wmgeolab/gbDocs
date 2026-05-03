@@ -61,6 +61,8 @@ Use this option if your request does not fit into the other templates. Input the
 
 After selecting a template, complete the form with as much detail as possible:
 
+### Boundary Errata Example
+
 <img width="656" height="407" alt="image" src="https://github.com/user-attachments/assets/9343d5e6-c637-4cb2-9d71-487cab93f1cb" />
 
 ### Guidelines
