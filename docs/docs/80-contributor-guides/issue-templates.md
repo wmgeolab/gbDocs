@@ -42,7 +42,16 @@ Examples:
 - Missing regions or polygons  
 - Incorrect geometry  
 - Attribute table errors  
-- Outdated or incorrect data  
+- Outdated or incorrect data
+
+<img width="656" height="407" alt="image" src="https://github.com/user-attachments/assets/9343d5e6-c637-4cb2-9d71-487cab93f1cb" />
+
+#### Guidelines
+
+- Be clear and specific  
+- Provide relevant links, sources, or images
+- Describe the issue or request in detail  
+- Follow the structure provided in the template
 
 ### Feature Request
 Use this template to suggest improvements to the repository, workflow, or documentation.
@@ -50,35 +59,15 @@ Use this template to suggest improvements to the repository, workflow, or docume
 Examples:
 - Suggestions for new tools or processes  
 - Improvements to documentation  
-- Workflow enhancements  
-
-### Blank Issue
-Use this option if your request does not fit into the other templates. Input the problem with explicit details, and images if applicable.
-
----
-
-## Filling Out an Issue
-
-After selecting a template, complete the form with as much detail as possible:
-
-### Boundary Errata Example
-
-<img width="656" height="407" alt="image" src="https://github.com/user-attachments/assets/9343d5e6-c637-4cb2-9d71-487cab93f1cb" />
-
-### Guidelines
-
-- Be clear and specific  
-- Provide relevant links, sources, or images
-- Describe the issue or request in detail  
-- Follow the structure provided in the template  
-
----
-
-## Feature Request Example
+- Workflow enhancements
 
 <img width="656" height="400" alt="image" src="https://github.com/user-attachments/assets/61282159-f1b4-473a-90ea-c5d55ae350c8" />
 
 Use this format when proposing improvements or new ideas.
+
+
+### Blank Issue
+Use this option if your request does not fit into the other templates. Input the problem with explicit details, and images if applicable.
 
 ---
 
