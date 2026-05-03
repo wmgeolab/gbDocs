@@ -30,7 +30,7 @@ After navigating to the submission page, you will upload your boundary dataset a
 
 ## Filled Out ZIP File Information
 
-This section shows the metadata extracted and/or entered for the uploaded boundary dataset.
+This section shows the information that is required from the contributor.
 
 ![ZIP File Information](https://github.com/user-attachments/assets/7fb211d2-e7cd-4535-8c22-7ca8fae1e84b)
 
@@ -38,7 +38,7 @@ This section shows the metadata extracted and/or entered for the uploaded bounda
 
 ## Metadata Screenshot
 
-The metadata section includes key descriptive information about the dataset, such as administrative level, country, and source details.
+The metadata section includes key descriptive information about the dataset, such as administrative level, country, source details, etc.
 
 ![Metadata Section](https://github.com/user-attachments/assets/b6520784-6d96-4d48-b1d5-99d77ab0fa9c)
 
@@ -52,17 +52,42 @@ Contributors must provide their personal and/or institutional details for attrib
 
 ---
 
+## After Submission: Pull Request Creation & Automated Checks
+
+After you submit your boundary ZIP file, the system takes a few minutes to process your submission. Once processing is complete, a new pull request (PR) is automatically created in the geoBoundaries repository.
+
+<img width="899" height="511" alt="image" src="https://github.com/user-attachments/assets/48fbbdd5-50aa-45b0-960b-62fa2b91d31b" />
+
+You can view all pull requests here: https://github.com/wmgeolab/geoBoundaries/pulls
+
+## Viewing Your Pull Request
+
+Once your submission is processed, navigate to the generated PR to review its status and validation results.
+
+## Checking Automated Validation Results
+
+Each pull request runs a set of automated validation checks. To verify whether your submission passed:
+
+- Open your pull request page.
+- Scroll to the Checks section.
+- Review the status of the automated validation jobs.
+
+Typically, there are 4 automated checks that run on every submission. Each check will show one of the following statuses:
+
+✅ Green checkmark: Passed successfully
+❌ Red X: Failed and requires correction
+⏳ Yellow circle: Still running
+
+All checks must pass for the pull request to be approved and merged.
+
 ## Summary
 
 To successfully submit a new boundary PR:
 
-1. Visit the submission portal.
-2. Upload your ZIP file.
-3. Confirm upload processing.
-4. Complete metadata fields.
-5. Provide contributor information.
+- Visit the submission portal.
+- Upload your ZIP file.
+- Complete metadata fields.
+- Provide contributor information.
+- Ensure automated checks passed.
 
 Ensure all required fields are completed accurately before final submission.
-
-
-
