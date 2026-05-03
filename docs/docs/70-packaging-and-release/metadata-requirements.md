@@ -75,9 +75,7 @@ The following fields must always be completed:
 - License Source
 - Link to Source Data
 
----
-
-Optional Fields
+### Optional Fields
 
 These fields may be left blank or marked as N/A if not applicable:
 
@@ -87,16 +85,15 @@ These fields may be left blank or marked as N/A if not applicable:
 
 ---
 
-Best Practices
+## Best Practices
 - Ensure all links are valid and accessible
 - Match metadata values to the dataset exactly
 - Use official names and terminology where possible
 - Double-check ISO codes and ADM levels
-- Keep descriptions concise but informative
 
 ---
 
-Common Issues
+## Common Issues
 - Missing required fields
 - Incorrect or inconsistent field names
 - Broken or missing links
