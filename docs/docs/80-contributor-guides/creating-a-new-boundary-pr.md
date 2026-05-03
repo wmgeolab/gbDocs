@@ -92,7 +92,9 @@ Typically, there are 4 automated checks that run on every submission.
 Each check will show one of the following statuses:
 
 ✅ Green checkmark: Passed successfully
+
 ❌ Red X: Failed and requires correction
+
 ⏳ Yellow circle: Still running
 
 All checks must pass for the pull request to be approved and merged.
