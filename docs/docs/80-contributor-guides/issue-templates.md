@@ -44,8 +44,6 @@ Examples:
 - Attribute table errors  
 - Outdated or incorrect data  
 
----
-
 ### Feature Request
 Use this template to suggest improvements to the repository, workflow, or documentation.
 
@@ -53,8 +51,6 @@ Examples:
 - Suggestions for new tools or processes  
 - Improvements to documentation  
 - Workflow enhancements  
-
----
 
 ### Blank Issue
 Use this option if your request does not fit into the other templates. Input the problem with explicit details, and images if applicable.
