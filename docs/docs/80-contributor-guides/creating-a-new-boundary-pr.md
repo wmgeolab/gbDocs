@@ -22,15 +22,7 @@ The submission page is where contributors upload their zipped boundary files and
 
 ## Linking a Zip File
 
-After navigating to the submission page, you will upload your boundary dataset as a ZIP file.
-
-![Linking ZIP File](https://github.com/user-attachments/assets/4776a58f-c0e4-4760-809d-c69ce10d7d40)
-
----
-
-## After Uploading the ZIP File
-
-Once the ZIP file is successfully uploaded, the system will process it and display confirmation details.
+After navigating to the submission page, you will upload your boundary dataset as a ZIP file. Once the ZIP file is successfully uploaded, the system will process it and display details for the contributor to fill out.
 
 ![After Upload Upload Confirmation](https://github.com/user-attachments/assets/fbefb651-2fca-44a8-ae4d-493f905aae19)
 
