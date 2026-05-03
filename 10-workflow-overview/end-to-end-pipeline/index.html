@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/10-workflow-overview/end-to-end-pipeline/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>End to End Pipeline - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "End to End Pipeline";
+        var mkdocs_page_input_path = "10-workflow-overview/end-to-end-pipeline.md";
+        var mkdocs_page_url = "/gbDocs/10-workflow-overview/end-to-end-pipeline/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">End to End Pipeline</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#using-github">Using GitHub</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#overview-of-issue-workflow">Overview of Issue Workflow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identifying-the-country">Identifying the country</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#finding-iso-codes">Finding ISO Codes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#understand-the-task-type">Understand the task type</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#researching-boundaries">Researching Boundaries</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general-searching-tips">General Searching Tips</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sources-to-avoid-license-issues">Sources to Avoid (License Issues)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#license-information">License Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#if-the-license-is-unclear">If the License Is Unclear</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#checking-the-shapefile">Checking the Shapefile</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#download-the-shapefile">Download the shapefile</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extract-the-shapefile-data">Extract the shapefile data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#open-arcgis-pro-or-qgis">Open ArcGIS Pro or QGIS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#add-the-shapefile-to-the-map">Add the shapefile to the map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#project-the-shapefile">Project the shapefile</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#checking-the-attribute-table">Checking the attribute table</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#delete-unnecessary-fields">Delete unnecessary fields</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#populate-the-fields">Populate the fields</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#saving-and-exporting-the-shapefile">Saving and Exporting the Shapefile</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#digitizing">Digitizing</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#digitizing-steps">Digitizing Steps</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-common-issues">Other Common Issues</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-find-and-download-geoboundaries-data-from-the-github">How to Find and Download geoBoundaries Data from the GitHub</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#clean-up-and-submission">Clean Up and Submission</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#submission-via-website">Submission via Website</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/georeferencing-workflow/">Georeferencing Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/attribute-schema/">Attribute Schema</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/exporting-and-formatting/">Exporting and Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/coastlines-lakes-enclaves/">Coastlines, Lakes, and Enclaves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/metadata-requirements/">Metadata Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Workflow Overview</li>
+      <li class="breadcrumb-item active">End to End Pipeline</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/10-workflow-overview/end-to-end-pipeline.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="end-to-end-pipeline-for-geoboundaries">End-to-End Pipeline for geoBoundaries</h1>
+<h2 id="using-github">Using GitHub</h2>
+<p>Tasks are located on GitHub and are called <strong>“<a href="https://github.com/wmgeolab/geoBoundaries/issues">issues</a>”</strong>.</p>
+<h2 id="overview-of-issue-workflow">Overview of Issue Workflow</h2>
+<p><img src="../../images/workflow.png" width="400"></p>
+<ol>
+<li>Identify the country and administrative division (ADM level) using <a href="#identifying-the-country">ISO codes</a>.</li>
+<li>Understand the <a href="#understand-the-task-type">task type</a> on GitHub.</li>
+<li>Follow the corresponding detailed guide:</li>
+<li><strong><a href="#researching-boundaries">Research a shapefile</a></strong></li>
+<li><strong><a href="#digitizing">Digitize a shapefile</a></strong></li>
+<li><strong><a href="#other-common-issues">Other issues</a></strong></li>
+<li>Compile the completed files into a zip file and submitting</li>
+</ol>
+<hr />
+<h2 id="identifying-the-country">Identifying the country</h2>
+<h3 id="finding-iso-codes">Finding ISO Codes</h3>
+<p>An ISO Code is a standardized, unique, short identifier for countries that is established by the International Organization for Standardization.</p>
+<p>The <strong>issue title</strong> indicates the country and administrative division level. </p>
+<p>Example: <code>VNM_ADM2</code> → <code>VNM</code> = Vietnam, <code>ADM2</code> = administrative division level 2.</p>
+<p>Here is the official <a href="https://www.iso.org/obp/ui/#search">ISO website</a> that allows you to search up a country and its corresponding ISO code. </p>
+<h2 id="understand-the-task-type">Understand the task type</h2>
+<p>There are usually three possible scenarios that contributors can be tasked with.</p>
+<ol>
+<li><a href="#researching-boundaries">Researching a new source of data with an accurate license.</a></li>
+<li><a href="#digitizing">Digitizing a boundary in ArcGIS Pro or QGIS.</a></li>
+<li><a href="#other-common-issues">Quick fix issues such as typos or polygon fixes.</a></li>
+</ol>
+<h2 id="researching-boundaries">Researching Boundaries</h2>
+<h3 id="general-searching-tips">General Searching Tips</h3>
+<ul>
+<li>Research background info on the country (number of divisions, ADM names)</li>
+<li>Use search terms like: "<strong>country name</strong> shapefile <strong>administrative division</strong>"</li>
+<li>Utilize government websites, census bureaus, and national mapping agencies</li>
+<li>Try searching in the local language</li>
+</ul>
+<h3 id="sources-to-avoid-license-issues">Sources to Avoid (License Issues)</h3>
+<ul>
+<li>
+<p>Avoid these common sources due to license issues:</p>
+<ul>
+<li>GADM</li>
+<li>earthworks.stanford.edu</li>
+<li>maps.princeton.edu</li>
+<li>geodata.lib.berkley.edu</li>
+<li>Open Street Map</li>
+<li>humdata/hdx</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Avoid any license that contains “sharealike.”</p>
+</blockquote>
+<h3 id="license-information">License Information</h3>
+<ul>
+<li><a href="https://github.com/wmgeolab/gbDocs/blob/main/docs/Licenses%20for%20gB%20Open.md">List of licenses we <strong>can</strong> and <strong>cannot</strong> use</a>  </li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> This list is not comprehensive. Notify the team if a new license type is found.</p>
+</blockquote>
+<h3 id="if-the-license-is-unclear">If the License Is Unclear</h3>
+<ul>
+<li>Contact the data owner for permission  </li>
+<li>Use the <a href="https://github.com/wmgeolab/gbDocs/blob/main/docs/templates/Boundary%20Request.md">permission tracking template provided</a></li>
+<li>If the owner responds and affirms the data's usage, save the correspondence in the zip file for the boundary, as it is proof that the data can be used.</li>
+</ul>
+<hr />
+<p>In order to continue the process of boundary research, up to this point a valid boundary would contain:</p>
+<ol>
+<li>A license that is appropriate for all uses (commercial, educational...)</li>
+<li>A source that we are able to provide, who geoBoundaries does not supply boundaries for.</li>
+<li>Relevant boundary information that would update the boundary in comparison to the one geoBoundaries already has.</li>
+</ol>
+<p>After all of these requirements are met, then the shapefile should be downloaded and verified for complete accuracy.</p>
+<h3 id="checking-the-shapefile">Checking the Shapefile</h3>
+<h3 id="download-the-shapefile">Download the shapefile</h3>
+<ul>
+<li>Right-click the <code>.zip</code> folder and select <strong>Extract All</strong> from the top ribbon.</li>
+<li>Choose a location on your computer where the files will be saved.</li>
+<li>After extraction, navigate to the folder and confirm that the individual files are present.</li>
+<li>Verify that the file <code>filename.shp</code> exists.</li>
+</ul>
+<h3 id="extract-the-shapefile-data">Extract the shapefile data</h3>
+<ul>
+<li>Open the extracted folder.</li>
+<li>Confirm that all files are present (<code>.shp</code>, <code>.dbf</code>, <code>.shx</code>, etc.).</li>
+</ul>
+<h3 id="open-arcgis-pro-or-qgis">Open ArcGIS Pro or QGIS</h3>
+<ul>
+<li>Select the <strong>Blank Map</strong> option.</li>
+<li>Name the project using the format: <code>ISO_ADM#</code></li>
+<li>Example: <code>VNM_ADM2</code></li>
+</ul>
+<h3 id="add-the-shapefile-to-the-map">Add the shapefile to the map</h3>
+<ul>
+<li>Click <strong>Add Data</strong> in the top ribbon.</li>
+<li>If the button is not visible, select the <strong>Map</strong> tab first.</li>
+<li>In the dropdown menu, choose <strong>Data</strong>.</li>
+<li>Navigate to the folder containing the extracted shapefile.</li>
+<li>Select the <code>.shp</code> file and click <strong>OK</strong>.</li>
+</ul>
+<h3 id="project-the-shapefile">Project the shapefile</h3>
+<ul>
+<li>Start here if you have digitized your file.</li>
+</ul>
+<p><em>(Start here if you have digitized your boundary instead of downloading an existing shapefile.)</em></p>
+<p>A map projection is the way in which a boundary is represented on a sphere. Different types of projections have different strengths and weaknesses in terms of portraying a boundary accurately (all have some sort of distortion; it’s impossible to represent the spherical earth on a 2D surface without distortion).</p>
+<ul>
+<li>Hit the <strong>Analysis</strong> button on the top ribbon. Then click <strong>Tools</strong> (the red toolbox).</li>
+<li>A pane will appear on the right side with a search bar. Type <strong>Project</strong> into the search bar. The <strong>Project</strong> tool will appear. Click it and select the options in this order:<br />
+<strong>Geographic Coordinate Systems → World → WGS 1984</strong>.<br />
+  The WGS projection is the projection we use for all shapefiles, so it’s important that projections are standardized.</li>
+<li>You’ll have the option to rename the new projected shapefile (the function creates a completely separate layer). Name it <code>CountryADMX_projected</code><br />
+  Example: Belgium ADM4 → <code>BelgiumADM4_projected</code>.<br />
+  Make sure to save the new layer in the folder you created on the computer.</li>
+<li>Once the projection and output location are set, click <strong>Run</strong> in the bottom corner of the pane.</li>
+</ul>
+<p><em>Insert photo of projection steps</em></p>
+<h4 id="checking-the-attribute-table">Checking the attribute table</h4>
+<p>After completing the digitizing steps, ensure there are the same number of features as there are supposed to be subdivisions for your given country.</p>
+<ol>
+<li>Navigate to the attribute table
+<em>insert screenshot of attribute table guidance</em></li>
+<li>Edit the Fields of the attribute table</li>
+<li>Ensure the following fields exist in the attribute table:</li>
+<li>Name (Text type, length = 50)</li>
+<li>ISO Code (Text type, length = 50)</li>
+<li>ADM Level (Text type, length 50)</li>
+<li>Object ID</li>
+<li>Shape</li>
+</ol>
+<p>To add a field, click the <strong>Add Field</strong> button in the ribbon near the bottom of the pane and create the fields according to the required criteria.</p>
+<h4 id="delete-unnecessary-fields">Delete unnecessary fields</h4>
+<p>Right-click the green box to the left of the field name and select <strong>Delete</strong>.<br />
+Remove all fields that are not required, then <strong>save your progress</strong>.</p>
+<h4 id="populate-the-fields">Populate the fields</h4>
+<p>Return to the <strong>original attribute table</strong>.<br />
+The fields you created will be empty. We will populate them using the <strong>Calculate Field</strong> tool.</p>
+<ul>
+<li>Click the field you want to populate.</li>
+<li>Click <strong>Calculate Field</strong> at the top of the attribute table.</li>
+<li>The <strong>Calculate Field pane</strong> will appear.</li>
+</ul>
+<h5 id="step-1-populate-the-name-field">Step 1: Populate the <code>Name</code> field</h5>
+<ol>
+<li>In the <strong>Field Name</strong> dropdown, select <code>Name</code>.</li>
+<li>In the expression area (<code>Name = ____</code>), build the expression by copying the existing field that contains the administrative division names.</li>
+<li>Double-click the original field containing the division names.</li>
+<li>The expression will automatically populate.</li>
+<li>Click <strong>Run</strong>.</li>
+</ol>
+<h5 id="step-2-populate-iso_code">Step 2: Populate <code>ISO_Code</code></h5>
+<ol>
+<li>In the <strong>Field Name</strong> dropdown, select <code>ISO_Code</code>.</li>
+<li>This field is not copied from another column. Instead, we assign the same ISO code to every row.</li>
+<li>In the expression area (<code>ISO_Code = ____</code>), type the country's ISO code <strong>in quotes</strong>.</li>
+</ol>
+<p>Example:</p>
+<p>Now that all fields are populated in the Attribute Table:
+   - Order the fields in this order: Object ID, Shape, Name, Level, ISO_Code
+   - Click on the title of the column and drag to relocate the fields.
+   <em>insert final attribute table example</em></p>
+<h3 id="saving-and-exporting-the-shapefile">Saving and Exporting the Shapefile</h3>
+<ul>
+<li>Now that the file is standardized and complete, we can export it.</li>
+<li>SAVE YOUR MAP! Hit the icon in the top left with the purple rectangle. </li>
+<li>Right click the name of the final shapefile in the LEFT pane, hover over “Data”, then hit “Export Features”.</li>
+<li>A pane will appear on the right. The “Output Location” is where the file will be saved. Be sure the output location is a folder on your computer and NOT a location ending in “.gbd”. The “Output Name” name must be “ISOcode_ADMX”. No need to mess with the field map. </li>
+<li>Hit “Ok”
+<em>insert photo of the export features</em></li>
+<li>Save your map and quit ArcPro</li>
+<li><a href="#clean-up-and-submission">Preparing the file for GitHub and Uploading to GitHub</a></li>
+</ul>
+<hr />
+<p>If you cannot find an acceptable license or usable data online, you may digitize the boundary, using the following steps.</p>
+<h2 id="digitizing">Digitizing</h2>
+<p><strong>Digitizing</strong> is the process of converting features from an image into digital vector data (a polygon).</p>
+<p>If an acceptable licensed shapefile is not found, follow these steps:</p>
+<h3 id="digitizing-steps">Digitizing Steps</h3>
+<p><strong>Finding an Image to Georeference</strong><br />
+To start digitizing, find an image with the boundary you need. Common options:</p>
+<ul>
+<li><strong>Wikimedia</strong> – check the license.  </li>
+<li><strong>Google Images</strong> – ensure the source license is acceptable.  </li>
+</ul>
+<p><strong>Georeferencing the Image</strong></p>
+<ol>
+<li>Open <strong>ArcGIS Pro</strong> or <strong>QGIS</strong>, create a <strong>Blank Map</strong>.  </li>
+<li>Name the project <code>ISO_ADM#</code>.  </li>
+<li>Add the image:</li>
+<li>Click <strong>Add Data → Data</strong> (or open the <strong>Map</strong> tab).  </li>
+<li>Navigate to the folder with the image and select it.  </li>
+<li>The image may appear in the middle of the ocean — this is normal.  </li>
+<li>Go to <strong>Imagery → Georeference</strong>. Tools to use: <strong>Fit to Display</strong>, <strong>Move</strong>, <strong>Scale</strong>, <strong>Rotate</strong>.</li>
+</ol>
+<p><strong>Adding Control Points</strong></p>
+<ul>
+<li>Click <strong>Add Control Points</strong> in the Georeference tab.  </li>
+<li>Click a point on the image and align it with the basemap.  </li>
+<li>Repeat along the border.  </li>
+<li>Tip: Make the image <strong>partially transparent</strong> to align more easily.  </li>
+<li>After adding points: <strong>Transformation → Adjust → Save → Close Georeference</strong>.</li>
+</ul>
+<p><strong>Digitizing the Boundary</strong></p>
+<ul>
+<li>Open <strong>Catalog Pane → Folders</strong> dropdown.  </li>
+<li>Right-click your project folder → <strong>New → Shapefile</strong>.  </li>
+<li>Feature Class Name  </li>
+<li>Geometry Type (Polygon / Polyline)  </li>
+<li>Coordinate System: <code>WGS 1984</code>  </li>
+<li>Edit tab → <strong>Create → select feature → trace along boundary</strong>.  </li>
+<li>Double-click to close polygon.  </li>
+<li>For neighboring polygons → use <strong>Trace Tool</strong>.</li>
+</ul>
+<p><strong>Saving Your Work</strong></p>
+<ul>
+<li>Click <strong>Save</strong> in Edit tab.  </li>
+<li>Next steps:  </li>
+<li><strong>Project the shapefile</strong> → <a href="#project-the-shapefile">Project the Shapefile</a>  </li>
+<li><strong>Complete the attribute table</strong> → <a href="#checking-the-attribute-table">Checking the Attribute Table</a></li>
+</ul>
+<hr />
+<h2 id="other-common-issues">Other Common Issues</h2>
+<ul>
+<li>Quick fixes, e.g., correcting typos in boundary names.</li>
+<li>Fixing a polygon to contain another polygon, or not contain another polygon</li>
+<li>Adding polygons to pre-existing boundaries</li>
+</ul>
+<p><strong>Tips</strong></p>
+<ul>
+<li>Always double-check the license when updating older files, as previously accepted licenses may now be outdated or no longer allowed.</li>
+<li>Make sure you are submitting the correct file. When renaming files to match the geoBoundaries naming convention, it is easy to confuse the updated file with an older version that has a similar name.</li>
+</ul>
+<hr />
+<p>If there is a quick fix in a boundary that does not require researching a new boundary, or digitizing from scratch, follow the proceeding steps:</p>
+<h3 id="how-to-find-and-download-geoboundaries-data-from-the-github">How to Find and Download geoBoundaries Data from the GitHub</h3>
+<p>GeoBoundaries source data is hosted on GitHub:</p>
+<ol>
+<li>Navigate to the <a href="https://github.com/wmgeolab/geoBoundaries/tree/main/sourceData/gbOpen">Source Data repository</a></li>
+<li>Locate the country and ADM level (alphabetical then ADM order)</li>
+<li>Click the folder and download using <strong>View raw</strong> or the download button  </li>
+<li>Extract all files from the zipped folder:</li>
+<li>Right-click → <strong>Extract All</strong></li>
+<li>Save to local folder (OneDrive recommended)</li>
+<li>Drag the <code>.shp</code> shapefile or <code>.geojson</code> into a new ArcGIS Pro or QGIS map</li>
+<li>Complete the quick fix.</li>
+</ol>
+<hr />
+<h2 id="clean-up-and-submission">Clean Up and Submission</h2>
+<p>Before submitting:</p>
+<ol>
+<li>Ensure shapefile is in the correct geographic projection: 'WGS 1984'</li>
+<li>Check that all of the fields in the attribute table exist including:<ul>
+<li>Name</li>
+<li>Level (ADM 0-4+)</li>
+<li>ISO_Code (only for ADM levels 0-1, ADM2+ levels do not have an ISO field because they are too granular)</li>
+</ul>
+</li>
+<li>Export shapefile with the proper name (ISO_ADM#)</li>
+<li>Take a screenshot of the license with the URL visible, and name it <code>license.png</code></li>
+<li>Create a new text file for the metadata. Make sure it follows the format described <a href="https://github.com/wmgeolab/gbDocs/blob/main/docs/docs/10-workflow-overview/deliverables-and-artifacts.md">here</a></li>
+<li>Ensure that the <code>meta.txt</code> file and the <code>license.png</code> screenshot and the shapefile are in the same folder</li>
+<li>Compress/zip all files, and ensure the compressed file (zip file) has the same name as the ADM (ex - USA_ADM2) for GitHub submission</li>
+</ol>
+<h2 id="submission-via-website">Submission via Website</h2>
+<p>You may submit through the website, or by emailing directly team@geoBoundaries.org with the zipfile.
+<a href="https://www.geoboundaries.org/gbContribute.html">Submit ZIP here</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../00-introduction/what-is-geoboundaries/" class="btn btn-neutral float-left" title="What is geoBoundaries"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../roles-and-responsibilities/" class="btn btn-neutral float-right" title="Roles and responsibilities">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../00-introduction/what-is-geoboundaries/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../roles-and-responsibilities/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

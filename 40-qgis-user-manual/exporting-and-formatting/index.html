@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/40-qgis-user-manual/exporting-and-formatting/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Exporting and Formatting - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Exporting and Formatting";
+        var mkdocs_page_input_path = "40-qgis-user-manual/exporting-and-formatting.md";
+        var mkdocs_page_url = "/gbDocs/40-qgis-user-manual/exporting-and-formatting/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/end-to-end-pipeline/">End to End Pipeline</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../georeferencing-workflow/">Georeferencing Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topology-and-validity/">Topology and Validity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../attribute-schema/">Attribute Schema</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Exporting and Formatting</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#exporting-the-file">Exporting the File</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preparing-submission-files">Preparing Submission Files</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#metatxt">meta.txt</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#licensepng">license.png</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#compressing-the-files">Compressing the Files</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#final-step">Final Step</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#final-checklist">Final Checklist</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/coastlines-lakes-enclaves/">Coastlines, Lakes, and Enclaves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/metadata-requirements/">Metadata Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">QGIS User Manual</li>
+      <li class="breadcrumb-item active">Exporting and Formatting</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/40-qgis-user-manual/exporting-and-formatting.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="exporting-and-formatting">Exporting and Formatting</h1>
+<p>Follow these steps to propertly export your boundary file and prepare it for submission.</p>
+<h2 id="exporting-the-file">Exporting the File</h2>
+<ol>
+<li>Remove any unnecessary layers (e.g., georeferencing images or unprojected layers). Right-click the layer and select "Remove Layer".
+<img width="1101" height="489" alt="Screenshot 2026-04-13 192149" src="https://github.com/user-attachments/assets/cb1c895d-d3af-4927-a64c-d8d2fa6b0010" /></li>
+</ol>
+<hr />
+<ol>
+<li>Export the shapefile layer. Double click (or right-click) the shapefile layer. Select "Export" -&gt; "Save Features as".</li>
+</ol>
+<p><img width="415" height="451" alt="image" src="https://github.com/user-attachments/assets/6dd3bcbe-1d27-4f28-b240-7f0cec9077c2" /></p>
+<ol>
+<li>Set the export format. Choose <strong>geoJSON</strong> as the file format.</li>
+</ol>
+<p><img width="883" height="984" alt="image" src="https://github.com/user-attachments/assets/a827ca80-a148-4298-95d8-6777b592a5ff" /></p>
+<ol>
+<li>Ensure that the fields match the below screenshot:
+<img width="440" height="491" alt="image" src="https://github.com/user-attachments/assets/dfe14a1c-ecea-4bbd-bec6-8352f83e25ab" /></li>
+</ol>
+<p>When typing the name of the shapefile, select a location for the exported file by selecting the <strong>three dots (...)</strong>.</p>
+<p><img width="472" height="127" alt="image" src="https://github.com/user-attachments/assets/78dca398-e696-4dde-b7f7-00e5d6a811b4" /></p>
+<hr />
+<h2 id="preparing-submission-files">Preparing Submission Files</h2>
+<p>Before compressing your files, ensure the following required files are present:</p>
+<ul>
+<li><strong>Boundary file(s)</strong></li>
+<li><strong>Metadata file</strong> (<code>meta.txt</code>)</li>
+<li><strong>License screenshot</strong> (<code>license.png</code>)</li>
+</ul>
+<h3 id="metatxt">meta.txt</h3>
+<p>This file description of what this file should include can be located in the <a href="https://wmgeolab.github.io/gbDocs/10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a> sheet.</p>
+<h3 id="licensepng">license.png</h3>
+<ul>
+<li>A screenshot of the license from the source website  </li>
+<li>Must clearly show the <strong>license type</strong> and <strong>URL</strong>  </li>
+<li>Must be readable and uncropped  </li>
+</ul>
+<hr />
+<h2 id="compressing-the-files">Compressing the Files</h2>
+<p>Once all required files are ready:</p>
+<ol>
+<li>Select all required files (boundary file(s), <code>meta.txt</code>, <code>license.png</code>).</li>
+</ol>
+<p><img width="479" height="166" alt="image" src="https://github.com/user-attachments/assets/1637e1ee-dee0-4591-ab03-7d25117e5283" /></p>
+<hr />
+<ol>
+<li>
+<p>Create a compressed folder.</p>
+</li>
+<li>
+<p>Right-click the selected files  </p>
+</li>
+<li>Choose <strong>Send to → Compressed (zipped) folder</strong></li>
+</ol>
+<p><img width="975" height="752" alt="Screenshot 2026-04-13 193340" src="https://github.com/user-attachments/assets/60ad147e-420e-41fb-894d-1f147130220c" /></p>
+<hr />
+<h2 id="final-step">Final Step</h2>
+<ul>
+<li>Rename the <code>.zip</code> folder using the required format: <code>ISO_ADM#</code></li>
+</ul>
+<hr />
+<h2 id="final-checklist">Final Checklist</h2>
+<p>Before submission, confirm:</p>
+<ul>
+<li>[ ] Boundary file(s) is correctly named  </li>
+<li>[ ] <code>meta.txt</code> is complete and accurate  </li>
+<li>[ ] <code>license.png</code> is included and readable  </li>
+<li>[ ] All files are included in the <code>.zip</code> folder  </li>
+<li>[ ] Folder is named correctly (<code>ISO_ADM#</code>)  </li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Export the boundary as a <strong>GeoJSON</strong> or <strong>Shapefile</strong></li>
+<li>Include required supporting files (<code>meta.txt</code>, <code>license.png</code>)</li>
+<li>Compress everything into a <code>.zip</code> file</li>
+<li>Follow strict naming conventions for submission</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../attribute-schema/" class="btn btn-neutral float-left" title="Attribute Schema"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../qgis-troubleshooting/" class="btn btn-neutral float-right" title="QGIS Troubleshooting">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../attribute-schema/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../qgis-troubleshooting/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

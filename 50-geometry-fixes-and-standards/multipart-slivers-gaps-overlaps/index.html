@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Multipart Slivers, Gaps, and Overlaps - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Multipart Slivers, Gaps, and Overlaps";
+        var mkdocs_page_input_path = "50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps.md";
+        var mkdocs_page_url = "/gbDocs/50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/end-to-end-pipeline/">End to End Pipeline</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/georeferencing-workflow/">Georeferencing Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/attribute-schema/">Attribute Schema</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/exporting-and-formatting/">Exporting and Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../coastlines-lakes-enclaves/">Coastlines, Lakes, and Enclaves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/metadata-requirements/">Metadata Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Geometry Fixes and Standards</li>
+      <li class="breadcrumb-item active">Multipart Slivers, Gaps, and Overlaps</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p># Multipart Features, Slivers, Gaps, and Overlaps</p>
+<p>This page outlines key geometry issues that must be identified and resolved before submission. These issues are common in boundary datasets and are critical to data quality.</p>
+<p>For step-by-step fixes, refer to the linked QGIS documentation pages.</p>
+<hr />
+<p>## Multipart Features</p>
+<p>### What They Are</p>
+<p>A <strong>multipart feature</strong> is a single record in the attribute table that contains multiple disconnected polygons.</p>
+<p>### Why This Matters</p>
+<ul>
+<li>Each administrative unit should typically be represented as a <strong>single feature</strong></li>
+<li>Multipart features can:</li>
+<li>Break analysis workflows</li>
+<li>Cause inconsistencies in the dataset</li>
+</ul>
+<p>+### Important Nuance
++
++- Everything may initially appear as multipart, but you should <strong>not always convert multipart to singlepart</strong>
++- This is more nuanced and depends on context and data integrity</p>
+<p>### When They Are Acceptable</p>
+<ul>
+<li>When a single administrative unit is naturally composed of multiple parts (e.g., islands)</li>
+</ul>
+<p>+### Edge Cases to Watch
++
++- Example: where there's an island
++  - But the island is <strong>not in the boundary</strong>
++- These situations require manual inspection</p>
+<p>### Fix</p>
+<p>-- Use <strong>Multipart to Singleparts</strong> to separate features if needed
++- Use <strong>Multipart to Singleparts</strong> carefully (do not apply blindly)
++- Exploding multipart features should always be followed by validation</p>
+<p>→ See: <a href="../../40-qgis-user-manual/editing-geometries/">Editing Geometries</a></p>
+<hr />
+<p>## Slivers</p>
+<p>### What They Are</p>
+<p><strong>Slivers</strong> are very small, thin polygons that are often created unintentionally during editing or overlay operations.</p>
+<p>### Why This Matters</p>
+<ul>
+<li>They do not represent real administrative areas</li>
+<li>They introduce errors in area calculations and analysis</li>
+</ul>
+<p>### Fix</p>
+<ul>
+<li>Identify and delete sliver polygons</li>
+<li>Merge them into the correct neighboring polygon if necessary</li>
+</ul>
+<p>→ See: <a href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a></p>
+<hr />
+<p>## Gaps</p>
+<p>### What They Are</p>
+<p><strong>Gaps</strong> are empty spaces between polygons where no feature exists.</p>
+<p>### Why This Matters</p>
+<ul>
+<li>The dataset should fully cover the administrative area</li>
+<li>Gaps indicate incomplete or misaligned boundaries</li>
+</ul>
+<p>### Fix</p>
+<ul>
+<li>Enable <strong>Snapping</strong></li>
+<li>Adjust vertices so polygons share borders exactly</li>
+</ul>
+<p>→ See:<br />
+ - <a href="../../40-qgis-user-manual/editing-geometries/">Editing Geometries</a><br />
+ - <a href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a></p>
+<hr />
+<p>## Overlaps</p>
+<p>### What They Are</p>
+<p><strong>Overlaps</strong> occur when two or more polygons cover the same geographic area.</p>
+<p>### Why This Matters</p>
+<ul>
+<li>Creates duplicate representation of space</li>
+<li>Leads to incorrect analysis results</li>
+</ul>
+<p>### Fix</p>
+<ul>
+<li>Adjust boundaries to eliminate overlap</li>
+<li>Validate using geometry tools</li>
+</ul>
+<p>→ See: <a href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a></p>
+<hr />
+<p>## How to Check for These Issues</p>
+<p>Use QGIS tools to identify problems:</p>
+<ul>
+<li><strong>Check Validity</strong></li>
+<li><strong>Fix Geometries</strong></li>
+<li>Visual inspection at high zoom levels</li>
+</ul>
+<p>→ See: <a href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a></p>
+<hr />
+<p>## Best Practices</p>
+<ul>
+<li>Always enable <strong>Snapping</strong> when editing</li>
+<li>Zoom in when working along shared borders</li>
+<li>Regularly validate geometry during editing</li>
+<li>Inspect small or complex regions carefully
++- Do not rely solely on automated tools like exploding multipart features—always verify results manually</li>
+</ul>
+<hr />
+<p>## Summary</p>
+<ul>
+<li>Multipart features, slivers, gaps, and overlaps are common geometry issues
+-- Some (like multipart features) may be acceptable depending on context
+-- All others must be resolved before submission
++- Multipart features require careful judgment and should not be automatically converted
++- Slivers, gaps, and overlaps must be resolved before submission
+ Ensuring clean geometry is essential for producing accurate and reliable boundary data.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../common-errors-and-fixes/" class="btn btn-neutral float-left" title="Common Errors and Fixes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../coastlines-lakes-enclaves/" class="btn btn-neutral float-right" title="Coastlines, Lakes, and Enclaves">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../common-errors-and-fixes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../coastlines-lakes-enclaves/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

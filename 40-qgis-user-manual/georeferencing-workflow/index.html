@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/40-qgis-user-manual/georeferencing-workflow/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Georeferencing Workflow - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Georeferencing Workflow";
+        var mkdocs_page_input_path = "40-qgis-user-manual/georeferencing-workflow.md";
+        var mkdocs_page_url = "/gbDocs/40-qgis-user-manual/georeferencing-workflow/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/end-to-end-pipeline/">End to End Pipeline</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Georeferencing Workflow</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#selecting-an-image-to-georeference">Selecting an Image to Georeference</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#georeferencing">Georeferencing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#digitizing">Digitizing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#snapping-multiple-polygons-and-merging-polygons">Snapping Multiple Polygons and Merging Polygons</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#saving-the-polygons-as-a-shapefile">Saving the Polygon(s) as a Shapefile</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topology-and-validity/">Topology and Validity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../attribute-schema/">Attribute Schema</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exporting-and-formatting/">Exporting and Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/coastlines-lakes-enclaves/">Coastlines, Lakes, and Enclaves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/metadata-requirements/">Metadata Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">QGIS User Manual</li>
+      <li class="breadcrumb-item active">Georeferencing Workflow</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/40-qgis-user-manual/georeferencing-workflow.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="georeferencing-workflow">Georeferencing Workflow</h1>
+<p>Here is a handy image of some of the important QGIS tools to keep an eye out for:
+<img width="557" height="227" alt="image" src="https://github.com/user-attachments/assets/a1870147-f1fb-4d5a-8cd8-74064bf9b4a6" /></p>
+<p>This tutorial will review the Georeferencing and Digitizing workflow. Georeferncing is the process of assigning real-world geographic coordinates (latitude/longitude or projection coordinates) to raster data like scanned maps, aerial photos, or satellite imagery. Digitizing is the process of converting information from physical (a paper map, a scanned image, a satellite photo, etc.) into a vector format.</p>
+<p>If there is no data available on the country's administrative division based off of your research, it can be helpful to georeference an image of the boundary that has an appropriate license and then digitize the said image to create a polygon.</p>
+<h2 id="selecting-an-image-to-georeference">Selecting an Image to Georeference</h2>
+<p>One tip to select an appropriate and acceptable image to georeference is to use a search query with the words "border", "outline", and "map". In order to demonstrate this, Williamsburg, Virginia will be used an example. The query "williamsburg virginia boundary map outline" was used to find an image with an acceptable license. The license specifically clarifies that the image can be used for any purposes, <strong>even commercial</strong>. To know which licenses are acceptable, review <a href="https://wmgeolab.github.io/gbDocs/20-research-and-sourcing/licensing-and-permissions/">this page</a>/ </p>
+<p>Here is the image that was selected for the georeferencing of Williamsburg, VA.</p>
+<p><img width="713" height="726" alt="image" src="https://github.com/user-attachments/assets/6d24d032-2277-4d3f-bcd6-5fadaf7d743f" /></p>
+<p>This is a good example because
+- The quality of the image is good
+- The edges are very detailed and precise
+- There is an acceptable license listed</p>
+<p>Here is a bad example of an image for georeferencing:</p>
+<p><img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/dfe05d19-6d06-47a2-a199-b4418be16e1a" /></p>
+<p>This is a bad example because:
+- The quality of the image is bad
+- The segments are not detailed and precise enough
+- There is no license listed on the website</p>
+<h2 id="georeferencing">Georeferencing</h2>
+<p>When adding a picture of a map to QGIS, it appears in the middle of the ocean. Georeferencing is when we take an image, and manually tell QGIS where to place it on a base map. Open up a QGIS project to get started with georeferencing. </p>
+<ol>
+<li>
+<p>To add a basemap of your choice, ensure the "Browser Panel" is visible.
+<img width="347" height="344" alt="image" src="https://github.com/user-attachments/assets/feb6f77c-e1bf-4e4b-b424-451a43c130ad" /></p>
+</li>
+<li>
+<p>Scroll until you locate the "XYZ Tiles" For this example, we will use the OSM basemap.</p>
+</li>
+</ol>
+<p><img width="452" height="380" alt="image" src="https://github.com/user-attachments/assets/3ae19182-d602-4221-a47a-00cbc0c95833" /></p>
+<ol>
+<li>Click Layer, then the <strong>Georeferencer</strong> tool.</li>
+</ol>
+<p><img width="316" height="165" alt="image" src="https://github.com/user-attachments/assets/eb93f67c-340a-4d03-94bd-08037c2bee7d" /></p>
+<ol>
+<li>Once in the georeferencing tool, you need to open your raster (the image of your map). </li>
+</ol>
+<p><img width="132" height="102" alt="image" src="https://github.com/user-attachments/assets/3606e8cf-828e-425a-911c-4393ba67ad06" /></p>
+<p>You must download the raster image using one of these formats: GeoTIFF (.tif, .tiff), JPEG (.jpg, .jpeg), PNG (.png), BMP (.bmp). GIF (.gif), and a few others.</p>
+<ol>
+<li>Now it is time to georeference. Zoom to the area you want to project onto on the window with the basemap.</li>
+</ol>
+<p><img width="1717" height="890" alt="image" src="https://github.com/user-attachments/assets/74f6822d-acf0-4690-a30e-6a6bca2dbc64" /></p>
+<ol>
+<li>
+<p>Select <strong>Add GCP Point</strong> in the Georeferencing pane.</p>
+</li>
+<li>
+<p>Select a notable corner/point on the raster image.</p>
+</li>
+<li>
+<p>Ensure the projection is set to WGS 84/Pseudo-Mercator.
+<img width="277" height="212" alt="image" src="https://github.com/user-attachments/assets/26e600ac-c57d-4abf-81b4-4cca8f418f57" /></p>
+</li>
+<li>
+<p>Select <strong>From Map Canvas</strong> to select the corresponding same corner from the base map to start the aligning/georeferencing process.</p>
+</li>
+<li>
+<p>Once the corresponding corner has been selected on the basemap, select <strong>OK</strong> on the pop-up.</p>
+</li>
+<li>
+<p>Continue this process at least 5 more times, to conclude with at least 5 GCPs, or control points. (Repeat steps 6-9 five more times)</p>
+</li>
+<li>
+<p>Select <strong>Start Georeferencing</strong>
+    <img width="522" height="428" alt="image" src="https://github.com/user-attachments/assets/11669a4b-70f4-419e-af9b-2f017d77ffb3" /></p>
+</li>
+<li>
+<p>Ensure the settings in the pop-up menu match these below. Select OK.</p>
+</li>
+</ol>
+<p><img width="654" height="1012" alt="image" src="https://github.com/user-attachments/assets/7803ae0e-ef30-4f66-94f3-01cd86feba05" /></p>
+<ol>
+<li>
+<p>Select the <strong>Start Georeferencing</strong> button again.</p>
+</li>
+<li>
+<p>Close the Georeferencing tab to see the georeferenced raster image!</p>
+</li>
+</ol>
+<h2 id="digitizing">Digitizing</h2>
+<p>Now it is time to create the shapefile</p>
+<ol>
+<li>Go to Layer -&gt; Create Layer -&gt; New Shapefile Layer...</li>
+<li>A menu will pop up. For geometry type, select Polygon. Save in a location <strong>other than the hard drive of your computer</strong>. Select OK.</li>
+</ol>
+<p><img width="1289" height="676" alt="image" src="https://github.com/user-attachments/assets/ea72711a-f827-4f58-af14-8a581b9f4f01" /></p>
+<ol>
+<li>Before we can use any tools, we have to toggle editing on the layer. Go to the newly created layer in the contents section and select toggle editing.</li>
+</ol>
+<p><img width="1505" height="782" alt="image" src="https://github.com/user-attachments/assets/12cb09e9-870d-4c47-abe7-1749449db7ac" /></p>
+<ol>
+<li>Select the <strong>Add Polygon Feature</strong> tool</li>
+</ol>
+<p><img width="248" height="109" alt="image" src="https://github.com/user-attachments/assets/4d69c3ee-316d-4de2-9a60-9eb4c4cd5a91" /></p>
+<ol>
+<li>Trace your shapefile by clicking around your raster image map. Each time you click it will add another vertex to your shape. The more vertexes the better and more accurate the polygon will be!</li>
+</ol>
+<p><img width="153" height="167" alt="image" src="https://github.com/user-attachments/assets/6f45d335-342d-4c9c-a255-cc741bd29eb1" /></p>
+<ol>
+<li>When you have fully traced your shape, right-click to save the polygon and label the polygon with a <strong>temporary</strong> id number. The ID column will later be deleted once the rest of the required fields are entered.<ul>
+<li>When there is an area of your shape that you would like to edit, select the Vertex Tool.
+<img width="173" height="80" alt="image" src="https://github.com/user-attachments/assets/a00d6f5e-4861-45ef-be7f-73c13ceb3b8c" />
+When you hover over your shape, it will show you all of the vertices. Using this tool, you can move vertices, move segments, add or delete vertices. You do not need to use this tool every time you digitize, it is just helpful for fixing errors.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="snapping-multiple-polygons-and-merging-polygons">Snapping Multiple Polygons and Merging Polygons</h2>
+<p>If you need to step away from the project and continue adding vertices to a polygon, or if you need to add a polygon that is adjacent to another polygon, follow the tutorial below. This tutorial is also helpful if you are digitizing many divisions and would like to trace the surrounding polygons as a basis.</p>
+<ol>
+<li>
+<p>Select "View" and then "Toolbars". Ensure all of these toolbars below are selected so that the needed tools are available. The required toolbars are "Advanced Digitizing Toolbar" and "Snapping Toolbar".
+<img width="410" height="613" alt="image" src="https://github.com/user-attachments/assets/20de296a-b7b2-48ca-878e-38e200f2f83b" /></p>
+</li>
+<li>
+<p>Ensure that these tools are selected to be able to snap the new polygon to the old one. Click "Enable Snapping". Select "Vertex", "Segment", and "Area" within the "Area" tool. Set the "Snapping Tolerance in Defined Units" to 5 meters. Select "Enable Snapping on Intersection", "Enable Tracing", and "Enable self-snapping". 
+<img width="386" height="157" alt="image" src="https://github.com/user-attachments/assets/f749b474-af54-4153-a814-6d1ca77fb2b1" /></p>
+</li>
+<li>
+<p>Select the "Select Features by Area or Single Click" tool and select the polygon that you would like to add more vertices to. 
+<img width="334" height="400" alt="image" src="https://github.com/user-attachments/assets/87020a3d-11f5-49a1-b982-3cdd0921a1f9" /></p>
+</li>
+<li>
+<p>Select the "Add Polygon Feature" tool. 
+<img width="112" height="66" alt="image" src="https://github.com/user-attachments/assets/ec00ebcc-4bc9-49f9-af3e-7104a1d749d8" /></p>
+</li>
+<li>
+<p>Hover over the vertex you would like to begin from. Once you see the pink square, click the vertex.
+<img width="678" height="354" alt="Screenshot 2026-04-05 223804" src="https://github.com/user-attachments/assets/c70473f6-f719-4c01-a5b6-de0d1869e753" /></p>
+</li>
+<li>
+<p>Drag along the segment of the original polygon and click when you see a pink "X".
+<img width="561" height="287" alt="image" src="https://github.com/user-attachments/assets/b2b304d4-d1ae-4685-a9ac-a42f095b7ad0" /></p>
+</li>
+<li>
+<p>Trace the area with vertexes just like you did with the original polygon. Once you have returned to the starting point of this new polygon, hover over the starting point and press with two fingers to close the polygon.
+<img width="515" height="370" alt="image" src="https://github.com/user-attachments/assets/001f2799-a6ef-4da3-aae4-31d44a5619cc" /></p>
+</li>
+<li>
+<p>Give the new polygon a <strong>temporary</strong> id number. The ID column will later be deleted once the rest of the required fields are entered.</p>
+</li>
+</ol>
+<p>Here is where you would stop if you only need to create an adjacent polygon using the snapping tool. If you would like to merge the polygons, continue to step 9.</p>
+<ol>
+<li>Using the "Select Features by Area or Single Click" tool, select both polygons to begin a merge.</li>
+<li>Select the "Merge Selected Features" tool. This will combine the two polygons into one. Select "OK".
+<img width="343" height="434" alt="image" src="https://github.com/user-attachments/assets/37c578a3-8a6f-41a1-9eab-22b58aeb37b7" /></li>
+</ol>
+<p>Now your two Polygons are merged into one!</p>
+<hr />
+<h2 id="saving-the-polygons-as-a-shapefile">Saving the Polygon(s) as a Shapefile</h2>
+<ol>
+<li>Now it is time to export the polygon as a shapefile.<ul>
+<li>First, toggle off editing.</li>
+<li>Next, go to your layer and select export-save features as...</li>
+</ul>
+</li>
+</ol>
+<p><img width="429" height="392" alt="image" src="https://github.com/user-attachments/assets/42a49e45-1339-4ba3-b59a-234dba984a3a" /></p>
+<p><img width="438" height="493" alt="image" src="https://github.com/user-attachments/assets/14a2a87a-8105-4999-be8e-2addf3516411" /></p>
+<ol>
+<li>This menu will pop up. Here you can name your file, according to the ISO Code of the Layer and the ADM level. In this case, since Williamsburg is under ADM3, the title of the file would be <code>USA_ADM3</code>. Make sure the encoding is UTF-8 and that the CRS is correct.  The format we use is ESRI Shapefile.
+Remember to change where it saves from your hard drive to literally anywhere else. DO NOT SAVE TO YOUR HARD DRIVE. 
+Click Ok when done. </li>
+</ol>
+<p>The final product should be the 6 files that automatically load when saved:</p>
+<p><img width="614" height="142" alt="image" src="https://github.com/user-attachments/assets/9a6f9f51-1206-4c68-b45f-ef5c801a25ed" /></p>
+<ol>
+<li>Copy all 6 files and compress them in a zip folder.</li>
+</ol>
+<p><img width="516" height="320" alt="image" src="https://github.com/user-attachments/assets/a1672463-abce-4b7d-a6fe-8907a15b043b" /></p>
+<ol>
+<li>Add the <code>meta.txt</code> file and the <code>license.png</code> screenshot to the zip folder, and you are ready to submit!</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../loading-and-inspecting-data/" class="btn btn-neutral float-left" title="Loading and Inspecting Data"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../editing-geometries/" class="btn btn-neutral float-right" title="Editing Geometries">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../loading-and-inspecting-data/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../editing-geometries/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

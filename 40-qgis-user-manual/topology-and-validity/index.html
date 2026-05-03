@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/40-qgis-user-manual/topology-and-validity/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Topology and Validity - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Topology and Validity";
+        var mkdocs_page_input_path = "40-qgis-user-manual/topology-and-validity.md";
+        var mkdocs_page_url = "/gbDocs/40-qgis-user-manual/topology-and-validity/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/end-to-end-pipeline/">End to End Pipeline</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../georeferencing-workflow/">Georeferencing Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Topology and Validity</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../attribute-schema/">Attribute Schema</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exporting-and-formatting/">Exporting and Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/coastlines-lakes-enclaves/">Coastlines, Lakes, and Enclaves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/metadata-requirements/">Metadata Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">QGIS User Manual</li>
+      <li class="breadcrumb-item active">Topology and Validity</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/40-qgis-user-manual/topology-and-validity.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="topology-and-validity">Topology and Validity</h1>
+<p>While the <a href="https://wmgeolab.github.io/gbDocs/40-qgis-user-manual/editing-geometries/">Editing Geometries</a> page reviewed <strong>how</strong> to fix polygons and what tools to use, this Topology and Validity page will review how to check if the polygons are correct qualitatively.</p>
+<h1 id="topology-and-validity_1">Topology and Validity</h1>
+<p>This page explains how to ensure that boundary geometries are <strong>topologically correct</strong> and <strong>valid</strong> before submission.</p>
+<p>Topology refers to how geometries relate to one another, while validity ensures that each individual geometry is correctly formed.</p>
+<hr />
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Even if a dataset looks correct visually, it may still contain technical errors that can:</p>
+<ul>
+<li>Break analyses</li>
+<li>Cause issues in GIS software</li>
+<li>Lead to rejection during review</li>
+</ul>
+<p>All geometries must pass both <strong>visual inspection</strong> and <strong>technical validation</strong>.</p>
+<hr />
+<h2 id="common-topology-errors">Common Topology Errors</h2>
+<h3 id="gaps-unless-gaps-do-truly-exist-in-the-boundary">Gaps (unless gaps do truly exist in the boundary)</h3>
+<ul>
+<li>Empty spaces between adjacent polygons </li>
+<li>Occur when boundaries do not align perfectly</li>
+</ul>
+<h3 id="overlaps-unless-overlaps-do-truly-exist-in-the-boundary">Overlaps (unless OVerlaps do truly exist in the boundary)</h3>
+<ul>
+<li>Two polygons cover the same area</li>
+<li>Causes duplication and incorrect data representation</li>
+</ul>
+<h3 id="self-intersections">Self-Intersections</h3>
+<ul>
+<li>A polygon crosses over itself</li>
+<li>Creates invalid geometry</li>
+</ul>
+<h3 id="duplicate-geometries">Duplicate Geometries</h3>
+<ul>
+<li>Identical polygons exist more than once</li>
+</ul>
+<hr />
+<h2 id="what-good-topology-looks-like">What Good Topology Looks Like</h2>
+<p>A valid dataset should:</p>
+<ul>
+<li>Have <strong>no gaps</strong> between adjacent boundaries</li>
+<li>Have <strong>no overlaps</strong></li>
+<li>Have <strong>clean, shared borders</strong></li>
+<li>Fully cover the intended geographic area</li>
+</ul>
+<hr />
+<h2 id="checking-geometry-validity-in-qgis">Checking Geometry Validity in QGIS</h2>
+<ol>
+<li>Open the <strong>Processing Toolbox</strong></li>
+</ol>
+<p><img width="429" height="317" alt="image" src="https://github.com/user-attachments/assets/2f50f274-a4c4-44b6-afc3-f18f4ff75232" /></p>
+<ol>
+<li>Search for <strong>Check Validity</strong></li>
+</ol>
+<p><img width="230" height="252" alt="image" src="https://github.com/user-attachments/assets/b1a1c5ca-95dd-4ec9-83db-4d07c1d2b64f" /></p>
+<ol>
+<li>Select your layer as the input</li>
+</ol>
+<p><img width="515" height="407" alt="image" src="https://github.com/user-attachments/assets/ce017a95-6467-4497-9b10-efa6b32c3d99" /></p>
+<ol>
+<li>Run the tool</li>
+<li>Check to see if the layer is valid.</li>
+</ol>
+<p><img width="299" height="317" alt="image" src="https://github.com/user-attachments/assets/047378d5-61ab-4c0b-ae49-3cf781d61541" /></p>
+<p>If the layer is invalid, use the <strong>Fix Geometries</strong> tool in the proccessing toolbox which is reviewed below.</p>
+<h3 id="output">Output</h3>
+<p>The tool will identify:</p>
+<ul>
+<li>Valid features</li>
+<li>Invalid features</li>
+<li>Specific geometry errors</li>
+</ul>
+<hr />
+<h2 id="fixing-geometry-errors">Fixing Geometry Errors</h2>
+<h3 id="fix-geometries-tool">Fix Geometries Tool</h3>
+<ol>
+<li>Open <strong>Processing Toolbox</strong></li>
+<li>Search for <strong>Fix Geometries</strong></li>
+<li>Run the tool on your layer</li>
+</ol>
+<p>This automatically repairs many common issues.</p>
+<hr />
+<h3 id="manual-fixes">Manual Fixes</h3>
+<p>If errors persist:</p>
+<ul>
+<li>Use the <strong>Vertex Tool</strong> to adjust shapes</li>
+<li>Snap vertices to neighboring boundaries</li>
+<li>Remove duplicate features</li>
+<li>Redraw problematic polygons if necessary</li>
+</ul>
+<hr />
+<h2 id="snapping-settings">Snapping Settings</h2>
+<p>Enable snapping to improve precision:</p>
+<ul>
+<li>Turn on <strong>Snapping Toolbar</strong></li>
+<li>Set snapping to:</li>
+<li>Vertex</li>
+<li>Segment</li>
+</ul>
+<p>This helps ensure boundaries align correctly.</p>
+<hr />
+<h2 id="visual-inspection">Visual Inspection</h2>
+<p>After fixing errors:</p>
+<ul>
+<li>Zoom into borders between polygons</li>
+<li>Check for:</li>
+<li>Gaps</li>
+<li>Overlaps</li>
+<li>Misaligned edges</li>
+</ul>
+<p>Pay special attention to:</p>
+<ul>
+<li>Coastal boundaries</li>
+<li>Complex borders</li>
+<li>Small or irregular regions</li>
+</ul>
+<hr />
+<h2 id="common-mistakes">Common Mistakes</h2>
+<ul>
+<li>Not running the <strong>Check Validity</strong> tool</li>
+<li>Ignoring small gaps or overlaps</li>
+<li>Overusing automatic fixes without checking results</li>
+</ul>
+<hr />
+<h2 id="final-validation-checklist">Final Validation Checklist</h2>
+<p>Before submission, confirm:</p>
+<ul>
+<li>[ ] No gaps between polygons</li>
+<li>[ ] No overlaps between polygons</li>
+<li>[ ] All geometries are valid</li>
+<li>[ ] No duplicate features</li>
+<li>[ ] Boundaries align cleanly</li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Topology ensures boundaries relate correctly to each other</li>
+<li>Validity ensures each geometry is technically correct</li>
+<li>Always run validation tools and perform visual checks</li>
+</ul>
+<p>Clean topology is essential for producing reliable and usable boundary data.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../editing-geometries/" class="btn btn-neutral float-left" title="Editing Geometries"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../snapping-and-shared-borders/" class="btn btn-neutral float-right" title="Snapping and Shared Borders">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../editing-geometries/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../snapping-and-shared-borders/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

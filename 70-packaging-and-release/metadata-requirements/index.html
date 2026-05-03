@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/70-packaging-and-release/metadata-requirements/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Metadata Requirements - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Metadata Requirements";
+        var mkdocs_page_input_path = "70-packaging-and-release/metadata-requirements.md";
+        var mkdocs_page_url = "/gbDocs/70-packaging-and-release/metadata-requirements/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/end-to-end-pipeline/">End to End Pipeline</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/georeferencing-workflow/">Georeferencing Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/attribute-schema/">Attribute Schema</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/exporting-and-formatting/">Exporting and Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/coastlines-lakes-enclaves/">Coastlines, Lakes, and Enclaves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Metadata Requirements</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#metadata-file">Metadata File</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example">Example</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#formatting-requirements">Formatting Requirements</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#optional-fields">Optional Fields</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#best-practices">Best Practices</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#common-issues">Common Issues</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Packaging and Release</li>
+      <li class="breadcrumb-item active">Metadata Requirements</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/70-packaging-and-release/metadata-requirements.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="metadata-requirements">Metadata Requirements</h1>
+<p>This page defines the required structure and content of the <code>meta.txt</code> file.</p>
+<p>The metadata file provides essential information about the dataset, including its source, licensing, and structure. It is required for all submissions.</p>
+<hr />
+<h2 id="purpose">Purpose</h2>
+<p>The <code>meta.txt</code> file ensures that each dataset is:</p>
+<ul>
+<li>Transparent in its origin</li>
+<li>Properly licensed</li>
+<li>Reproducible and verifiable</li>
+<li>Consistent with geoBoundaries standards</li>
+</ul>
+<hr />
+<h2 id="metadata-file">Metadata File</h2>
+<p>Within the <code>meta.txt</code> file, there are several subfields that describe the data:</p>
+<pre><code class="language-text">Boundary Representative of Year: Year of data creation, publication, or most recent update.
+
+ISO-3166-1 (Alpha-3): ISO 3-letter country code 
+
+Boundary Type: Administrative Division level (0-5+)
+
+Canonical Boundary Type Name: The local name for the ADM (ex - USA ADM 1 would have “state” here), for ADM 0 make sure to put what the country calls itself (ex - Germany calls itself Deutschland, so we’d enter “Deutschland”)
+
+Source 1: The site name for where the shapefile comes from (geoBoundaries if digitized)
+
+Source 2: Secondary source name (if applicable)
+
+Release Type: What gB release category (or categories) the shapefile falls into (gbOpen, gbHumanitarian, or gbAuthoritative)
+
+License: License type name (note this is case sensitive)
+
+License Notes: Notes on the license (if applicable)
+
+License Source: Link to the page on the website that details the license information
+
+Link to Source Data: Link to the page where the shapefile can be found
+
+Other Notes: Any other relevant information (if applicable)
+</code></pre>
+<h3 id="example">Example</h3>
+<p><img width="708" height="271" alt="image" src="https://github.com/user-attachments/assets/96958e45-514d-4784-b7d4-8bea08de2e0e" /></p>
+<h2 id="formatting-requirements">Formatting Requirements</h2>
+<ul>
+<li>Each field must be included, even if marked as not applicable</li>
+<li>Use consistent field names exactly as shown above</li>
+<li>Separate each field with a new line</li>
+<li>Use plain text format (.txt)</li>
+<li>Do not add extra fields unless necessary</li>
+<li>Required vs Optional Fields</li>
+<li>Required Fields</li>
+</ul>
+<hr />
+<p>The following fields must always be completed:</p>
+<ul>
+<li>Boundary Representative of Year</li>
+<li>ISO-3166-1 (Alpha-3)</li>
+<li>Boundary Type</li>
+<li>Canonical Boundary Type Name</li>
+<li>Source 1</li>
+<li>Release Type</li>
+<li>License</li>
+<li>License Source</li>
+<li>Link to Source Data</li>
+</ul>
+<h3 id="optional-fields">Optional Fields</h3>
+<p>These fields may be left blank or marked as N/A if not applicable:</p>
+<ul>
+<li>Source 2</li>
+<li>License Notes</li>
+<li>Other Notes</li>
+</ul>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Ensure all links are valid and accessible</li>
+<li>Match metadata values to the dataset exactly</li>
+<li>Use official names and terminology where possible</li>
+<li>Double-check ISO codes and ADM levels</li>
+</ul>
+<hr />
+<h2 id="common-issues">Common Issues</h2>
+<ul>
+<li>Missing required fields</li>
+<li>Incorrect or inconsistent field names</li>
+<li>Broken or missing links</li>
+<li>License information that does not match license.png</li>
+<li>Vague or incomplete source descriptions</li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The meta.txt file is required for all datasets</li>
+<li>All required fields must be completed accurately</li>
+<li>Metadata must match the dataset and its source</li>
+<li>Proper metadata ensures usability, transparency, and compliance</li>
+</ul>
+<p>Accurate metadata is essential for maintaining high-quality and reliable geospatial data.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../versioning-and-changelog/" class="btn btn-neutral float-left" title="Versioning and Changelog"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../publication-checklist/" class="btn btn-neutral float-right" title="Publication Checklist">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../versioning-and-changelog/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../publication-checklist/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

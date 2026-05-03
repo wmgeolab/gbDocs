@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/50-geometry-fixes-and-standards/coastlines-lakes-enclaves/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Coastlines, Lakes, and Enclaves - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Coastlines, Lakes, and Enclaves";
+        var mkdocs_page_input_path = "50-geometry-fixes-and-standards/coastlines-lakes-enclaves.md";
+        var mkdocs_page_url = "/gbDocs/50-geometry-fixes-and-standards/coastlines-lakes-enclaves/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/end-to-end-pipeline/">End to End Pipeline</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/georeferencing-workflow/">Georeferencing Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/topology-and-validity/">Topology and Validity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/attribute-schema/">Attribute Schema</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/exporting-and-formatting/">Exporting and Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../40-qgis-user-manual/qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multipart-slivers-gaps-overlaps/">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Coastlines, Lakes, and Enclaves</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/metadata-requirements/">Metadata Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Geometry Fixes and Standards</li>
+      <li class="breadcrumb-item active">Coastlines, Lakes, and Enclaves</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/50-geometry-fixes-and-standards/coastlines-lakes-enclaves.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p># Coastlines, Lakes, and Enclaves</p>
+<p>This page outlines how to correctly handle complex geographic features such as coastlines, lakes, and enclaves when working with boundary data.</p>
+<p>These features often introduce ambiguity and require careful attention to maintain accuracy and consistency.</p>
+<hr />
+<p>## Coastlines</p>
+<p>### What to Consider</p>
+<p>Coastlines define the outer boundary of a country or administrative unit.</p>
+<p>+GeoBoundaries seeks to represent the <strong>land mass</strong> of administrative zones — water rights are not included.</p>
+<p>### Best Practices</p>
+<ul>
+<li>Follow the <strong>source data exactly</strong> — do not generalize or redraw unnecessarily</li>
+<li>Maintain <strong>high-resolution detail</strong> when available</li>
+<li>Ensure boundaries align with the coastline (no gaps or inland shifts)
++- Boundaries should always stop at the coastline (do not extend into the ocean)</li>
+</ul>
+<p>+### Important Note
++
++- GeoBoundaries does <strong>not capture maritime or water boundaries</strong>
++- If you need boundaries that extend beyond the coast (e.g., maritime zones), refer to:
++  - marineregions.org</p>
+<p>### Common Issues</p>
+<ul>
+<li>Over-simplified coastlines</li>
+<li>Misalignment with basemap</li>
+<li>Jagged or pixelated edges</li>
+</ul>
+<p>### Fix</p>
+<ul>
+<li>Adjust vertices carefully using the <strong>Vertex Tool</strong></li>
+<li>Re-digitize if the coastline is significantly inaccurate</li>
+</ul>
+<p>→ See: <a href="../../40-qgis-user-manual/editing-geometries/">Editing Geometries</a></p>
+<hr />
+<p>## Lakes and Inland Water Bodies</p>
+<p>### What to Consider</p>
+<p>Administrative boundaries may:</p>
+<ul>
+<li>Follow the edge of a lake</li>
+<li>Extend into a lake</li>
+<li>Divide a lake between regions</li>
+</ul>
+<p>### Best Practices</p>
+<ul>
+<li>Match the <strong>source definition of the boundary</strong></li>
+<li>Do not assume boundaries follow the shoreline unless specified</li>
+<li>Ensure polygons do not unintentionally overlap water boundaries</li>
+</ul>
+<p>### Common Issues</p>
+<ul>
+<li>Boundaries incorrectly cutting across lakes</li>
+<li>Missing water boundaries</li>
+<li>Misinterpretation of shared water regions</li>
+</ul>
+<p>### Fix</p>
+<ul>
+<li>Verify against source data</li>
+<li>Adjust boundaries to match official definitions</li>
+</ul>
+<p>## Enclaves and Exclaves</p>
+<p>### Definitions</p>
+<ul>
+<li><strong>Enclave:</strong> A territory completely surrounded by another</li>
+<li><strong>Exclave:</strong> A territory separated from its main region</li>
+</ul>
+<h3 id="representation-of-territories">Representation of Territories</h3>
+<p>+
++- Some enclaves/exclaves are part of larger sovereign territories
++- We represent them based on the entity being mapped
++  - Example: <strong>French Polynesia under France (FRA)</strong> should be represented how France defines it
++  - If <strong>French Polynesia is mapped under its own ISO code</strong>, it should be represented based on its own official boundaries
++- Always ensure consistency with the <strong>source and ISO context</strong> of the dataset</p>
+<p>### Best Practices</p>
+<ul>
+<li>Ensure enclaves/exclaves are:</li>
+<li>Included in the correct administrative unit</li>
+<li>Properly connected in the attribute table</li>
+<li>Multipart features may be appropriate in these cases</li>
+</ul>
+<p>### Common Issues</p>
+<ul>
+<li>Enclaves missing entirely</li>
+<li>Assigned to the wrong administrative unit</li>
+<li>Incorrectly merged with surrounding regions</li>
+</ul>
+<p>### Fix</p>
+<ul>
+<li>Verify using multiple sources</li>
+<li>Assign correct attributes</li>
+<li>Separate or merge features as needed</li>
+</ul>
+<p>→ See: <a href="../multipart-slivers-gaps-overlaps/">Multipart Features</a></p>
+<hr />
+<p>## Islands</p>
+<p>### What to Consider</p>
+<p>Many administrative units include offshore islands.</p>
+<p>### Best Practices</p>
+<ul>
+<li>Include all islands that belong to the administrative unit</li>
+<li>Maintain their correct association in the attribute table</li>
+<li>Use multipart features where appropriate</li>
+</ul>
+<p>### Common Issues</p>
+<ul>
+<li>Missing small islands</li>
+<li>Islands assigned to incorrect regions</li>
+</ul>
+<hr />
+<p>## General Guidance</p>
+<ul>
+<li>Always prioritize <strong>accuracy over simplicity</strong></li>
+<li>Do not modify boundaries unless necessary</li>
+<li>When unsure, <strong>cross-check multiple sources</strong></li>
+</ul>
+<hr />
+<p>## Summary</p>
+<ul>
+<li>Coastlines must align accurately with source data
++- Boundaries stop at the coastline (no maritime boundaries included)</li>
+<li>Lakes require careful interpretation of boundaries</li>
+<li>Enclaves and exclaves must be preserved correctly</li>
+<li>Islands should be included and properly attributed</li>
+</ul>
+<p>Handling these features correctly ensures geographic accuracy and consistency across datasets.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../multipart-slivers-gaps-overlaps/" class="btn btn-neutral float-left" title="Multipart Slivers, Gaps, and Overlaps"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projection-and-precision/" class="btn btn-neutral float-right" title="Projection and Precision">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../multipart-slivers-gaps-overlaps/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../projection-and-precision/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

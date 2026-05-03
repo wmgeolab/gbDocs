@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wmgeolab.github.io/gbDocs/40-qgis-user-manual/attribute-schema/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Attribute Schema - geoBoundaries Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Attribute Schema";
+        var mkdocs_page_input_path = "40-qgis-user-manual/attribute-schema.md";
+        var mkdocs_page_url = "/gbDocs/40-qgis-user-manual/attribute-schema/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> geoBoundaries Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/governance-and-principles/">Governance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00-introduction/what-is-geoboundaries/">What is geoBoundaries</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/end-to-end-pipeline/">End to End Pipeline</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/roles-and-responsibilities/">Roles and responsibilities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../10-workflow-overview/deliverables-and-artifacts/">Deliverables and Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research and Sourcing</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-discovery-strategies/">Source Discovery Strategies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/source-evaluation-rubric/">Source Evaluation Rubric</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/licensing-and-permissions/">Licensing and Permissions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../20-research-and-sourcing/citation-and-provenance/">Citation and Provenance</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/downloading-data/">Downloading Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/digitizing-and-georeferencing/">Digitizing and Georeferencing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../30-data-acquisition/admin-hierarchy-and-naming/">Admin Hierarchy and Naming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QGIS User Manual</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-setup/">QGIS Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../project-structure/">Project Structure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../loading-and-inspecting-data/">Loading and Inspecting Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../georeferencing-workflow/">Georeferencing Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../editing-geometries/">Editing Geometries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topology-and-validity/">Topology and Validity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../snapping-and-shared-borders/">Snapping and Shared Borders</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Attribute Schema</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#opening-the-attribute-table">Opening the Attribute Table</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identifying-existing-fields">Identifying Existing Fields</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#entering-edit-mode">Entering Edit Mode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#required-fields">Required Fields</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#name">Name</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#level">Level</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#iso_code">ISO_Code</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-new-fields">Adding New Fields</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#removing-unnecessary-fields">Removing Unnecessary Fields</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#populating-fields">Populating Fields</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#name-field">Name Field</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#level-field">Level Field</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#iso_code-field">ISO_Code Field</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#common-mistakes">Common Mistakes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#final-checklist">Final Checklist</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exporting-and-formatting/">Exporting and Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qgis-troubleshooting/">QGIS Troubleshooting</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry Fixes and Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/common-errors-and-fixes/">Common Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/multipart-slivers-gaps-overlaps/">Multipart Slivers, Gaps, and Overlaps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/coastlines-lakes-enclaves/">Coastlines, Lakes, and Enclaves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/projection-and-precision/">Projection and Precision</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../50-geometry-fixes-and-standards/generalization-vs-fidelity/">Generalization vs. Fidelity</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance and Quality Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/automated-checks-spec/">Automated Checks and Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/manual-review-checklist/">Manual Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/peer-review-process/">Peer Review Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../60-qa-qc/acceptance-criteria/">Acceptance Criteria</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packaging and Release</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/folder-and-file-conventions/">Folder and File Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/versioning-and-changelog/">Versioning and Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/metadata-requirements/">Metadata Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../70-packaging-and-release/publication-checklist/">Publication Checklist</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributor Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/creating-a-new-boundary-pr/">Creating a New Boundary Pull Request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/issue-templates/">Issue Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/pr-templates/">Pull Request Templates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../80-contributor-guides/support-and-contact/">Support and Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">geoBoundaries Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">QGIS User Manual</li>
+      <li class="breadcrumb-item active">Attribute Schema</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wmgeolab/gbDocs/edit/master/docs/docs/40-qgis-user-manual/attribute-schema.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="attribute-schema">Attribute Schema</h1>
+<p>This page defines the required structure of the attribute table for all boundary datasets.</p>
+<p>A correctly formatted attribute table ensures consistency, usability, and compatibility across geoBoundaries data.</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>Each boundary file must include a standardized attribute table with specific required fields.</p>
+<p>Even if the source data contains many columns, only a subset is needed. Extra or unnecessary fields should be removed.</p>
+<p>If you are working with a boundary file obtained through research, you should begin by reviewing the existing attribute table to ensure that all required fields (<code>Name</code>, <code>Level</code>, and <code>ISO_Code</code>) are present, correctly formatted, and fully populated. In many cases, these fields may already exist but require cleaning, renaming, or standardization. However, if you created the boundary file from scratch through digitization, the attribute table will likely be empty or incomplete. In this case, you must manually create each required field and populate it according to the schema outlined below.</p>
+<hr />
+<h2 id="opening-the-attribute-table">Opening the Attribute Table</h2>
+<p>To view the attribute table in QGIS:</p>
+<ol>
+<li>Right-click the layer in the <strong>Layers panel</strong></li>
+</ol>
+<p><img width="451" height="681" alt="image" src="https://github.com/user-attachments/assets/f09637d7-cd0a-4124-9bcb-5639d5c91841" /></p>
+<ol>
+<li>Select <strong>Open Attribute Table</strong></li>
+</ol>
+<hr />
+<h2 id="identifying-existing-fields">Identifying Existing Fields</h2>
+<p>Before making changes:</p>
+<ul>
+<li>Identify which column contains the <strong>names of administrative divisions</strong></li>
+<li>Determine whether required fields already exist</li>
+<li>Plan whether to <strong>rename</strong> or <strong>create new fields</strong></li>
+</ul>
+<hr />
+<h2 id="entering-edit-mode">Entering Edit Mode</h2>
+<p>To modify the attribute table:</p>
+<ol>
+<li>Click the <strong>Toggle Editing</strong> button (pencil icon)</li>
+</ol>
+<p><img width="1505" height="782" alt="image" src="https://github.com/user-attachments/assets/c1553e10-8427-4d26-b942-9cd380403bcb" /></p>
+<ol>
+<li>The table is now editable</li>
+</ol>
+<hr />
+<h2 id="required-fields">Required Fields</h2>
+<p>The following fields must exist in every dataset:</p>
+<h3 id="name">Name</h3>
+<ul>
+<li>Field name: <code>Name</code></li>
+<li>Type: <strong>Text</strong></li>
+<li>Length: <strong>50</strong></li>
+</ul>
+<p><strong>Description:</strong>
+- Contains the name of each administrative unit
+- Should match official naming conventions</p>
+<hr />
+<h3 id="level">Level</h3>
+<ul>
+<li>Field name: <code>Level</code></li>
+<li>Type: <strong>Text</strong></li>
+<li>Length: <strong>10</strong></li>
+</ul>
+<p><strong>Description:</strong>
+- Indicates the administrative level
+- Format: <code>ADM#</code> (e.g., <code>ADM1</code>, <code>ADM2</code>)</p>
+<hr />
+<h3 id="iso_code">ISO_Code</h3>
+<ul>
+<li>Field name: <code>ISO_Code</code></li>
+<li>Type: <strong>Text</strong></li>
+<li>Length: <strong>10</strong></li>
+</ul>
+<p><strong>Applies to:</strong>
+- Required for <strong>ADM1 and below</strong></p>
+<p><strong>Description:</strong>
+- For <strong>ADM0</strong>: use the country ISO code
+- For <strong>ADM1</strong>: use <strong>ISO 3166-2 codes</strong> (unique per feature)
+- For lower levels: follow project-specific guidance if applicable</p>
+<p>This example has the ISO_Code to demonstrate what higher ADM levels should have.</p>
+<p><img width="301" height="150" alt="image" src="https://github.com/user-attachments/assets/c2080e0e-ad27-4d09-afeb-1180740da415" /></p>
+<p>Reference:<br />
+ISO codes can be found using the <a href="https://www.iso.org/obp/ui/#home">ISO Online Browsing Platform</a></p>
+<hr />
+<h2 id="adding-new-fields">Adding New Fields</h2>
+<p>To add a field:</p>
+<ol>
+<li>
+<p>Ensure editing mode is enabled
+<img width="275" height="265" alt="image" src="https://github.com/user-attachments/assets/95a4a20e-ce30-4d9d-824f-7411482874dc" /></p>
+</li>
+<li>
+<p>Click <strong>Add Field</strong> (top of the attribute table window)
+<img width="452" height="218" alt="image" src="https://github.com/user-attachments/assets/70363d85-a8c1-4f57-8f15-4612884d9311" /></p>
+</li>
+<li>
+<p>Enter:</p>
+</li>
+<li>Field name</li>
+<li>Type (<strong>Text</strong>)</li>
+<li>
+<p>Length (as specified above)
+<img width="391" height="254" alt="image" src="https://github.com/user-attachments/assets/2499a010-26f0-46c3-a722-7cead59dead8" /></p>
+</li>
+<li>
+<p>Click <strong>OK</strong></p>
+</li>
+<li>Fill in the corresponding name of the boundary</li>
+</ol>
+<p><img width="377" height="259" alt="image" src="https://github.com/user-attachments/assets/7bb7d7a9-ccf7-463e-b22f-8f102042bc31" /></p>
+<p>Repeat for each required field.</p>
+<hr />
+<h2 id="removing-unnecessary-fields">Removing Unnecessary Fields</h2>
+<p>After creating the required fields:</p>
+<ol>
+<li>Right-click the column header (or field name)</li>
+<li>
+<p>Select <strong>Delete Field</strong>
+<img width="136" height="50" alt="image" src="https://github.com/user-attachments/assets/9e0f3f2c-13c1-4aca-91e4-19c56874e806" /></p>
+</li>
+<li>
+<p>Save edits</p>
+</li>
+</ol>
+<p>Only required fields should remain unless otherwise specified.</p>
+<hr />
+<h2 id="populating-fields">Populating Fields</h2>
+<h3 id="name-field">Name Field</h3>
+<ul>
+<li>Use the existing column that contains administrative names</li>
+<li>Use <strong>Field Calculator</strong> to copy values if needed</li>
+</ul>
+<hr />
+<h3 id="level-field">Level Field</h3>
+<ul>
+<li>Assign the same value to all rows:</li>
+<li>Example: <code>"ADM2"</code></li>
+</ul>
+<hr />
+<h3 id="iso_code-field">ISO_Code Field</h3>
+<ul>
+<li>For ADM0:</li>
+<li>
+<p>Use the country ISO code (e.g., <code>"USA"</code>)</p>
+</li>
+<li>
+<p>For ADM1:</p>
+</li>
+<li>
+<p>Use ISO 3166-2 codes (e.g., <code>"US-VA"</code>)</p>
+</li>
+<li>
+<p>Each feature must have a <strong>unique code</strong></p>
+</li>
+</ul>
+<hr />
+<h2 id="common-mistakes">Common Mistakes</h2>
+<ul>
+<li>Incorrect field names (must match exactly)</li>
+<li>Wrong data type (must be Text)</li>
+<li>Missing required fields</li>
+<li>Duplicate ISO codes for ADM1</li>
+<li>Leaving unnecessary fields in the table</li>
+<li>Not saving edits</li>
+</ul>
+<hr />
+<h2 id="final-checklist">Final Checklist</h2>
+<p>Before proceeding, confirm:</p>
+<ul>
+<li>[ ] All required fields exist (<code>Name</code>, <code>Level</code>, <code>ISO_Code</code>)</li>
+<li>[ ] Field names are spelled and capitalized correctly</li>
+<li>[ ] Field types and lengths are correct</li>
+<li>[ ] Values are populated correctly</li>
+<li>[ ] No extra fields remain</li>
+<li>[ ] Edits have been saved</li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Standardized attribute tables are required for all datasets</li>
+<li>Only specific fields should be included</li>
+<li>Naming, types, and values must follow strict guidelines</li>
+</ul>
+<p>A correct attribute schema is essential for ensuring consistency across geoBoundaries data.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../snapping-and-shared-borders/" class="btn btn-neutral float-left" title="Snapping and Shared Borders"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../exporting-and-formatting/" class="btn btn-neutral float-right" title="Exporting and Formatting">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wmgeolab/gbDocs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../snapping-and-shared-borders/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../exporting-and-formatting/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
