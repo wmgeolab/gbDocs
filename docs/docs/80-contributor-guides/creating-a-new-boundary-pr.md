@@ -69,10 +69,23 @@ You can view all pull requests here: https://github.com/wmgeolab/geoBoundaries/p
 Each pull request runs a set of automated validation checks. To verify whether your submission passed:
 
 - Open your pull request page.
-- Scroll to the Checks section.
+
+<img width="929" height="212" alt="image" src="https://github.com/user-attachments/assets/01f2a419-40d4-484b-a9f0-6aef9276dc1c" />
+
+- Click the Checks section.
+
+<img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/b9f05306-5b0e-4d9b-a462-e8e8aab824a0" />
+
 - Review the status of the automated validation jobs.
 
-Typically, there are 4 automated checks that run on every submission. Each check will show one of the following statuses:
+Typically, there are 4 automated checks that run on every submission. 
+
+1. geoBoundaryZipfileChecks
+2. geoBoundaryMetaDataCheck
+3. geoBoundaryDataCheck
+4. prResponse
+
+Each check will show one of the following statuses:
 
 ✅ Green checkmark: Passed successfully
 ❌ Red X: Failed and requires correction
