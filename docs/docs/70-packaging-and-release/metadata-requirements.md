@@ -1,9 +1,28 @@
+# Metadata Requirements
 
+This page defines the required structure and content of the `meta.txt` file.
 
-### Metadata File:
-_insert photo of meta data file_
+The metadata file provides essential information about the dataset, including its source, licensing, and structure. It is required for all submissions.
 
-Within the `meta.txt` file, there are several subfields that describe the data.
+---
+
+## Purpose
+
+The `meta.txt` file ensures that each dataset is:
+
+- Transparent in its origin
+- Properly licensed
+- Reproducible and verifiable
+- Consistent with geoBoundaries standards
+
+---
+
+## Metadata File
+
+_insert photo of metadata file here_
+
+Within the `meta.txt` file, there are several subfields that describe the data:
+
 ```text
 Boundary Representative of Year: Year of data creation, publication, or most recent update.
 
@@ -29,3 +48,55 @@ Link to Source Data: Link to the page where the shapefile can be found
 
 Other Notes: Any other relevant information (if applicable)
 ```
+
+## Formatting Requirements
+
+- Each field must be included, even if marked as not applicable
+- Use consistent field names exactly as shown above
+- Separate each field with a new line
+- Use plain text format (.txt)
+- Do not add extra fields unless necessary
+- Required vs Optional Fields
+- Required Fields
+
+---
+
+The following fields must always be completed:
+
+- Boundary Representative of Year
+- ISO-3166-1 (Alpha-3)
+- Boundary Type
+- Canonical Boundary Type Name
+- Source 1
+- Release Type
+- License
+- License Source
+- Link to Source Data
+
+---
+
+Optional Fields
+
+These fields may be left blank or marked as N/A if not applicable:
+
+- Source 2
+- License Notes
+- Other Notes
+
+---
+
+Best Practices
+- Ensure all links are valid and accessible
+- Match metadata values to the dataset exactly
+- Use official names and terminology where possible
+- Double-check ISO codes and ADM levels
+- Keep descriptions concise but informative
+
+---
+
+Common Issues
+- Missing required fields
+- Incorrect or inconsistent field names
+- Broken or missing links
+- License information that does not match license.png
+- Vague or incomplete source descriptions
