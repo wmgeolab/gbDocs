@@ -95,7 +95,7 @@ Each check will show one of the following statuses:
 
 ❌ Red X: Failed and requires correction
 
-⏳ Yellow circle: Still running
+⏳ Hour Glass: Still running
 
 All checks must pass for the pull request to be approved and merged.
 
