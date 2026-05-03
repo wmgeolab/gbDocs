@@ -58,11 +58,11 @@ After you submit your boundary ZIP file, the system takes a few minutes to proce
 
 <img width="899" height="511" alt="image" src="https://github.com/user-attachments/assets/48fbbdd5-50aa-45b0-960b-62fa2b91d31b" />
 
-You can view all pull requests here: https://github.com/wmgeolab/geoBoundaries/pulls
-
 ## Viewing Your Pull Request
 
 Once your submission is processed, navigate to the generated PR to review its status and validation results.
+
+You can view all pull requests here: https://github.com/wmgeolab/geoBoundaries/pulls
 
 ## Checking Automated Validation Results
 
