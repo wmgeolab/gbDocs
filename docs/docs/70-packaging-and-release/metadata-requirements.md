@@ -102,3 +102,13 @@ Common Issues
 - Broken or missing links
 - License information that does not match license.png
 - Vague or incomplete source descriptions
+
+---
+
+## Summary
+- The meta.txt file is required for all datasets
+- All required fields must be completed accurately
+- Metadata must match the dataset and its source
+- Proper metadata ensures usability, transparency, and compliance
+
+Accurate metadata is essential for maintaining high-quality and reliable geospatial data.
